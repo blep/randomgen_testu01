@@ -1,0 +1,6 @@
+[submodule "thirdparties/TestU01"]
+	path = thirdparties/TestU01
+	url = https://github.com/blep/TestU01.git
+[submodule "thirdparties/pcg-c"]
+	path = thirdparties/pcg-c
+	url = https://github.com/blep/pcg-c.git
