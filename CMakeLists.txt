@@ -28,7 +28,8 @@ set(THIRDPARTIES_INSTALL_DIR ${CMAKE_BINARY_DIR}/thirdparties)
 externalproject_add(
 	testu01
 	SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparties/TestU01
-	CONFIGURE_COMMAND ./configure --prefix=${THIRDPARTIES_INSTALL_DIR}
+	CONFIGURE_COMMAND ./configure --prefix=${THIRDPARTIES_INSTALL_DIR} --disable-shared
+	BUILD_COMMAND make install
 	INSTALL_DIR ${THIRDPARTIES_INSTALL_DIR}
 	BUILD_IN_SOURCE 1
 )
