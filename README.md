@@ -5,6 +5,6 @@ Tests some random generator against TestU01 random generator quality test suite.
 
 git submodule update --init --recursive
 
-
-sudo apt-get install automake
-sudo apt-get install libtool
+mkdir build
+cd build
+cmake -G "Unix Makefiles" .. && make
