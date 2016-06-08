@@ -37,5 +37,8 @@ externalproject_add(
 include_directories(BEFORE ${CMAKE_BINARY_DIR}/include)
 link_directories(${CMAKE_BINARY_DIR}/lib)
 
-add_subdirectory( src/ )
+option(PCG_C_BUILD_SAMPLES "Build pgc-c samples" OFF)
+option(PCG_C_BUILD_TESTS "Build pgc-c tests" OFF)
 
+add_subdirectory( thirdparties/pcg-c/ )
+add_subdirectory( src/ )
