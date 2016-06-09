@@ -1,13 +1,14 @@
 extern "C" {
-#include "ulcg.h"
-#include "unif01.h"
-#include "bbattery.h"
+    #include "ulcg.h"
+    #include "unif01.h"
+    #include "bbattery.h"
+    #include <siphash.h>
 }
 
-#include "pcg_variants.h"
-#include "MurmurHash1.h"
-#include "MurmurHash2.h"
-#include "MurmurHash3.h"
+#include <pcg_variants.h>
+#include <MurmurHash1.h>
+#include <MurmurHash2.h>
+#include <MurmurHash3.h>
 
 #include <iomanip>
 #include <iostream>
@@ -135,6 +136,19 @@ uint32_t murmur3_counter( CounterState *state )
     return out;
 }
 
+uint32_t siphash24_counter( CounterState *state )
+{
+    union Key {
+        uint32_t vs[4];
+        uint8_t keys[16];
+    } key;
+    key.vs[0] = state->next();
+    key.vs[1] = 0;
+    key.vs[2] = 0;
+    key.vs[3] = 0;
+    return (uint32_t)sip_hash24( key.keys, NULL, 0);
+}
+
 
 
 std::unique_ptr<Unif01GenBase> 
@@ -155,6 +169,8 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &murmur2_counter, CounterState() );
     else if ( name == "murmur3_counter" )
         return makeUnif01Gen32( name, &murmur3_counter, CounterState() );
+    else if ( name == "siphash24_counter" )
+        return makeUnif01Gen32( name, &siphash24_counter, CounterState() );
     else
     {
         printf( "Unknown rng: '%s'. Aborting...", name.c_str() );
@@ -168,7 +184,8 @@ int main (int argc, const char *argv[] )
     std::string name = (argc > 1 ) ? argv[1] : "pcg32_random_r";
 
     std::unique_ptr<Unif01GenBase> rng = createRng( name );
-    bbattery_SmallCrush (rng.get());
+    bbattery_SmallCrush(rng.get());
+//    bbattery_BigCrush(rng.get());
 
     return 0;
 }
