@@ -4,3 +4,6 @@
 [submodule "thirdparties/pcg-c"]
 	path = thirdparties/pcg-c
 	url = https://github.com/blep/pcg-c.git
+[submodule "thirdparties/smhasher"]
+	path = thirdparties/smhasher
+	url = https://github.com/blep/smhasher-official.git
