@@ -7,3 +7,6 @@
 [submodule "thirdparties/smhasher"]
 	path = thirdparties/smhasher
 	url = https://github.com/blep/smhasher-official.git
+[submodule "thirdparties/siphash-c"]
+	path = thirdparties/siphash-c
+	url = https://github.com/blep/siphash-c.git
