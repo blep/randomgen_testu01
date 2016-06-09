@@ -57,6 +57,7 @@ set(TESTU01_LIBRARIES
 include_directories(BEFORE ${THIRDPARTIES_INSTALL_DIR}/include)
 link_directories(${THIRDPARTIES_INSTALL_DIR}/lib)
 include_directories(thirdparties/pcg-c/include)
+set(SMHASHER_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparties/smhasher/src)
 
 option(PCG_C_BUILD_SAMPLES "Build pgc-c samples" OFF)
 option(PCG_C_BUILD_TESTS "Build pgc-c tests" OFF)
