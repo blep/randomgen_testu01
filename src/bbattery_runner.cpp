@@ -1,11 +1,13 @@
 extern "C" {
-    #include "ulcg.h"
-    #include "unif01.h"
-    #include "bbattery.h"
+    #include <ulcg.h>
+    #include <unif01.h>
+    #include <battery.h>
     #include <siphash.h>
 }
 
 #include <pcg_variants.h>
+#include "pcg_lite.h"
+#include "pcg_lite_inline.h"
 #include <MurmurHash1.h>
 #include <MurmurHash2.h>
 #include <MurmurHash3.h>
@@ -156,11 +158,18 @@ createRng( const std::string &name )
 {
     std::unique_ptr<Unif01GenBase> rng;
 
-    pcg32_random_t initState;
-    pcg32_srandom_r(&initState, 42u, 54u);
-
     if ( name == "pcg32_random_r" )
+    {
+        pcg32_random_t initState;
+        pcg32_srandom_r(&initState, 42u, 54u);
         return makeUnif01Gen32( name, &pcg32_random_r, initState );
+    }
+    if ( name == "pcglite32_random" )
+    {
+        PCGLite_SeededState32 initState;
+        pcglite_seed32(&initState, 42u, 54u);
+        return makeUnif01Gen32( name, &pcglite_random32, initState );
+    }
     else if ( name == "raw_counter" )
         return makeUnif01Gen32( name, &raw_counter, CounterState() );
     else if ( name == "murmur1_counter" )
@@ -179,13 +188,60 @@ createRng( const std::string &name )
 }
 
 
-int main (int argc, const char *argv[] )
+static void 
+dump_number( Unif01GenBase *rng, int count )
 {
-    std::string name = (argc > 1 ) ? argv[1] : "pcg32_random_r";
+    while ( count-- > 0 )
+    {
+        unsigned long value = rng->GetBits( rng->state, rng->param );
+        printf( "%lx\n", value);
+    }
+}
+
+
+int main (int argc, const char **argv )
+{
+    std::string name = "pcg32_random_r";
+    std::string runner = "small_crush";
+    ++argv; --argc;
+    if ( argc > 0 )
+    {
+        name = *argv;
+        ++argv; --argc;
+    }
+    if ( argc > 0 )
+    {
+        runner = *argv;
+        ++argv; --argc;
+    }
 
     std::unique_ptr<Unif01GenBase> rng = createRng( name );
-    bbattery_SmallCrush(rng.get());
-//    bbattery_BigCrush(rng.get());
+    if ( runner == "small_crush" )
+        bbattery_SmallCrush(rng.get());
+    else if ( runner == "crush" )
+        bbattery_Crush(rng.get());
+    else if ( runner == "big_crush" )
+        bbattery_BigCrush(rng.get());
+    else if ( runner == "dump_number" )
+    {
+        int count = 10*1000;
+        if ( argc > 0 )
+        {
+            count = atoi(*argv);
+            if ( count <= 0 )
+            {
+                print( "Invalid number of random number to dump: %s\n", *argv);
+                return 2;
+            }
+            ++argv; --argc;
+        }
+        dump_number( rng.get(), count );
+    }
+    else
+    {
+        printf( "Unsupported test runner: %s\n", runner.c_str() );
+        return 2;
+    }
 
     return 0;
 }

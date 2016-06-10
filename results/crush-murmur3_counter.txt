@@ -1,0 +1,3336 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   d = 4096,   t =  2,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   29.802322
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.01677312,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16773120
+Value of the statistic                : 1.68e+7
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:53.35
+
+Generator state:
+state: count=500000000
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   d =   64,   t =  4,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   17.881393
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16515072
+Value of the statistic                : 1.65e+7
+p-value of test                       :    0.85
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.96
+
+Generator state:
+state: count=800000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      456
+p-value of test                       :    0.48
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278216
+  j =  1                              :         99999088
+  j =  2                              :              456
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.93
+
+Generator state:
+state: count=900000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      435
+p-value of test                       :    0.82
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278195
+  j =  1                              :         99999130
+  j =  2                              :              435
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.33
+
+Generator state:
+state: count=1000000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      467
+p-value of test                       :    0.29
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278227
+  j =  1                              :         99999066
+  j =  2                              :              467
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.03
+
+Generator state:
+state: count=1100000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 20,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      478
+p-value of test                       :    0.14
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278238
+  j =  1                              :         99999044
+  j =  2                              :              478
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.44
+
+Generator state:
+state: count=1200000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      509
+p-value of test                       :  6.5e-3
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278269
+  j =  1                              :         99998982
+  j =  2                              :              509
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.75
+
+Generator state:
+state: count=1300000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 25,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      486
+p-value of test                       :    0.08
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278246
+  j =  1                              :         99999028
+  j =  2                              :              486
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.68
+
+Generator state:
+state: count=1400000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      455
+p-value of test                       :    0.50
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278215
+  j =  1                              :         99999090
+  j =  2                              :              455
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.61
+
+Generator state:
+state: count=1500000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 28,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      441
+p-value of test                       :    0.73
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278201
+  j =  1                              :         99999118
+  j =  2                              :              441
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.56
+
+Generator state:
+state: count=1600000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =     433.6809
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    2168.40
+Total observed number                 :    2133
+p-value of test                       :    0.77
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.81
+
+Generator state:
+state: count=1800000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    1084.20
+Total observed number                 :    1017
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.20
+
+Generator state:
+state: count=2100000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     542.10
+Total observed number                 :     550
+p-value of test                       :    0.37
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.00
+
+Generator state:
+state: count=2500000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     686
+p-value of test                       :    0.09
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.85
+
+Generator state:
+state: count=2920000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     633
+p-value of test                       :    0.75
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.81
+
+Generator state:
+state: count=3340000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     316
+p-value of test                       :    0.68
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.79
+
+Generator state:
+state: count=3820000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     331
+p-value of test                       :    0.38
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.81
+
+Generator state:
+state: count=05032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 2,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    1.10
+p-value of test                       :    0.31
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.28
+p-value of test                       :    0.95
+
+Test on the Nm values of W_{n,i}(mNP1):    0.32
+p-value of test                       :    0.92
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     302
+p-value of test                       :    0.46
+
+Stat. AD (mNP2)                       :    0.54
+p-value of test                       :    0.70
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.85
+
+Generator state:
+state: count=45032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.59
+p-value of test                       :    0.65
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.85
+p-value of test                       :    0.44
+
+Test on the Nm values of W_{n,i}(mNP1):    1.97
+p-value of test                       :    0.10
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     269
+p-value of test                       :    0.96
+
+Stat. AD (mNP2)                       :    0.86
+p-value of test                       :    0.44
+
+Stat. AD after spacings (mNP2-S)      :    1.53
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.63
+
+Generator state:
+state: count=105032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 7,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.55
+p-value of test                       :    0.69
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.43
+p-value of test                       :    0.20
+
+Test on the Nm values of W_{n,i}(mNP1):    2.74
+p-value of test                       :    0.04
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     146
+p-value of test                       :    0.61
+
+Stat. AD (mNP2)                       :    1.68
+p-value of test                       :    0.14
+
+Stat. AD after spacings (mNP2-S)      :    0.54
+p-value of test                       :    0.71
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.37
+
+Generator state:
+state: count=175032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  4,  n = 4000000,  r =  0,  t = 2
+
+
+-----------------------------------------------
+Max of all bit distances              :   25.00
+p-value of test                       :  7.1e-3
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.12
+
+Generator state:
+state: count=207032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  2,  n = 4000000,  r =  0,  t = 4
+
+
+-----------------------------------------------
+Max of all bit distances              :   11.00
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.36
+
+Generator state:
+state: count=239032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    5.57
+p-value of test                       :    0.94
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.59
+
+Generator state:
+state: count=879032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 26,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :   21.85
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.51
+
+Generator state:
+state: count=1519032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   31.64
+p-value of test                       :    0.11
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.46
+
+Generator state:
+state: count=2159032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   12.52
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.60
+
+Generator state:
+state: count=2799032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   66.46
+p-value of test                       :    0.07
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.28
+
+Generator state:
+state: count=3132379867
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 28,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   73.00
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.22
+
+Generator state:
+state: count=3465686765
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   54.76
+p-value of test                       :    0.18
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.71
+
+Generator state:
+state: count=3959389506
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   38.17
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.48
+
+Generator state:
+state: count=158027444
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :   92.42
+p-value of test                       :    0.82
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.02
+
+Generator state:
+state: count=958058055
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 27,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :   94.47
+p-value of test                       :    0.78
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.80
+
+Generator state:
+state: count=1758019869
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 2003.09
+p-value of test                       :    0.14
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.71
+
+Generator state:
+state: count=3038090886
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1876.33
+p-value of test                       :    0.83
+
+-----------------------------------------------
+CPU time used                    :  00:00:41.30
+
+Generator state:
+state: count=23651850
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Up =  TRUE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    4.11
+p-value of test                       :    0.66
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.21
+
+Generator state:
+state: count=523651850
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 15,   Up = FALSE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    4.91
+p-value of test                       :    0.56
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.02
+
+Generator state:
+state: count=1023651850
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.91
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.00
+
+Generator state:
+state: count=1523651850
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r = 15,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.40
+
+Generator state:
+state: count=2023651850
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40171
+p-value of test                       :    0.41
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144171
+  j =  1                              :         49919677
+  j =  2                              :            40133
+  j =  3                              :               19
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:37.33
+
+Generator state:
+state: count=2673651850
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r = 15,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40166
+p-value of test                       :    0.42
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144166
+  j =  1                              :         49919687
+  j =  2                              :            40128
+  j =  3                              :               19
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:39.03
+
+Generator state:
+state: count=3323651850
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 100000,   t =  5
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.65
+p-value of test                       :  6.2e-5    *****
+
+Kolmogorov-Smirnov- statistic = D-    : 5.76e-7
+p-value of test                       : 1 -  5.8e-7    *****
+
+Anderson-Darling statistic = A2       :   12.42
+p-value of test                       :  1.1e-6    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 999990
+Chi-square statistic                  : 9.92e+5
+p-value of test                       : 1 -  2.5e-8    *****
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.35
+p-value of test                       :    0.07
+
+Kolmogorov-Smirnov- statistic = D-    :   0.090
+p-value of test                       :    0.80
+
+Anderson-Darling statistic = A2       :    1.37
+p-value of test                       :    0.21
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:40.00
+
+Generator state:
+state: count=3823651850
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   d = 100000,   t = 10
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.92
+p-value of test                       :  4.0e-6    *****
+
+Kolmogorov-Smirnov- statistic = D-    : 7.26e-5
+p-value of test                       : 1 -  7.3e-5    *****
+
+Anderson-Darling statistic = A2       :   12.59
+p-value of test                       :  9.4e-7    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 499995
+Chi-square statistic                  : 4.95e+5
+p-value of test                       : 1 -  1.6e-7    *****
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.49
+p-value of test                       :    0.06
+
+Kolmogorov-Smirnov- statistic = D-    :   0.099
+p-value of test                       :    0.85
+
+Anderson-Darling statistic = A2       :    1.55
+p-value of test                       :    0.17
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.70
+
+Generator state:
+state: count=28684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 20
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  :97951.22
+p-value of test                       : 1 -  2.0e-6    *****
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.73
+p-value of test                       :    0.27
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.44
+
+Generator state:
+state: count=228684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 30
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  :96403.30
+p-value of test                       : 1 - eps1    *****
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.99
+p-value of test                       :    0.01
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.41
+
+Generator state:
+state: count=528684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 10
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.87
+p-value of test                       :    0.13
+
+-----------------------------------------------
+CPU time used                    :  00:00:04.85
+
+Generator state:
+state: count=628684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 30
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.96
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.66
+
+Generator state:
+state: count=928684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 10000000,  n = 20,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 4.39e-4
+p-value of test                       :    0.02
+
+Kolmogorov-Smirnov- statistic = D-    : 3.94e-5
+p-value of test                       :    0.97
+
+Anderson-Darling statistic = A2       :    2.61
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.68
+
+Generator state:
+state: count=1128684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :    0.96
+p-value of test                       :    0.17
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.94
+
+Generator state:
+state: count=1628684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 400000000,   r = 0,   s = 30,   L = 15
+
+   Sequences of n = (K + Q)L =   6150000000 bits
+   Q = 10000000 initialization blocks
+   K = 400000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :  -0.079
+p-value of test                       :    0.53
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.84
+
+Generator state:
+state: count=1833684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 100000000,   r = 20,   s = 10,   L = 15
+
+   Sequences of n = (K + Q)L =   1650000000 bits
+   Q = 10000000 initialization blocks
+   K = 100000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.44
+p-value of test                       :    0.67
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.14
+
+Generator state:
+state: count=2053684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   56.09
+p-value of test                       :    0.15
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.79
+
+Generator state:
+state: count=2565684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  8,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   46.73
+p-value of test                       :    0.44
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.40
+
+Generator state:
+state: count=3077684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 16,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   44.88
+p-value of test                       :    0.52
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.29
+
+Generator state:
+state: count=3589684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 24,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   42.92
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.44
+
+Generator state:
+state: count=4101684554
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   25
+Chi-square statistic                  :   28.27
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.72
+
+Generator state:
+state: count=220049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,    s = 30,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    1.30
+p-value of test                       :    0.86
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.29
+
+Generator state:
+state: count=340049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    3.39
+p-value of test                       :    0.50
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.19
+
+Generator state:
+state: count=700049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r =  0,    s = 30,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.03
+p-value of test                       :    0.57
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.09
+
+Generator state:
+state: count=850049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r = 20,    s = 10,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.04
+p-value of test                       :    0.56
+
+-----------------------------------------------
+CPU time used                    :  00:00:43.92
+
+Generator state:
+state: count=1300049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r =  0,    s = 30,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    3.54
+p-value of test                       :    0.32
+
+-----------------------------------------------
+CPU time used                    :  00:00:39.64
+
+Generator state:
+state: count=1396049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r = 20,    s = 10,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    3.44
+p-value of test                       :    0.33
+
+-----------------------------------------------
+CPU time used                    :  00:00:57.21
+
+Generator state:
+state: count=1684049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   17
+Chi-square statistic                  :   29.12
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.61
+
+Generator state:
+state: count=2284049807
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 2465
+Chi2 statistic for GCD values         : 2529.49
+p-value of test                       :    0.18
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.29
+
+Generator state:
+state: count=2484049809
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 10,   s = 20
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1559
+Chi2 statistic for GCD values         : 1537.75
+p-value of test                       :    0.64
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.90
+
+Generator state:
+state: count=2564049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   46
+ChiSquare statistic                   :   28.57
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   47
+ChiSquare statistic                   :   37.58
+p-value of test                       :    0.84
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   32.45
+p-value of test                       :    0.92
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   37.56
+p-value of test                       :    0.40
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   23
+ChiSquare statistic                   :   12.93
+p-value of test                       :    0.95
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.03
+
+Generator state:
+state: count=2714049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   39.16
+p-value of test                       :    0.68
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   36.52
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   65.08
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   34.06
+p-value of test                       :    0.51
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   22
+ChiSquare statistic                   :   22.61
+p-value of test                       :    0.42
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.60
+
+Generator state:
+state: count=2804049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   s = 30,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  140
+ChiSquare statistic                   :  141.56
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  141
+ChiSquare statistic                   :  126.15
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  541.43
+p-value of test                       :    0.10
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  132
+ChiSquare statistic                   :  143.96
+p-value of test                       :    0.22
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   72
+ChiSquare statistic                   :   67.45
+p-value of test                       :    0.63
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.77
+
+Generator state:
+state: count=2974049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  128
+ChiSquare statistic                   :  123.11
+p-value of test                       :    0.61
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  130
+ChiSquare statistic                   :  140.32
+p-value of test                       :    0.25
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  506.63
+p-value of test                       :    0.41
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  122
+ChiSquare statistic                   :  109.64
+p-value of test                       :    0.78
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   66
+ChiSquare statistic                   :   56.09
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.09
+
+Generator state:
+state: count=3074049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r =  0,   s = 30,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  412.52
+p-value of test                       :    0.05
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  351.31
+p-value of test                       :    0.70
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 4976.69
+p-value of test                       :    0.59
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  360
+ChiSquare statistic                   :  404.86
+p-value of test                       :    0.05
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  192
+ChiSquare statistic                   :  166.64
+p-value of test                       :    0.91
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.83
+
+Generator state:
+state: count=3241049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000,  r = 20,   s = 10,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  323.31
+p-value of test                       :    0.41
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  264.18
+p-value of test                       :    0.99
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5079.31
+p-value of test                       :    0.21
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  315
+ChiSquare statistic                   :  321.12
+p-value of test                       :    0.39
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  169
+ChiSquare statistic                   :  133.93
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.99
+
+Generator state:
+state: count=3341049943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    4.53
+p-value of test                       :    0.92
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -0.70
+p-value of test                       :    0.76
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.85
+
+Generator state:
+state: count=3341169943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    9.19
+p-value of test                       :    0.51
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    0.58
+p-value of test                       :    0.28
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.95
+
+Generator state:
+state: count=3341289943
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 33554432,  r =  0,   s =   30,   k =   25
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.068
+p-value of test                       :    0.88
+
+Kolmogorov-Smirnov- statistic = D-    :    0.23
+p-value of test                       :    0.31
+
+Anderson-Darling statistic = A2       :    0.65
+p-value of test                       :    0.59
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.92
+p-value of test                       :    0.18
+
+Sample variance                       :    1.38
+p-value of test                       :    0.19
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.67
+
+Generator state:
+state: count=3352474763
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r =  0,   s =   30,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 5.72e-3
+p-value of test                       :    0.76
+
+Kolmogorov-Smirnov- statistic = D-    : 7.63e-3
+p-value of test                       :    0.62
+
+Anderson-Darling statistic = A2       :    0.36
+p-value of test                       :    0.89
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.15
+
+Generator state:
+state: count=3379824763
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r = 20,   s =   10,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.016
+p-value of test                       :    0.12
+
+Kolmogorov-Smirnov- statistic = D-    : 7.70e-3
+p-value of test                       :    0.61
+
+Anderson-Darling statistic = A2       :    1.09
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.30
+
+Generator state:
+state: count=3461774763
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 30,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    3.37
+p-value of test                       :    0.91
+
+-----------------------------------------------
+Global longest run of 1               :   31.00
+p-value of test                       :    0.69
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:47.53
+
+Generator state:
+state: count=3795108763
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 300,  r = 20,   s = 10,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :    4.34
+p-value of test                       :    0.74
+
+-----------------------------------------------
+Global longest run of 1               :   33.00
+p-value of test                       :    0.16
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.16
+
+Generator state:
+state: count=4095109363
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  302
+Chi-square statistic                  :  307.24
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.99
+
+Generator state:
+state: count=100142067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 15,   s =   15
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   56
+Chi-square statistic                  :   59.50
+p-value of test                       :    0.35
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.07
+
+Generator state:
+state: count=400142067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 100,  n = 100000000,  r =  0,   s = 30,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.061
+p-value of test                       :    0.46
+
+Kolmogorov-Smirnov- statistic = D-    :   0.058
+p-value of test                       :    0.49
+
+Anderson-Darling statistic = A2       :    0.65
+p-value of test                       :    0.60
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  : 9994.02
+p-value of test                       :    0.51
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.18
+
+Generator state:
+state: count=733482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 30,  n = 100000000,  r = 20,   s = 10,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.15
+p-value of test                       :    0.24
+
+Kolmogorov-Smirnov- statistic = D-    :   0.052
+p-value of test                       :    0.82
+
+Anderson-Darling statistic = A2       :    0.73
+p-value of test                       :    0.54
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3000
+Chi-square statistic                  : 2917.97
+p-value of test                       :    0.86
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.75
+
+Generator state:
+state: count=1033482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   s = 30,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :    1.95
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.72
+
+Generator state:
+state: count=1533482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.72
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.38
+
+Generator state:
+state: count=2033482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.70
+p-value of test                       :    0.76
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.34
+
+Generator state:
+state: count=2433482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s = 30,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  577
+Chi-square statistic                  :  581.77
+p-value of test                       :    0.44
+
+-----------------------------------------------
+CPU time used                    :  00:00:31.17
+
+Generator state:
+state: count=3033482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 20,   s = 10,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  533
+Chi-square statistic                  :  568.08
+p-value of test                       :    0.14
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.13
+
+Generator state:
+state: count=3633482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 30,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4139.45
+p-value of test                       :    0.40
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.51
+
+Generator state:
+state: count=4233482067
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 3585
+Chi-square statistic                  : 3609.87
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.79
+
+Generator state:
+state: count=538514771
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :11870.15
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:00:38.80
+
+Generator state:
+state: count=1338514771
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 7473
+Chi-square statistic                  : 7472.10
+p-value of test                       :    0.50
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.26
+
+Generator state:
+state: count=1578514771
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000004
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   33.71
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+Total number of bits:  4000061790
+
+Normal statistic for number of bits   :    0.69
+p-value of test                       :    0.24
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.17
+
+Generator state:
+state: count=1711850164
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000001
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   62.91
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+Total number of bits:  4000038570
+
+Normal statistic for number of bits   :    0.43
+p-value of test                       :    0.33
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.11
+
+Generator state:
+state: count=2111854021
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000021,  r =  0,   s = 30,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.26
+p-value of test                       :    0.21
+
+Kolmogorov-Smirnov- statistic = D-    :    0.25
+p-value of test                       :    0.25
+
+Anderson-Darling statistic = A2       :    1.57
+p-value of test                       :    0.16
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.72
+p-value of test                       :    0.76
+
+Sample variance                       :    2.07
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.15
+
+Generator state:
+state: count=2445187371
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000001,  r = 20,   s = 10,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.48
+
+Kolmogorov-Smirnov- statistic = D-    :    0.26
+p-value of test                       :    0.44
+
+Anderson-Darling statistic = A2       :    0.51
+p-value of test                       :    0.73
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.31
+p-value of test                       :    0.38
+
+Sample variance                       :    0.42
+p-value of test                       :    0.80
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.30
+
+Generator state:
+state: count=2945187376
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000020,  r =  0,   s = 30,   d = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.13
+p-value of test                       :    0.66
+
+Kolmogorov-Smirnov- statistic = D-    :    0.31
+p-value of test                       :    0.13
+
+Anderson-Darling statistic = A2       :    1.39
+p-value of test                       :    0.20
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.18
+p-value of test                       :    0.12
+
+Sample variance                       :    0.40
+p-value of test                       :    0.94
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.86
+
+Generator state:
+state: count=3278520726
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+murmur3_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000010,  r = 20,   s = 10,   d = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.28
+p-value of test                       :    0.38
+
+Kolmogorov-Smirnov- statistic = D-    :    0.27
+p-value of test                       :    0.41
+
+Anderson-Darling statistic = A2       :    0.59
+p-value of test                       :    0.65
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.23
+p-value of test                       :    0.59
+
+Sample variance                       :    0.36
+p-value of test                       :    0.84
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.46
+
+Generator state:
+state: count=3778520736
+
+
+
+
+
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        murmur3_counter
+ Number of statistics:  144
+ Total CPU time:   00:36:51.05
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 41  MaxOft, t = 5                  1 -  2.5e-8
+ 42  MaxOft, t = 10                 1 -  1.6e-7
+ 43  MaxOft, t = 20                 1 -  2.0e-6
+ 44  MaxOft, t = 30                 1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+
+
+
