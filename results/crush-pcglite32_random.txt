@@ -1,0 +1,3326 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   d = 4096,   t =  2,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   29.802322
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.01677312,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16773120
+Value of the statistic                : 1.68e+7
+p-value of test                       :    0.27
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.60
+
+Generator state:
+state: state=0x87d583d8e6a5cef8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   d =   64,   t =  4,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   17.881393
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16515072
+Value of the statistic                : 1.65e+7
+p-value of test                       :    0.43
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.81
+
+Generator state:
+state: state=0x07da530f6a0a7bf8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      454
+p-value of test                       :    0.50
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278214
+  j =  1                              :         99999092
+  j =  2                              :              454
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.84
+
+Generator state:
+state: state=0xc29511fb05e40af8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      484
+p-value of test                       :    0.09
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278244
+  j =  1                              :         99999032
+  j =  2                              :              484
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.90
+
+Generator state:
+state: state=0x1bffc3f53f1999f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      455
+p-value of test                       :    0.50
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278215
+  j =  1                              :         99999090
+  j =  2                              :              455
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:27.65
+
+Generator state:
+state: state=0xe5ef4b4c05ab28f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 20,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      437
+p-value of test                       :    0.79
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278197
+  j =  1                              :         99999126
+  j =  2                              :              437
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.28
+
+Generator state:
+state: state=0xa691940d4998b7f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      449
+p-value of test                       :    0.59
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278209
+  j =  1                              :         99999102
+  j =  2                              :              449
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.12
+
+Generator state:
+state: state=0xff9c9406fae246f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 25,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :      479
+p-value of test                       :    0.13
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278239
+  j =  1                              :         99999042
+  j =  2                              :              479
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.28
+
+Generator state:
+state: state=0xf17d4ac70987d5f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      475
+p-value of test                       :    0.18
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278235
+  j =  1                              :         99999050
+  j =  2                              :              475
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.34
+
+Generator state:
+state: state=0xfa86c19b658964f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 28,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         :      417
+p-value of test                       :    0.96
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016278177
+  j =  1                              :         99999166
+  j =  2                              :              417
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.18
+
+Generator state:
+state: state=0x12210b91fee6f3f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =     433.6809
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    2168.40
+Total observed number                 :    2080
+p-value of test                       :    0.97
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.56
+
+Generator state:
+state: state=0x8f2b95dda9b611f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    1084.20
+Total observed number                 :    1073
+p-value of test                       :    0.63
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.82
+
+Generator state:
+state: state=0x6abe21cc661ebef8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     542.10
+Total observed number                 :     597
+p-value of test                       :    0.01
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.98
+
+Generator state:
+state: state=0x890de47ddc5cfaf8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     640
+p-value of test                       :    0.65
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.99
+
+Generator state:
+state: state=0x0a12cea8a82ab9f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 :     660
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.08
+
+Generator state:
+state: state=0xaa0144e612d478f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     342
+p-value of test                       :    0.18
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.81
+
+Generator state:
+state: state=0x1e3374a408b8c0f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 :     332
+p-value of test                       :    0.36
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.04
+
+Generator state:
+state: state=0x617c50d2659d08f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 2,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.86
+p-value of test                       :    0.44
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.42
+p-value of test                       :    0.20
+
+Test on the Nm values of W_{n,i}(mNP1):    0.45
+p-value of test                       :    0.79
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     302
+p-value of test                       :    0.46
+
+Stat. AD (mNP2)                       :    1.23
+p-value of test                       :    0.26
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.22
+
+Generator state:
+state: state=0x70c625be23c80ef8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.70
+p-value of test                       :    0.56
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.98
+p-value of test                       :    0.10
+
+Test on the Nm values of W_{n,i}(mNP1):    0.63
+p-value of test                       :    0.62
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     291
+p-value of test                       :    0.69
+
+Stat. AD (mNP2)                       :    0.57
+p-value of test                       :    0.67
+
+Stat. AD after spacings (mNP2-S)      :    1.05
+p-value of test                       :    0.33
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.60
+
+Generator state:
+state: state=0x3d698ba2550a97f8, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 7,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.65
+p-value of test                       :    0.59
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.37
+p-value of test                       :    0.87
+
+Test on the Nm values of W_{n,i}(mNP1):    0.60
+p-value of test                       :    0.65
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     144
+p-value of test                       :    0.67
+
+Stat. AD (mNP2)                       :    0.41
+p-value of test                       :    0.84
+
+Stat. AD after spacings (mNP2-S)      :    1.38
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.48
+
+Generator state:
+state: state=0xacb76e74c1fd6278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  4,  n = 4000000,  r =  0,  t = 2
+
+
+-----------------------------------------------
+Max of all bit distances              :   22.00
+p-value of test                       :    0.37
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.43
+
+Generator state:
+state: state=0xd74a8835e73c9a78, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  2,  n = 4000000,  r =  0,  t = 4
+
+
+-----------------------------------------------
+Max of all bit distances              :   11.00
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.99
+
+Generator state:
+state: state=0xaf24514f537bd278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    8.80
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.37
+
+Generator state:
+state: state=0xdfd77136066c3278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 26,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :    8.00
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.88
+
+Generator state:
+state: state=0x8ac1810ba95c9278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   22.79
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.43
+
+Generator state:
+state: state=0x7b8ed8d03c4cf278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :   22.83
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.16
+
+Generator state:
+state: state=0xd9ebd083bf3d5278, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   55.49
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.22
+
+Generator state:
+state: state=0xbaed9e7744a68700, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 28,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  :   35.08
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.01
+
+Generator state:
+state: state=0xa274cd080bb037d6, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   51.66
+p-value of test                       :    0.26
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.62
+
+Generator state:
+state: state=0x50afa3701d921414, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   52.78
+p-value of test                       :    0.23
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.84
+
+Generator state:
+state: state=0x551f6269ae1107df, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :  146.64
+p-value of test                       :  5.5e-3
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.75
+
+Generator state:
+state: state=0x1d049f14278cfb7e, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 27,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  :  107.81
+p-value of test                       :    0.43
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.73
+
+Generator state:
+state: state=0x546be711ea06eecf, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1968.18
+p-value of test                       :    0.30
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.84
+
+Generator state:
+state: state=0x6b1bd4191ae87599, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 1881.08
+p-value of test                       :    0.81
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.30
+
+Generator state:
+state: state=0x47494329f71ce6fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Up =  TRUE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    8.36
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.40
+
+Generator state:
+state: state=0x74f3e82b58f599fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 15,   Up = FALSE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  :    4.61
+p-value of test                       :    0.59
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.23
+
+Generator state:
+state: state=0xe60c716411ea4cfa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.88
+
+Generator state:
+state: state=0x808fc384d1fafffa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r = 15,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.40
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.65
+
+Generator state:
+state: state=0x655832fe4927b2fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    39981
+p-value of test                       :    0.76
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085143981
+  j =  1                              :         49920057
+  j =  2                              :            39944
+  j =  3                              :               17
+  j =  4                              :                1
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.66
+
+Generator state:
+state: state=0xdd4d09ad7fb5e87a, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r = 15,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         :    40153
+p-value of test                       :    0.45
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31085144153
+  j =  1                              :         49919709
+  j =  2                              :            40123
+  j =  3                              :               15
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.28
+
+Generator state:
+state: state=0x78be72f8337b1dfa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 100000,   t =  5
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.11
+p-value of test                       :    0.72
+
+Kolmogorov-Smirnov- statistic = D-    :    0.25
+p-value of test                       :    0.24
+
+Anderson-Darling statistic = A2       :    0.90
+p-value of test                       :    0.41
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 999990
+Chi-square statistic                  : 1.00e+6
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.50
+
+Anderson-Darling statistic = A2       :    0.48
+p-value of test                       :    0.77
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.62
+
+Generator state:
+state: state=0xbc20d8e5743fd0fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   d = 100000,   t = 10
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.048
+p-value of test                       :    0.94
+
+Kolmogorov-Smirnov- statistic = D-    :    0.52
+p-value of test                       :    0.04
+
+Anderson-Darling statistic = A2       :    2.03
+p-value of test                       :    0.09
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 499995
+Chi-square statistic                  : 5.02e+5
+p-value of test                       :    0.04
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.22
+p-value of test                       :    0.53
+
+Kolmogorov-Smirnov- statistic = D-    :   0.091
+p-value of test                       :    0.87
+
+Anderson-Darling statistic = A2       :    0.47
+p-value of test                       :    0.77
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.80
+
+Generator state:
+state: state=0x243da8e4fc2083fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 20
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  :99524.00
+p-value of test                       :    0.86
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.91
+p-value of test                       :    0.09
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.08
+
+Generator state:
+state: state=0x42ef327867ab31fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 30
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  :98958.36
+p-value of test                       :    0.9902
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.90
+p-value of test                       :    0.10
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.39
+
+Generator state:
+state: state=0x5a1adc677b1d36fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 10
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.54
+p-value of test                       :    0.46
+
+-----------------------------------------------
+CPU time used                    :  00:00:03.17
+
+Generator state:
+state: state=0xf05d2838e8908dfa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 30
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.15
+p-value of test                       :    0.85
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.65
+
+Generator state:
+state: state=0x3fe922d485d292fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 10000000,  n = 20,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 9.84e-5
+p-value of test                       :    0.82
+
+Kolmogorov-Smirnov- statistic = D-    : 4.27e-4
+p-value of test                       :    0.03
+
+Anderson-Darling statistic = A2       :    3.28
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.52
+
+Generator state:
+state: state=0x27a2762ac01540fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.28
+p-value of test                       :    0.61
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.84
+
+Generator state:
+state: state=0x8f3ddffddeb5f3fa, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 400000000,   r = 0,   s = 30,   L = 15
+
+   Sequences of n = (K + Q)L =   6150000000 bits
+   Q = 10000000 initialization blocks
+   K = 400000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.95
+p-value of test                       :    0.83
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.22
+
+Generator state:
+state: state=0x7013ce11b1b12cba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 100000000,   r = 20,   s = 10,   L = 15
+
+   Sequences of n = (K + Q)L =   1650000000 bits
+   Q = 10000000 initialization blocks
+   K = 100000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.98
+p-value of test                       :    0.84
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.00
+
+Generator state:
+state: state=0x9afbda681d7585ba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   47.62
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.11
+
+Generator state:
+state: state=0x8dd598c4d26d05ba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  8,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   40.71
+p-value of test                       :    0.69
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.34
+
+Generator state:
+state: state=0x43d2c670876485ba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 16,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   43.21
+p-value of test                       :    0.59
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.33
+
+Generator state:
+state: state=0x5e51636b3c5c05ba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 24,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :   62.02
+p-value of test                       :    0.06
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.40
+
+Generator state:
+state: state=0x7eaf6fb4f15385ba, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   25
+Chi-square statistic                  :   24.63
+p-value of test                       :    0.48
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.61
+
+Generator state:
+state: state=0x3eabe09389a49f01, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,    s = 30,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    3.91
+p-value of test                       :    0.42
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.72
+
+Generator state:
+state: state=0x4399332b438ce901, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    4.04
+p-value of test                       :    0.40
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.24
+
+Generator state:
+state: state=0x507c63595565c701, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r =  0,    s = 30,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.45
+p-value of test                       :    0.48
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.55
+
+Generator state:
+state: state=0x82de29cbc8d3a381, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r = 20,    s = 10,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.77
+p-value of test                       :    0.43
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.32
+
+Generator state:
+state: state=0xc809c5686b8f3901, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r =  0,    s = 30,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    1.61
+p-value of test                       :    0.66
+
+-----------------------------------------------
+CPU time used                    :  00:00:37.13
+
+Generator state:
+state: state=0x38b7190cecdc4101, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r = 20,    s = 10,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    4.58
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:00:49.27
+
+Generator state:
+state: state=0x06007e7b02c35901, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   17
+Chi-square statistic                  :   11.89
+p-value of test                       :    0.81
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.98
+
+Generator state:
+state: state=0x77b17947851ccb01, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 2465
+Chi2 statistic for GCD values         : 2443.10
+p-value of test                       :    0.62
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.48
+
+Generator state:
+state: state=0x3f5ac73737eff101, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 10,   s = 20
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1559
+Chi2 statistic for GCD values         : 1641.97
+p-value of test                       :    0.07
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.33
+
+Generator state:
+state: state=0xe429b1bc50bc7eff, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   46
+ChiSquare statistic                   :   58.00
+p-value of test                       :    0.11
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   47
+ChiSquare statistic                   :   52.10
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   41.49
+p-value of test                       :    0.62
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   18.59
+p-value of test                       :    0.9927
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   23
+ChiSquare statistic                   :   26.39
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.79
+
+Generator state:
+state: state=0x7d94367a3019af7f, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   53.95
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   50.02
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   :   42.15
+p-value of test                       :    0.59
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   42.16
+p-value of test                       :    0.19
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   22
+ChiSquare statistic                   :   24.60
+p-value of test                       :    0.32
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.90
+
+Generator state:
+state: state=0x8009fb863b0f32ff, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   s = 30,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  140
+ChiSquare statistic                   :  137.49
+p-value of test                       :    0.54
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  141
+ChiSquare statistic                   :  153.84
+p-value of test                       :    0.22
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  480.47
+p-value of test                       :    0.73
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  132
+ChiSquare statistic                   :  143.65
+p-value of test                       :    0.23
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   72
+ChiSquare statistic                   :   75.25
+p-value of test                       :    0.37
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.61
+
+Generator state:
+state: state=0xdb611089507df27f, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  128
+ChiSquare statistic                   :  119.55
+p-value of test                       :    0.69
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  130
+ChiSquare statistic                   :  139.77
+p-value of test                       :    0.26
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  498.72
+p-value of test                       :    0.51
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  122
+ChiSquare statistic                   :  112.34
+p-value of test                       :    0.72
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   66
+ChiSquare statistic                   :   55.97
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.52
+
+Generator state:
+state: state=0x1506babf2c91bd7f, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r =  0,   s = 30,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  342.41
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   :  358.76
+p-value of test                       :    0.60
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5147.54
+p-value of test                       :    0.07
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  360
+ChiSquare statistic                   :  382.80
+p-value of test                       :    0.20
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  192
+ChiSquare statistic                   :  180.29
+p-value of test                       :    0.72
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.89
+
+Generator state:
+state: state=0x6e7672307d223abf, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000,  r = 20,   s = 10,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  267.53
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   :  302.78
+p-value of test                       :    0.72
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5000.97
+p-value of test                       :    0.49
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  315
+ChiSquare statistic                   :  282.96
+p-value of test                       :    0.90
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  169
+ChiSquare statistic                   :  134.71
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.52
+
+Generator state:
+state: state=0x8ef1138e7b0f05bf, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    8.61
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    0.81
+p-value of test                       :    0.21
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.41
+
+Generator state:
+state: state=0x58614b4c7b5fa1ff, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    5.83
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    0.94
+p-value of test                       :    0.17
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.56
+
+Generator state:
+state: state=0x334479dd849afe3f, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 33554432,  r =  0,   s =   30,   k =   25
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.39
+p-value of test                       :    0.03
+
+Kolmogorov-Smirnov- statistic = D-    :   0.013
+p-value of test                       :    0.99
+
+Anderson-Darling statistic = A2       :    3.56
+p-value of test                       :    0.01
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -2.60
+p-value of test                       :    0.9953
+
+Sample variance                       :    0.73
+p-value of test                       :    0.68
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.20
+
+Generator state:
+state: state=0x1cf6ddb9dc1521db, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r =  0,   s =   30,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 8.74e-3
+p-value of test                       :    0.53
+
+Kolmogorov-Smirnov- statistic = D-    :   0.012
+p-value of test                       :    0.32
+
+Anderson-Darling statistic = A2       :    0.63
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.19
+
+Generator state:
+state: state=0x56311bf4c40bf22b, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r = 20,   s =   10,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.014
+p-value of test                       :    0.20
+
+Kolmogorov-Smirnov- statistic = D-    : 1.86e-3
+p-value of test                       :    0.97
+
+Anderson-Darling statistic = A2       :    0.91
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.31
+
+Generator state:
+state: state=0xec813860fcf9903b, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 30,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    4.38
+p-value of test                       :    0.82
+
+-----------------------------------------------
+Global longest run of 1               :   33.00
+p-value of test                       :    0.44
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:41.63
+
+Generator state:
+state: state=0x53852f6e998a8e8b, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 300,  r = 20,   s = 10,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :   10.21
+p-value of test                       :    0.18
+
+-----------------------------------------------
+Global longest run of 1               :   29.00
+p-value of test                       :    0.75
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.92
+
+Generator state:
+state: state=0x9de5eec870aeee53, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  302
+Chi-square statistic                  :  282.30
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.15
+
+Generator state:
+state: state=0x7250f3ddfcd0bf53, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 15,   s =   15
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   56
+Chi-square statistic                  :   56.45
+p-value of test                       :    0.46
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.97
+
+Generator state:
+state: state=0x5e0d8f30455e9053, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 100,  n = 100000000,  r =  0,   s = 30,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.083
+p-value of test                       :    0.24
+
+Kolmogorov-Smirnov- statistic = D-    :   0.045
+p-value of test                       :    0.64
+
+Anderson-Darling statistic = A2       :    1.30
+p-value of test                       :    0.23
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  : 9955.04
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.56
+
+Generator state:
+state: state=0x764f06f746439573, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 30,  n = 100000000,  r = 20,   s = 10,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.018
+p-value of test                       :    0.97
+
+Kolmogorov-Smirnov- statistic = D-    :    0.26
+p-value of test                       :    0.01
+
+Anderson-Darling statistic = A2       :    2.32
+p-value of test                       :    0.06
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3000
+Chi-square statistic                  : 3153.82
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.18
+
+Generator state:
+state: state=0x0ffca6cce72ee673, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   s = 30,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -1.05
+p-value of test                       :    0.85
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.66
+
+Generator state:
+state: state=0x06bfca87b6fc6d73, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.31
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.93
+
+Generator state:
+state: state=0xa1e056ff75f5f473, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.99
+p-value of test                       :    0.16
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.10
+
+Generator state:
+state: state=0x342d1af0b8626073, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s = 30,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  577
+Chi-square statistic                  :  588.18
+p-value of test                       :    0.36
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.14
+
+Generator state:
+state: state=0x62c3a9c5816d0273, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 20,   s = 10,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  533
+Chi-square statistic                  :  519.94
+p-value of test                       :    0.65
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.56
+
+Generator state:
+state: state=0x7f3a0b51c427a473, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 30,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 3980.92
+p-value of test                       :    0.93
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.43
+
+Generator state:
+state: state=0xdd26639a00924673, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 3585
+Chi-square statistic                  : 3587.29
+p-value of test                       :    0.49
+
+-----------------------------------------------
+CPU time used                    :  00:00:12.75
+
+Generator state:
+state: state=0x5170e2a2b6ace873, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :12027.00
+p-value of test                       :    0.10
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.75
+
+Generator state:
+state: state=0x96e4d61a66c5c073, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 7473
+Chi-square statistic                  : 7402.23
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.18
+
+Generator state:
+state: state=0xbd02f861b66d3473, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000004
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   49.64
+p-value of test                       :    0.57
+
+
+-----------------------------------------------
+Total number of bits:  3999995580
+
+Normal statistic for number of bits   :  -0.049
+p-value of test                       :    0.52
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.82
+
+Generator state:
+state: state=0x48897a7bbfb7b081, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000000
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :   77.45
+p-value of test                       :    0.01
+
+
+-----------------------------------------------
+Total number of bits:  4000035930
+
+Normal statistic for number of bits   :    0.40
+p-value of test                       :    0.34
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.67
+
+Generator state:
+state: state=0x895241b529335952, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000021,  r =  0,   s = 30,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.26
+
+Kolmogorov-Smirnov- statistic = D-    :   0.099
+p-value of test                       :    0.77
+
+Anderson-Darling statistic = A2       :    0.81
+p-value of test                       :    0.47
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.90
+p-value of test                       :    0.82
+
+Sample variance                       :    0.66
+p-value of test                       :    0.75
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.34
+
+Generator state:
+state: state=0x9825ccb9980bab74, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000001,  r = 20,   s = 10,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.26
+p-value of test                       :    0.43
+
+Kolmogorov-Smirnov- statistic = D-    :    0.13
+p-value of test                       :    0.78
+
+Anderson-Darling statistic = A2       :    0.47
+p-value of test                       :    0.77
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.47
+p-value of test                       :    0.68
+
+Sample variance                       :    1.26
+p-value of test                       :    0.28
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.89
+
+Generator state:
+state: state=0x260a5075e69c7cfd, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000020,  r =  0,   s = 30,   d = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.022
+p-value of test                       :    0.97
+
+Kolmogorov-Smirnov- statistic = D-    :    0.46
+p-value of test                       :  8.5e-3
+
+Anderson-Darling statistic = A2       :    2.77
+p-value of test                       :    0.04
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    2.04
+p-value of test                       :    0.02
+
+Sample variance                       :    0.93
+p-value of test                       :    0.49
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.47
+
+Generator state:
+state: state=0x4fab4f61bdb871c7, seq=0x000000000000006d
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+pcglite32_random
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000010,  r = 20,   s = 10,   d = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.47
+p-value of test                       :    0.08
+
+Kolmogorov-Smirnov- statistic = D-    :    0.11
+p-value of test                       :    0.83
+
+Anderson-Darling statistic = A2       :    1.10
+p-value of test                       :    0.30
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.94
+p-value of test                       :    0.83
+
+Sample variance                       :    1.12
+p-value of test                       :    0.35
+
+-----------------------------------------------
+CPU time used                    :  00:00:18.59
+
+Generator state:
+state: state=0xef8e3326646ed64d, seq=0x000000000000006d
+
+
+
+
+
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        pcglite32_random
+ Number of statistics:  144
+ Total CPU time:   00:26:01.53
+
+ All tests were passed
+
+
+
