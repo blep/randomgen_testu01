@@ -8,27 +8,29 @@
 
 # include <stdlib.h>
 
-# define PCGLITE_ROTL32(x, r) _rotl(x,y)
-# define PCGLITE_ROTL64(x, r) _rotl64(x,y)
+# define PCGLITE_ROR32(x, r) _rotr(x,r)
+# define PCGLITE_ROR64(x, r) _rotr64(x,r)
 #else /* #if defined(_MSC_VER) */
 # define PCGLITE_FORCE_INLINE inline __attribute__((always_inline))
 
-PCGLITE_FORCE_INLINE uint32_t pcglite_rotl32( uint32_t x, int8_t r )
+// Rotate bits right
+PCGLITE_FORCE_INLINE uint32_t pcglite_ror32( uint32_t x, int8_t r )
 {
 #if PCGLITE_WITH_ASM  &&  __clang__  &&  (__x86_64__  || __i386__)
     asm ("rorw   %%cl, %0" : "=r" (x) : "0" (x), "c" (r));
     return value;
 #else
-	return (x << r) | (x >> (32u - r));
+    return (x >> r) | (x << ((-r) & 31));
 #endif
 }
 
-PCGLITE_FORCE_INLINE uint64_t pcglite_rotl64( uint64_t x, int8_t r )
+// Rotate bits right
+PCGLITE_FORCE_INLINE uint64_t pcglite_ror64( uint64_t x, int8_t r )
 {
   return (x << r) | (x >> (64u - r));
 }
-# define PCGLITE_ROTL32(x, r) pcglite_rotl32(x,y)
-# define PCGLITE_ROTL64(x, r) pcglite_rotl64(x,y)
+# define PCGLITE_ROR32(x, r) pcglite_ror32(x,r)
+# define PCGLITE_ROR64(x, r) pcglite_ror64(x,r)
 
 #endif
 
@@ -64,7 +66,7 @@ PCGLITE_INLINE uint32_t pcglite_random32( PCGLite_SeededState32 *seededState )
 	uint64_t state = seededState->state_;
 	internal_pcglite_step32( seededState );
 
-    return PCGLITE_ROTL32(((state >> 18u) ^ state) >> 27u, state >> 59u);
+    return PCGLITE_ROR32(((state >> 18u) ^ state) >> 27u, state >> 59u);
 }
 
 

@@ -4,7 +4,7 @@ from pathlib import Path
 
 DOIT_CONFIG = {'default_tasks': ['small_crush']}
 
-COMMON_RNG = "pcg32_random_r murmur1_counter murmur2_counter murmur3_counter siphash24_counter".split()
+COMMON_RNG = "pcg32_random_r pcglite32_random murmur1_counter murmur2_counter murmur3_counter siphash24_counter siphash24_key_counter siphash24_key_counter_64".split()
 SMALL_RNG = ["raw_counter"] + COMMON_RNG
 
 def do_crushes(rngs, kind):

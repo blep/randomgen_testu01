@@ -1,8 +1,9 @@
 extern "C" {
     #include <ulcg.h>
     #include <unif01.h>
-    #include <battery.h>
+    #include <bbattery.h>
     #include <siphash.h>
+    #include "siphash24_ints.h"
 }
 
 #include <pcg_variants.h>
@@ -30,6 +31,15 @@ std::ostream & operator <<( std::ostream &os, pcg32_random_t state )
     os << std::hex;
     os << "state=0x" << std::setw(16) << std::setfill('0') << state.state 
        << ", inc=0x" << std::setw(16) << std::setfill('0') << state.inc;
+    return os;
+}
+
+
+std::ostream & operator <<( std::ostream &os, PCGLite_SeededState32 state )
+{
+    os << std::hex;
+    os << "state=0x" << std::setw(16) << std::setfill('0') << state.state_ 
+       << ", seq=0x" << std::setw(16) << std::setfill('0') << state.seq_;
     return os;
 }
 
@@ -91,25 +101,35 @@ makeUnif01Gen32( std::string name, FnGetBits getBitsFn, State initialState )
 
 // Dumb increasing counter for "failing" statistical RNG tests
 
-struct CounterState
+template<typename T>
+struct GenericCounterState
 {
-    CounterState()
+    GenericCounterState()
         : count_( 0 )
     {
     }
 
-    uint32_t next()
+    T next()
     {
         return count_++;
     }
 
-    uint32_t count_;
+    T count_;
 };
+
+using CounterState = GenericCounterState<uint32_t>;
+using CounterState64 = GenericCounterState<uint64_t>;
 
 
 std::ostream &operator <<( std::ostream &os, const CounterState &state )
 {
     os << "count=" << std::setw(8) << std::setfill('0') << state.count_;
+    return os;
+}
+
+std::ostream &operator <<( std::ostream &os, const CounterState64 &state )
+{
+    os << "count=" << std::setw(16) << std::setfill('0') << state.count_;
     return os;
 }
 
@@ -151,6 +171,16 @@ uint32_t siphash24_counter( CounterState *state )
     return (uint32_t)sip_hash24( key.keys, NULL, 0);
 }
 
+uint32_t siphash24_key_counter( CounterState *state )
+{
+    return (uint32_t)sip_hash24_key_only( state->next());
+}
+
+uint32_t siphash24_key_counter_64( CounterState64 *state )
+{
+    return (uint32_t)sip_hash24_key_only( state->next());
+}
+
 
 
 std::unique_ptr<Unif01GenBase> 
@@ -180,6 +210,10 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &murmur3_counter, CounterState() );
     else if ( name == "siphash24_counter" )
         return makeUnif01Gen32( name, &siphash24_counter, CounterState() );
+    else if ( name == "siphash24_key_counter" )
+        return makeUnif01Gen32( name, &siphash24_key_counter, CounterState() );
+    else if ( name == "siphash24_key_counter_64" )
+        return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
     else
     {
         printf( "Unknown rng: '%s'. Aborting...", name.c_str() );
@@ -191,9 +225,10 @@ createRng( const std::string &name )
 static void 
 dump_number( Unif01GenBase *rng, int count )
 {
+    printf("Numbers: \n");
     while ( count-- > 0 )
     {
-        unsigned long value = rng->GetBits( rng->state, rng->param );
+        unsigned long value = rng->GetBits( rng->param, rng->state );
         printf( "%lx\n", value);
     }
 }
@@ -222,7 +257,7 @@ int main (int argc, const char **argv )
         bbattery_Crush(rng.get());
     else if ( runner == "big_crush" )
         bbattery_BigCrush(rng.get());
-    else if ( runner == "dump_number" )
+    else if ( runner == "dump_int" )
     {
         int count = 10*1000;
         if ( argc > 0 )
@@ -230,7 +265,7 @@ int main (int argc, const char **argv )
             count = atoi(*argv);
             if ( count <= 0 )
             {
-                print( "Invalid number of random number to dump: %s\n", *argv);
+                printf( "Invalid number of random number to dump: %s\n", *argv);
                 return 2;
             }
             ++argv; --argc;
