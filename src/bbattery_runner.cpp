@@ -176,6 +176,21 @@ uint32_t siphash24_key_counter( CounterState *state )
     return (uint32_t)sip_hash24_key_only( state->next());
 }
 
+uint32_t siphash14_key_counter( CounterState *state )
+{
+    return (uint32_t)sip_hash14_key_only( state->next());
+}
+
+uint32_t siphash12_key_counter( CounterState *state )
+{
+    return (uint32_t)sip_hash12_key_only( state->next());
+}
+
+uint32_t siphash11_key_counter( CounterState *state )
+{
+    return (uint32_t)sip_hash11_key_only( state->next());
+}
+
 uint32_t siphash24_key_counter_64( CounterState64 *state )
 {
     return (uint32_t)sip_hash24_key_only( state->next());
@@ -212,6 +227,12 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &siphash24_counter, CounterState() );
     else if ( name == "siphash24_key_counter" )
         return makeUnif01Gen32( name, &siphash24_key_counter, CounterState() );
+    else if ( name == "siphash14_key_counter" )
+        return makeUnif01Gen32( name, &siphash14_key_counter, CounterState() );
+    else if ( name == "siphash12_key_counter" )
+        return makeUnif01Gen32( name, &siphash12_key_counter, CounterState() );
+    else if ( name == "siphash11_key_counter" )
+        return makeUnif01Gen32( name, &siphash11_key_counter, CounterState() );
     else if ( name == "siphash24_key_counter_64" )
         return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
     else

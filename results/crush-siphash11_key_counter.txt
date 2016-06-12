@@ -1,0 +1,3479 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   d = 4096,   t =  2,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   29.802322
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.01677312,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16773120
+Value of the statistic                : 1.96e+9
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:47.57
+
+Generator state:
+state: count=500000000
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   d =   64,   t =  4,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   17.881393
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =    0.027525119,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16515072
+Value of the statistic                :2.99e+11
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.87
+
+Generator state:
+state: count=800000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :    89576
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016367336
+  j =  1                              :         99821167
+  j =  2                              :            88942
+  j =  3                              :              311
+  j =  4                              :                4
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.31
+
+Generator state:
+state: count=900000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,   d = 1048576,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :    47059
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995016324819
+  j =  1                              :         99905951
+  j =  2                              :            46921
+  j =  3                              :               69
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.70
+
+Generator state:
+state: count=1000000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         : 46851338
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995063129098
+  j =  1                              :         27496231
+  j =  2                              :         15862999
+  j =  3                              :          4207218
+  j =  4                              :          3415551
+  j =  5                              :           520975
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.56
+
+Generator state:
+state: count=1100000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 20,   d = 1024,   t =  4,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         :  3500814
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995019778574
+  j =  1                              :         93728439
+  j =  2                              :          2307779
+  j =  3                              :           314089
+  j =  4                              :            87318
+  j =  5                              :            32802
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.27
+
+Generator state:
+state: count=1200000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         : 95376982
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995111654742
+  j =  1                              :           899911
+  j =  2                              :           726355
+  j =  3                              :           277968
+  j =  4                              :           328128
+  j =  5                              :           188212
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.46
+
+Generator state:
+state: count=1300000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 25,   d =   32,   t =  8,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.75
+Observed number of collisions         : 22069681
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995038347441
+  j =  1                              :         62430737
+  j =  2                              :         11415764
+  j =  3                              :          2725106
+  j =  4                              :           812541
+  j =  5                              :           291627
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.84
+
+Generator state:
+state: count=1400000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         : 98688563
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995114966323
+  j =  1                              :           357501
+  j =  2                              :           199626
+  j =  3                              :           103679
+  j =  4                              :            74402
+  j =  5                              :            53970
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.53
+
+Generator state:
+state: count=1500000000
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 28,   d =    4,   t = 20,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      1099511627776
+       Expected number per cell =  1 /  109951.16
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  109951.16
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :      454.74
+Observed number of collisions         : 87925906
+p-value of test                       :   eps      *****
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :   10995104203666
+  j =  1                              :          4040352
+  j =  2                              :          1679032
+  j =  3                              :          1250577
+  j =  4                              :          1033182
+  j =  5                              :           718606
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.69
+
+Generator state:
+state: count=1600000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =     433.6809
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    2168.40
+Total observed number                 :  123199
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.99
+
+Generator state:
+state: count=1800000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    1084.20
+Total observed number                 : 2006100
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.25
+
+Generator state:
+state: count=2100000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  5,  n = 20000000,  r =  0,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     542.10
+Total observed number                 : 12220517
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.97
+
+Generator state:
+state: count=2500000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 : 24404856
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.93
+
+Generator state:
+state: count=2920000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     650.52
+Total observed number                 : 6552918
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:24.51
+
+Generator state:
+state: count=3340000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 : 59409905
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:20.66
+
+Generator state:
+state: count=3820000000
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  3,  n = 20000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     108.4202
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :     325.26
+Total observed number                 : 35780650
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.63
+
+Generator state:
+state: count=05032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 2,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :   67.11
+p-value of test                       : 8.5e-31    *****
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :  357.37
+p-value of test                       :3.2e-157    *****
+
+Test on the Nm values of W_{n,i}(mNP1): 3703.28
+p-value of test                       :   eps      *****
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :   76029
+p-value of test                       :   eps      *****
+
+Stat. AD (mNP2)                       : 8084.33
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.80
+
+Generator state:
+state: count=45032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 2000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :  162.64
+p-value of test                       : 1.8e-72    *****
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :  357.37
+p-value of test                       :3.2e-157    *****
+
+Test on the Nm values of W_{n,i}(mNP1): 4480.29
+p-value of test                       :   eps      *****
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :  477809
+p-value of test                       :   eps      *****
+
+Stat. AD (mNP2)                       : 1.16e+5
+p-value of test                       :   eps      *****
+
+Stat. AD after spacings (mNP2-S)      : 5.03e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.37
+
+Generator state:
+state: count=105032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 7,  p = 0,  m = 30,  Torus =  TRUE
+
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+*********  WARNING in file  snpair.c  on line  294
+*********  res->NumClose > 50000
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :  178.68
+p-value of test                       : 1.8e-79    *****
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :  178.68
+p-value of test                       : 1.8e-79    *****
+
+Test on the Nm values of W_{n,i}(mNP1): 5360.52
+p-value of test                       :   eps      *****
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  > 250000     *****
+p-value of test                       :   eps      *****
+
+Stat. AD (mNP2)                       : 6.36e+6
+p-value of test                       :   eps      *****
+
+Stat. AD after spacings (mNP2-S)      : 6.58e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:02:00.75
+
+Generator state:
+state: count=175032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  4,  n = 4000000,  r =  0,  t = 2
+
+
+-----------------------------------------------
+Max of all bit distances              :   30.00
+p-value of test                       :  6.9e-6    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.19
+
+Generator state:
+state: count=207032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+snpair_ClosePairsBitMatch test:
+-----------------------------------------------
+   N =  2,  n = 4000000,  r =  0,  t = 4
+
+
+-----------------------------------------------
+Max of all bit distances              :   26.00
+p-value of test                       : 4.9e-20    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.16
+
+Generator state:
+state: count=239032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  :5.46e+12
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.01
+
+Generator state:
+state: count=879032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 26,   d =   16,   k =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi-square statistic                  : 1.25e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.99
+
+Generator state:
+state: count=1519032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  :3.46e+11
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.51
+
+Generator state:
+state: count=2159032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   23
+Chi-square statistic                  : 3.53e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.26
+
+Generator state:
+state: count=2799032704
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r =  0,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  : 2.25e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.65
+
+Generator state:
+state: count=2980185604
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 28,   d =    4
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   51
+Chi-square statistic                  : 8.91e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.87
+
+Generator state:
+state: count=3303115104
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  : 4.25e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.74
+
+Generator state:
+state: count=3838687302
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  : 5.24e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.38
+
+Generator state:
+state: count=13904898
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  : 3.80e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.62
+
+Generator state:
+state: count=816240682
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 27,   Alpha =        0,   Beta  =    0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  106
+Chi-square statistic                  : 2.69e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.34
+
+Generator state:
+state: count=1616209732
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  : 8.67e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:36.02
+
+Generator state:
+state: count=2892792180
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1936
+Chi-square statistic                  :90784.28
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:38.23
+
+Generator state:
+state: count=4171736479
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Up =  TRUE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  : 1.31e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.51
+
+Generator state:
+state: count=376769183
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 15,   Up = FALSE
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    6
+Chi-square statistic                  : 1.59e+7
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.91
+
+Generator state:
+state: count=876769183
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                :7.02e+10
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.17
+
+Generator state:
+state: count=1376769183
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r = 15,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    13.77866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =     0.03628799,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                :8.43e+10
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.70
+
+Generator state:
+state: count=1876769183
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         : 41914311
+p-value of test                       :   eps      *****
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31127018311
+  j =  1                              :          4599890
+  j =  2                              :          1228675
+  j =  3                              :           572530
+  j =  4                              :           332666
+  j =  5                              :           216886
+
+-----------------------------------------------
+CPU time used                    :  00:00:32.72
+
+Generator state:
+state: count=2526769183
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r = 15,   t = 13,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =         6227020800
+       Expected number per cell =  1 /  622.70208
+       EColl = n^2 / (2k) =  8029.521918
+       Hashing =   TRUE
+
+       Collision test,    Mu =      8025.2245,    Sigma =    89.5098
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    40126.12
+Observed number of collisions         : 46324501
+p-value of test                       :   eps      *****
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :      31131428501
+  j =  1                              :          1632484
+  j =  2                              :           517132
+  j =  3                              :           285174
+  j =  4                              :           188760
+  j =  5                              :           138572
+
+-----------------------------------------------
+CPU time used                    :  00:00:33.36
+
+Generator state:
+state: count=3176769183
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r =  0,   d = 100000,   t =  5
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  357.37
+p-value of test                       :3.2e-157    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 999990
+Chi-square statistic                  : 2.49e+7
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    1.00
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Anderson-Darling statistic = A2       :  357.37
+p-value of test                       :3.2e-157    *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:40.42
+
+Generator state:
+state: count=3676769183
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  5,  n = 10000000,  r =  0,   d = 100000,   t = 10
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :  178.68
+p-value of test                       : 1.8e-79    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 499995
+Chi-square statistic                  : 7.35e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    1.00
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Anderson-Darling statistic = A2       :  178.68
+p-value of test                       : 1.8e-79    *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.18
+
+Generator state:
+state: count=4176769183
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 20
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.83e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :   0.000
+p-value of test                       : 1 - eps1    *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.57
+
+Generator state:
+state: count=81801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   d = 100000,   t = 30
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.90e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :   0.000
+p-value of test                       : 1 - eps1    *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.53
+
+Generator state:
+state: count=381801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 10
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :   0.000
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:04.81
+
+Generator state:
+state: count=481801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   t = 30
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :   0.000
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.56
+
+Generator state:
+state: count=781801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 10000000,  n = 20,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.072
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.074
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       : 2.08e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.90
+
+Generator state:
+state: count=981801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      : -583.71
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.36
+
+Generator state:
+state: count=1481801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 400000000,   r = 0,   s = 30,   L = 15
+
+   Sequences of n = (K + Q)L =   6150000000 bits
+   Q = 10000000 initialization blocks
+   K = 400000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :-4303.15
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.25
+
+Generator state:
+state: count=1686801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 100000000,   r = 20,   s = 10,   L = 15
+
+   Sequences of n = (K + Q)L =   1650000000 bits
+   Q = 10000000 initialization blocks
+   K = 100000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      : -1.01e+4
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.61
+
+Generator state:
+state: count=1906801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  : 1.74e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.50
+
+Generator state:
+state: count=2418801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  8,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :19209.94
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.22
+
+Generator state:
+state: count=2930801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 16,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :4.30e+10
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.21
+
+Generator state:
+state: count=3442801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r = 24,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   46
+Chi-square statistic                  :12444.55
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.27
+
+Generator state:
+state: count=3954801887
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   25
+Chi-square statistic                  : 2.33e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.85
+
+Generator state:
+state: count=73107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,    s = 30,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  : 6.81e+9
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.81
+
+Generator state:
+state: count=193107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    4
+Chi-square statistic                  :    7.40
+p-value of test                       :    0.12
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.52
+
+Generator state:
+state: count=553107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r =  0,    s = 30,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  : 3.59e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.14
+
+Generator state:
+state: count=703107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 50000,  r = 20,    s = 10,    L = 300,    k = 300
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    2.89
+p-value of test                       :    0.41
+
+-----------------------------------------------
+CPU time used                    :  00:00:41.81
+
+Generator state:
+state: count=1153107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r =  0,    s = 30,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  : 3.76e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:39.59
+
+Generator state:
+state: count=1249107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 2000,  r = 20,    s = 10,    L = 1200,    k = 1200
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :   0.053
+p-value of test                       :    0.9968
+
+-----------------------------------------------
+CPU time used                    :  00:00:56.50
+
+Generator state:
+state: count=1537107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   17
+Chi-square statistic                  :12459.17
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.96
+
+Generator state:
+state: count=2137107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 2465
+Chi2 statistic for GCD values         :19371.59
+p-value of test                       :   eps      *****
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.21
+
+Generator state:
+state: count=2337107777
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N =  1,  n = 40000000,  r = 10,   s = 20
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1559
+Chi2 statistic for GCD values         :36668.28
+p-value of test                       :   eps      *****
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:06.82
+
+Generator state:
+state: count=2417107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   46
+ChiSquare statistic                   : 2.53e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   47
+ChiSquare statistic                   : 1.15e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   : 2.43e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   : 1.86e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   23
+ChiSquare statistic                   : 5.23e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:28.26
+
+Generator state:
+state: count=2567107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 =   90,   L1 =   90
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   : 7.23e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   : 4.53e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   45
+ChiSquare statistic                   : 9.53e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   : 7.05e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   22
+ChiSquare statistic                   : 1.03e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:07.82
+
+Generator state:
+state: count=2657107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   s = 30,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  140
+ChiSquare statistic                   : 6.31e+8
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  141
+ChiSquare statistic                   : 2.94e+8
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   : 6.20e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  132
+ChiSquare statistic                   : 8.04e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   72
+ChiSquare statistic                   : 7.92e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:30.47
+
+Generator state:
+state: count=2827107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  128
+ChiSquare statistic                   : 6.52e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  130
+ChiSquare statistic                   : 4.66e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :99116.01
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  122
+ChiSquare statistic                   : 2.23e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   66
+ChiSquare statistic                   : 2.44e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.41
+
+Generator state:
+state: count=2927107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r =  0,   s = 30,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   : 3.67e+8
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  366
+ChiSquare statistic                   : 2.01e+8
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 1.01e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  360
+ChiSquare statistic                   : 2.91e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  192
+ChiSquare statistic                   : 2.89e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:29.99
+
+Generator state:
+state: count=3094107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000,  r = 20,   s = 10,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   : 1.15e+6
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  318
+ChiSquare statistic                   : 9.81e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   :10810.74
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  315
+ChiSquare statistic                   :38770.27
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  169
+ChiSquare statistic                   :39607.20
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.24
+
+Generator state:
+state: count=3194107923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :   20.04
+p-value of test                       :    0.03
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -0.89
+p-value of test                       :    0.81
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.19
+
+Generator state:
+state: count=3194227923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 120000,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   10
+Chi2 statistic for size of jumps      :    9.51
+p-value of test                       :    0.48
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :    1.63
+p-value of test                       :    0.05
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:09.26
+
+Generator state:
+state: count=3194347923
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 33554432,  r =  0,   s =   30,   k =   25
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.58
+p-value of test                       :  4.6e-4    *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.070
+p-value of test                       :    0.87
+
+Anderson-Darling statistic = A2       :    8.46
+p-value of test                       :  7.8e-5    *****
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -4.01
+p-value of test                       : 1 -  3.0e-5    *****
+
+Sample variance                       :    2.20
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.77
+
+Generator state:
+state: count=3205532743
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r =  0,   s =   30,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.73
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :    0.26
+p-value of test                       :1.6e-243    *****
+
+Anderson-Darling statistic = A2       :84415.75
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.09
+
+Generator state:
+state: count=3232882743
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 50000,  n = 16384,  r = 20,   s =   10,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.65
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :    0.32
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       :71419.32
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:15.85
+
+Generator state:
+state: count=3314832743
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 30,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :   10.44
+p-value of test                       :    0.24
+
+-----------------------------------------------
+Global longest run of 1               :   35.00
+p-value of test                       :    0.14
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:44.95
+
+Generator state:
+state: count=3648166743
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 300,  r = 20,   s = 10,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :  252.45
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+Global longest run of 1               :   31.00
+p-value of test                       :    0.50
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.18
+
+Generator state:
+state: count=3948167343
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  302
+Chi-square statistic                  :  468.84
+p-value of test                       :  2.3e-9    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:16.52
+
+Generator state:
+state: count=4248167343
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 15,   s =   15
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   56
+Chi-square statistic                  :   47.44
+p-value of test                       :    0.79
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.51
+
+Generator state:
+state: count=253200047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 100,  n = 100000000,  r =  0,   s = 30,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    1.00
+p-value of test                       :   eps      *****
+
+Anderson-Darling statistic = A2       : 3573.68
+p-value of test                       :   eps      *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  : 5.29e+5
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:14.07
+
+Generator state:
+state: count=586540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 30,  n = 100000000,  r = 20,   s = 10,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.69
+p-value of test                       : 6.4e-15    *****
+
+Kolmogorov-Smirnov- statistic = D-    : 1.31e-7
+p-value of test                       : 1 -  1.3e-7    *****
+
+Anderson-Darling statistic = A2       :   84.09
+p-value of test                       : 3.2e-38    *****
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3000
+Chi-square statistic                  : 2086.82
+p-value of test                       : 1 - eps1    *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.95
+
+Generator state:
+state: count=886540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   s = 30,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      : 3372.29
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.25
+
+Generator state:
+state: count=1386540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 50000000,  r =  0,   s = 30,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      : 7868.96
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.91
+
+Generator state:
+state: count=1886540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      : 4066.36
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.30
+
+Generator state:
+state: count=2286540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r =  0,   s = 30,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  577
+Chi-square statistic                  : 1.12e+7
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.77
+
+Generator state:
+state: count=2886540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 20,   s = 10,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          :  533
+Chi-square statistic                  : 1.01e+7
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:23.52
+
+Generator state:
+state: count=3486540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 30,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 2.45e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.97
+
+Generator state:
+state: count=4086540047
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 3585
+Chi-square statistic                  : 1.98e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.28
+
+Generator state:
+state: count=391572751
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 30,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  : 3.76e+8
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:34.58
+
+Generator state:
+state: count=1191572751
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 20,   s = 10,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 7473
+Chi-square statistic                  : 4.39e+6
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:08.93
+
+Generator state:
+state: count=1431572751
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   s =   30
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000002
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     :  233.20
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Total number of bits:  3999638700
+
+Normal statistic for number of bits   :   -4.04
+p-value of test                       : 1 -  2.7e-5    *****
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:17.38
+
+Generator state:
+state: count=1564894041
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+Total number of 1 runs:  1000000002
+
+Number of degrees of freedom          :   52
+Chi2 statistic for number of runs     : 5.50e+5
+p-value of test                       :   eps      *****
+
+
+-----------------------------------------------
+Total number of bits:  3999977010
+
+Normal statistic for number of bits   :   -0.26
+p-value of test                       :    0.60
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:25.94
+
+Generator state:
+state: count=1964891742
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000021,  r =  0,   s = 30,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.80
+p-value of test                       :  1.1e-7    *****
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.50
+
+Anderson-Darling statistic = A2       :  161.99
+p-value of test                       : 3.4e-72    *****
+
+Tests on the sum of all N observations
+Standardized normal statistic         :  -42.92
+p-value of test                       : 1 - eps1    *****
+
+Sample variance                       :  238.28
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.18
+
+Generator state:
+state: count=2298225092
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000001,  r = 20,   s = 10,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.29
+p-value of test                       :    0.36
+
+Kolmogorov-Smirnov- statistic = D-    :    0.17
+p-value of test                       :    0.68
+
+Anderson-Darling statistic = A2       :    0.41
+p-value of test                       :    0.84
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -0.35
+p-value of test                       :    0.64
+
+Sample variance                       :    0.52
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.88
+
+Generator state:
+state: count=2798225097
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000020,  r =  0,   s = 30,   d = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    1.00
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Anderson-Darling statistic = A2       :  357.37
+p-value of test                       :3.2e-157    *****
+
+Tests on the sum of all N observations
+Standardized normal statistic         : -1.53e+4
+p-value of test                       : 1 - eps1    *****
+
+Sample variance                       :15818.81
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:19.36
+
+Generator state:
+state: count=3131558447
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+siphash11_key_counter
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N =  5,  n = 1000000010,  r = 20,   s = 10,   d = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    1.00
+p-value of test                       :   eps      *****
+
+Kolmogorov-Smirnov- statistic = D-    :   0.000
+p-value of test                       : 1 - eps1    *****
+
+Anderson-Darling statistic = A2       :  178.68
+p-value of test                       : 1.8e-79    *****
+
+Tests on the sum of all N observations
+Standardized normal statistic         :-6796.66
+p-value of test                       : 1 - eps1    *****
+
+Sample variance                       : 2067.56
+p-value of test                       :   eps      *****
+
+-----------------------------------------------
+CPU time used                    :  00:00:26.21
+
+Generator state:
+state: count=3631558457
+
+
+
+
+
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        siphash11_key_counter
+ Number of statistics:  144
+ Total CPU time:   00:35:09.50
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+  1  SerialOver, t = 2                eps  
+  2  SerialOver, t = 4                eps  
+  3  CollisionOver, t = 2             eps  
+  4  CollisionOver, t = 2             eps  
+  5  CollisionOver, t = 4             eps  
+  6  CollisionOver, t = 4             eps  
+  7  CollisionOver, t = 8             eps  
+  8  CollisionOver, t = 8             eps  
+  9  CollisionOver, t = 20            eps  
+ 10  CollisionOver, t = 20            eps  
+ 11  BirthdaySpacings, t = 2          eps  
+ 12  BirthdaySpacings, t = 3          eps  
+ 13  BirthdaySpacings, t = 4          eps  
+ 14  BirthdaySpacings, t = 7          eps  
+ 15  BirthdaySpacings, t = 7          eps  
+ 16  BirthdaySpacings, t = 8          eps  
+ 17  BirthdaySpacings, t = 8          eps  
+ 18  ClosePairs NP, t = 2           8.5e-31
+ 18  ClosePairs mNP, t = 2         3.2e-157
+ 18  ClosePairs mNP1, t = 2           eps  
+ 18  ClosePairs mNP2, t = 2           eps  
+ 18  ClosePairs NJumps, t = 2         eps  
+ 19  ClosePairs NP, t = 3           1.8e-72
+ 19  ClosePairs mNP, t = 3         3.2e-157
+ 19  ClosePairs mNP1, t = 3           eps  
+ 19  ClosePairs mNP2, t = 3           eps  
+ 19  ClosePairs NJumps, t = 3         eps  
+ 19  ClosePairs mNP2S, t = 3          eps  
+ 20  ClosePairs NP, t = 7           1.8e-79
+ 20  ClosePairs mNP, t = 7          1.8e-79
+ 20  ClosePairs mNP1, t = 7           eps  
+ 20  ClosePairs mNP2, t = 7           eps  
+ 20  ClosePairs NJumps, t = 7         eps  
+ 20  ClosePairs mNP2S, t = 7          eps  
+ 21  ClosePairsBitMatch, t = 2       6.9e-6
+ 22  ClosePairsBitMatch, t = 4      4.9e-20
+ 23  SimpPoker, d = 16                eps  
+ 24  SimpPoker, d = 16                eps  
+ 25  SimpPoker, d = 64                eps  
+ 26  SimpPoker, d = 64                eps  
+ 27  CouponCollector, d = 4           eps  
+ 28  CouponCollector, d = 4           eps  
+ 29  CouponCollector, d = 16          eps  
+ 30  CouponCollector, d = 16          eps  
+ 31  Gap, r = 0                       eps  
+ 32  Gap, r = 27                      eps  
+ 33  Gap, r = 0                       eps  
+ 34  Gap, r = 22                      eps  
+ 35  Run of U01, r = 0                eps  
+ 36  Run of U01, r = 15               eps  
+ 37  Permutation, r = 0               eps  
+ 38  Permutation, r = 15              eps  
+ 39  CollisionPermut, r = 0           eps  
+ 40  CollisionPermut, r = 15          eps  
+ 41  MaxOft, t = 5                    eps  
+ 41  MaxOft AD, t = 5              3.2e-157
+ 42  MaxOft, t = 10                   eps  
+ 42  MaxOft AD, t = 10              1.8e-79
+ 43  MaxOft, t = 20                   eps  
+ 43  MaxOft AD, t = 20              1 - eps1
+ 44  MaxOft, t = 30                   eps  
+ 44  MaxOft AD, t = 30              1 - eps1
+ 45  SampleProd, t = 10             1 - eps1
+ 46  SampleProd, t = 30             1 - eps1
+ 47  SampleMean                       eps  
+ 48  SampleCorr                     1 - eps1
+ 49  AppearanceSpacings, r = 0      1 - eps1
+ 50  AppearanceSpacings, r = 20     1 - eps1
+ 51  WeightDistrib, r = 0             eps  
+ 52  WeightDistrib, r = 8             eps  
+ 53  WeightDistrib, r = 16            eps  
+ 54  WeightDistrib, r = 24            eps  
+ 55  SumCollector                     eps  
+ 56  MatrixRank, 60 x 60              eps  
+ 58  MatrixRank, 300 x 300            eps  
+ 60  MatrixRank, 1200 x 1200          eps  
+ 62  Savir2                           eps  
+ 63  GCD, r = 0                       eps  
+ 64  GCD, r = 10                      eps  
+ 65  RandomWalk1 H (L = 90)           eps  
+ 65  RandomWalk1 M (L = 90)           eps  
+ 65  RandomWalk1 J (L = 90)           eps  
+ 65  RandomWalk1 R (L = 90)           eps  
+ 65  RandomWalk1 C (L = 90)           eps  
+ 66  RandomWalk1 H (L = 90)           eps  
+ 66  RandomWalk1 M (L = 90)           eps  
+ 66  RandomWalk1 J (L = 90)           eps  
+ 66  RandomWalk1 R (L = 90)           eps  
+ 66  RandomWalk1 C (L = 90)           eps  
+ 67  RandomWalk1 H (L = 1000)         eps  
+ 67  RandomWalk1 M (L = 1000)         eps  
+ 67  RandomWalk1 J (L = 1000)         eps  
+ 67  RandomWalk1 R (L = 1000)         eps  
+ 67  RandomWalk1 C (L = 1000)         eps  
+ 68  RandomWalk1 H (L = 1000)         eps  
+ 68  RandomWalk1 M (L = 1000)         eps  
+ 68  RandomWalk1 J (L = 1000)         eps  
+ 68  RandomWalk1 R (L = 1000)         eps  
+ 68  RandomWalk1 C (L = 1000)         eps  
+ 69  RandomWalk1 H (L = 10000)        eps  
+ 69  RandomWalk1 M (L = 10000)        eps  
+ 69  RandomWalk1 J (L = 10000)        eps  
+ 69  RandomWalk1 R (L = 10000)        eps  
+ 69  RandomWalk1 C (L = 10000)        eps  
+ 70  RandomWalk1 H (L = 10000)        eps  
+ 70  RandomWalk1 M (L = 10000)        eps  
+ 70  RandomWalk1 J (L = 10000)        eps  
+ 70  RandomWalk1 R (L = 10000)        eps  
+ 70  RandomWalk1 C (L = 10000)        eps  
+ 73  LempelZiv                      1 -  3.0e-5
+ 74  Fourier3, r = 0                  eps  
+ 75  Fourier3, r = 20                 eps  
+ 77  LongestHeadRun, r = 20           eps  
+ 78  PeriodsInStrings, r = 0         2.3e-9
+ 80  HammingWeight2, r = 0            eps  
+ 81  HammingWeight2, r = 20         1 - eps1
+ 82  HammingCorr, L = 30              eps  
+ 83  HammingCorr, L = 300             eps  
+ 84  HammingCorr, L = 1200            eps  
+ 85  HammingIndep, L = 30             eps  
+ 86  HammingIndep, L = 30             eps  
+ 87  HammingIndep, L = 300            eps  
+ 88  HammingIndep, L = 300            eps  
+ 89  HammingIndep, L = 1200           eps  
+ 90  HammingIndep, L = 1200           eps  
+ 91  Run of bits, r = 0               eps  
+ 91  Run of bits, r = 0             1 -  2.7e-5
+ 92  Run of bits, r = 20              eps  
+ 93  AutoCor, d = 1                 1 - eps1
+ 95  AutoCor, d = 30                1 - eps1
+ 96  AutoCor, d = 10                1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+
+
+
