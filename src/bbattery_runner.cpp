@@ -18,6 +18,7 @@ extern "C" {
 #include <ios>
 #include <functional>
 #include <memory>
+#include <random>
 #include <sstream>
 #include <stdlib.h>
 #include <string>
@@ -196,6 +197,11 @@ uint32_t siphash24_key_counter_64( CounterState64 *state )
     return (uint32_t)sip_hash24_key_only( state->next());
 }
 
+template<typename T>
+uint32_t cpp_random_engine( T *state )
+{
+    return (uint32_t)(*state)();
+}
 
 
 std::unique_ptr<Unif01GenBase> 
@@ -235,6 +241,16 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &siphash11_key_counter, CounterState() );
     else if ( name == "siphash24_key_counter_64" )
         return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
+    else if ( name == "mt19937")
+    {
+        std::mt19937 rng( 56 );
+        return makeUnif01Gen32( name, &cpp_random_engine<decltype(rng)>, rng );
+    }
+    else if ( name == "mt19937_64")
+    {
+        std::mt19937_64 rng( 56 );
+        return makeUnif01Gen32( name, &cpp_random_engine<decltype(rng)>, rng );
+    }
     else
     {
         printf( "Unknown rng: '%s'. Aborting...", name.c_str() );
