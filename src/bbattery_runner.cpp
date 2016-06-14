@@ -203,6 +203,29 @@ uint32_t cpp_random_engine( T *state )
     return (uint32_t)(*state)();
 }
 
+template<typename T>
+uint32_t cpp_shared_random_engine( std::shared_ptr<T> *state )
+{
+    return (uint32_t)(**state)();
+}
+
+
+template<typename T>
+std::unique_ptr<Unif01GenBase>
+makeUnif01Gen32StdRng( const std::string &name, T state )
+{
+    return makeUnif01Gen32( name, &cpp_random_engine<T>, state );
+}
+
+
+template<typename T>
+std::unique_ptr<Unif01GenBase>
+makeUnif01Gen32StdSharedRng( const std::string &name, std::shared_ptr<T> state )
+{
+    return makeUnif01Gen32( name, &cpp_shared_random_engine<T>, state );
+}
+
+
 
 std::unique_ptr<Unif01GenBase> 
 createRng( const std::string &name )
@@ -242,15 +265,21 @@ createRng( const std::string &name )
     else if ( name == "siphash24_key_counter_64" )
         return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
     else if ( name == "mt19937")
-    {
-        std::mt19937 rng( 56 );
-        return makeUnif01Gen32( name, &cpp_random_engine<decltype(rng)>, rng );
-    }
+        return makeUnif01Gen32StdRng( name, std::mt19937(56) );
     else if ( name == "mt19937_64")
-    {
-        std::mt19937_64 rng( 56 );
-        return makeUnif01Gen32( name, &cpp_random_engine<decltype(rng)>, rng );
-    }
+        return makeUnif01Gen32StdRng( name, std::mt19937_64(56) );
+    else if ( name == "minstd_rand")
+        return makeUnif01Gen32StdRng( name, std::minstd_rand(57) );
+    else if ( name == "minstd_rand0")
+        return makeUnif01Gen32StdRng( name, std::minstd_rand0(57) );
+    else if ( name == "ranlux24")
+        return makeUnif01Gen32StdRng( name, std::ranlux24(57) );
+    else if ( name == "ranlux48")
+        return makeUnif01Gen32StdRng( name, std::ranlux48(57) );
+    else if ( name == "knuth_b")
+        return makeUnif01Gen32StdRng( name, std::knuth_b(57) );
+    else if ( name == "random_device") // random_device is not copyable
+        return makeUnif01Gen32StdSharedRng( name, std::make_shared<std::random_device>() );
     else
     {
         printf( "Unknown rng: '%s'. Aborting...", name.c_str() );
