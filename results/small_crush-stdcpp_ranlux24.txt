@@ -7,7 +7,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 smarsa_BirthdaySpacings test:
@@ -21,15 +21,15 @@ smarsa_BirthdaySpacings test:
 
 ----------------------------------------------------
 Total expected number = N*Lambda      :      27.11
-Total observed number                 :    3433
+Total observed number                 :  974259
 p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.09
+CPU time used                    :  00:00:02.20
 
 Generator state:
-state: count=10000000
+state: 15167264 3144627 14649722 271330 5478352 7841731 16281546 1318479 573500 4339776 16468981 3195457 13126398 12638327 14006305 1439717 8347152 13241753 4281288 10420688 16401926 13382931 12302425 2967782 0 0 14
 
 
 
@@ -40,7 +40,7 @@ Test sknuth_Collision calling smultin_Multinomial
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 smultin_Multinomial test:
@@ -60,24 +60,24 @@ smultin_Multinomial test:
 Test Results for Collisions
 
 Expected number of collisions = Mu    :     2909.25
-Observed number of collisions         :    90264
+Observed number of collisions         :  4934464
 p-value of test                       :   eps      *****
 
 -----------------------------
 Total number of cells containing j balls
 
-  j =  0                              :       4290057560
-  j =  1                              :          4821760
-  j =  2                              :            86004
-  j =  3                              :             1666
-  j =  4                              :              299
-  j =  5                              :                5
+  j =  0                              :       4294901760
+  j =  1                              :                0
+  j =  2                              :                0
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.04
+CPU time used                    :  00:00:01.54
 
 Generator state:
-state: count=20000000
+state: 5021408 8924753 3053697 9274207 7417980 11811065 3781189 6812248 5299246 12528501 7046447 9169259 15380875 8517202 12730245 9789761 13721263 8709109 2050893 13863025 14790808 3892169 10736604 7035580 1 8 5
 
 
 
@@ -85,7 +85,7 @@ state: count=20000000
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 sknuth_Gap test:
@@ -95,14 +95,14 @@ sknuth_Gap test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 1114
-Chi-square statistic                  : 5366.64
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 1138.77
+p-value of test                       :    0.30
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.49
+CPU time used                    :  00:00:07.00
 
 Generator state:
-state: count=71097225
+state: 15467442 6019927 5821176 14751236 4729535 6625522 13869551 12461457 15847426 11792127 8506074 5458329 15037673 10995688 5377352 5220415 9057742 1359866 8662197 2265378 15885687 4746435 7642368 5555408 1 9 11
 
 
 
@@ -110,7 +110,7 @@ state: count=71097225
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 sknuth_SimpPoker test:
@@ -120,14 +120,14 @@ sknuth_SimpPoker test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   19
-Chi-square statistic                  :16234.93
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   12.75
+p-value of test                       :    0.85
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.99
+CPU time used                    :  00:00:03.69
 
 Generator state:
-state: count=96697225
+state: 2217841 12773320 7115647 4292619 4773769 15056012 7983956 16068367 14252443 1318693 8233667 538564 11780209 8929100 4255087 10898825 5544532 16411483 9533750 12760256 741246 4323710 9978627 2624357 1 9 22
 
 
 
@@ -135,7 +135,7 @@ state: count=96697225
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 sknuth_CouponCollector test:
@@ -145,14 +145,14 @@ sknuth_CouponCollector test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   44
-Chi-square statistic                  :70212.65
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   48.33
+p-value of test                       :    0.30
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.82
+CPU time used                    :  00:00:03.48
 
 Generator state:
-state: count=119491580
+state: 2586892 5681043 12090722 9858330 7702137 6258912 12255189 10002790 3958447 15499697 412163 15824874 9425811 605278 3001415 4814887 5973207 14845199 2613237 3492815 16232846 8532259 16739210 15566186 0 15 18
 
 
 
@@ -160,7 +160,7 @@ state: count=119491580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 sknuth_MaxOft test:
@@ -173,7 +173,7 @@ sknuth_MaxOft test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 99999
-Chi-square statistic                  : 4.69e+5
+Chi-square statistic                  :2.00e+11
 p-value of test                       :   eps      *****
 
 
@@ -183,10 +183,10 @@ p-value of test                       : 1 - eps1    *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.83
+CPU time used                    :  00:00:02.26
 
 Generator state:
-state: count=131491580
+state: 16052275 572216 11656241 6836135 13582008 10861698 5840378 8148731 1277446 10318424 13947278 5447163 15754077 10182130 3038702 218933 167838 15704473 5907956 7918902 13426748 3945715 5695307 205071 0 15 21
 
 
 
@@ -194,7 +194,7 @@ state: count=131491580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 svaria_WeightDistrib test:
@@ -204,14 +204,14 @@ svaria_WeightDistrib test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   41
-Chi-square statistic                  : 1.19e+5
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   41.37
+p-value of test                       :    0.45
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.48
+CPU time used                    :  00:00:06.96
 
 Generator state:
-state: count=182691580
+state: 7329432 11749604 11434352 14645797 8190520 15267355 10549888 3228876 16733201 12265780 15189901 4506068 663392 16556125 9518136 5613915 11292344 2200177 13516892 13760160 12462202 11972494 3837573 8042496 1 23 20
 
 
 
@@ -219,7 +219,7 @@ state: count=182691580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 smarsa_MatrixRank test:
@@ -229,14 +229,14 @@ smarsa_MatrixRank test:
 
 -----------------------------------------------
 Number of degrees of freedom          :    3
-Chi-square statistic                  :    5.75
-p-value of test                       :    0.12
+Chi-square statistic                  :    3.74
+p-value of test                       :    0.29
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.46
+CPU time used                    :  00:00:01.25
 
 Generator state:
-state: count=189891580
+state: 9868811 186160 7560466 11106927 224899 7607385 329351 14186313 16684410 14544811 10321723 11658431 10009906 8569559 417650 13181989 7327506 11622846 7101159 14986714 1660186 14359756 8941062 1317609 0 23 8
 
 
 
@@ -244,7 +244,7 @@ state: count=189891580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 sstring_HammingIndep test:
@@ -256,14 +256,14 @@ sstring_HammingIndep test:
 Counters with expected numbers >= 10
 -----------------------------------------------
 Number of degrees of freedom          : 2209
-Chi-square statistic                  : 4.16e+6
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 2198.52
+p-value of test                       :    0.56
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.08
+CPU time used                    :  00:00:04.14
 
 Generator state:
-state: count=219891580
+state: 14374920 12804428 1907140 14521318 5237272 2823235 10612860 8482098 16074361 12428383 15762314 4266217 4663584 207385 2659708 443257 12431965 14936340 11553101 4241051 3305348 16223292 2440390 16483554 0 15 4
 
 
 
@@ -271,7 +271,7 @@ state: count=219891580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+stdcpp_ranlux24
 
 
 swalk_RandomWalk1 test:
@@ -284,7 +284,7 @@ swalk_RandomWalk1 test:
 Test on the values of the Statistic H
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 2.98e+5
+ChiSquare statistic                   : 2.14e+9
 p-value of test                       :   eps      *****
 
 
@@ -292,7 +292,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic M
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 1.52e+5
+ChiSquare statistic                   : 1.27e+7
 p-value of test                       :   eps      *****
 
 
@@ -300,7 +300,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic J
 
 Number of degrees of freedom          :   75
-ChiSquare statistic                   :18103.28
+ChiSquare statistic                   : 1.27e+7
 p-value of test                       :   eps      *****
 
 
@@ -308,7 +308,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic R
 
 Number of degrees of freedom          :   44
-ChiSquare statistic                   :12152.39
+ChiSquare statistic                   : 1.16e+7
 p-value of test                       :   eps      *****
 
 
@@ -316,15 +316,15 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic C
 
 Number of degrees of freedom          :   26
-ChiSquare statistic                   :12574.72
+ChiSquare statistic                   : 5.87e+6
 p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.92
+CPU time used                    :  00:00:01.35
 
 Generator state:
-state: count=224891580
+state: 11512684 5220186 12486814 11028718 7953974 6080527 13790258 1253231 255734 243119 14286025 1097005 10119532 10707210 70689 2852083 1505134 5844513 513638 11039203 4672649 7333747 8074054 214590 0 15 11
 
 
 
@@ -333,9 +333,9 @@ state: count=224891580
 ========= Summary results of SmallCrush =========
 
  Version:          TestU01 1.2.3
- Generator:        siphash11_key_counter
+ Generator:        stdcpp_ranlux24
  Number of statistics:  15
- Total CPU time:   00:00:10.23
+ Total CPU time:   00:00:33.90
  The following tests gave p-values outside [0.001, 0.9990]:
  (eps  means a value < 1.0e-300):
  (eps1 means a value < 1.0e-15):
@@ -344,19 +344,15 @@ state: count=224891580
  ----------------------------------------------
   1  BirthdaySpacings                 eps  
   2  Collision                        eps  
-  3  Gap                              eps  
-  4  SimpPoker                        eps  
-  5  CouponCollector                  eps  
   6  MaxOft                           eps  
   6  MaxOft AD                      1 - eps1
-  7  WeightDistrib                    eps  
-  9  HammingIndep                     eps  
  10  RandomWalk1 H                    eps  
  10  RandomWalk1 M                    eps  
  10  RandomWalk1 J                    eps  
  10  RandomWalk1 R                    eps  
  10  RandomWalk1 C                    eps  
  ----------------------------------------------
+ All other tests were passed
 
 
 

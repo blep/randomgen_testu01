@@ -1,0 +1,343 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting SmallCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,    d = 1073741824,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 1152921504606846976
+      Lambda = Poisson mean =      27.1051
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :      27.11
+Total observed number                 :      29
+p-value of test                       :    0.38
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.16
+
+Generator state:
+state: 9183941553655 89152902794188 269339265905738 76714858044217 12995086893536 231128568654834 223992895599026 189532345169204 256006617002496 188316599474816 263263671581348 245807838918535 0 4 10
+
+
+
+
+***********************************************************
+Test sknuth_Collision calling smultin_Multinomial
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 5000000,  r =  0,   d = 65536,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =         4294967296
+       Expected number per cell =  1 /  858.99346
+       EColl = n^2 / (2k) =  2910.383046
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2909.2534,    Sigma =    53.8957
+
+-----------------------------------------------
+Test Results for Collisions
+
+Expected number of collisions = Mu    :     2909.25
+Observed number of collisions         :     2967
+p-value of test                       :    0.14
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :       4289970263
+  j =  1                              :          4994067
+  j =  2                              :             2965
+  j =  3                              :                1
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.08
+
+Generator state:
+state: 46247621799313 26687614748168 264238146280611 49059239055394 280351746021448 230015348809730 92543327987608 92990868338326 77116718839809 45270856535539 88023504388740 71168484808621 0 2 9
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 200000,  r = 22,   Alpha =        0,   Beta  = 0.00390625
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1114
+Chi-square statistic                  : 1144.18
+p-value of test                       :    0.26
+
+-----------------------------------------------
+CPU time used                    :  00:00:21.76
+
+Generator state:
+state: 73337359186657 219395822611458 135919281093848 90093157510090 198998928981064 22158432420162 198167294253032 273517776065146 84351820207532 75006631144686 175139867024115 71133265520808 1 2 11
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000,  r = 24,   d =   64,   k =   64
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   19
+Chi-square statistic                  :   23.97
+p-value of test                       :    0.20
+
+-----------------------------------------------
+CPU time used                    :  00:00:11.43
+
+Generator state:
+state: 55687151676588 21308651478965 40905912977871 202575890835605 133499641291528 136036181612258 157180446527179 257388150103349 277530863516504 23026044614278 52675811875534 78696404889217 0 0 8
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r = 26,   d =   16
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   44
+Chi-square statistic                  :   41.80
+p-value of test                       :    0.57
+
+-----------------------------------------------
+CPU time used                    :  00:00:10.88
+
+Generator state:
+state: 583919443537 122804992636979 97784514094369 127377966113553 96397290177072 146826697987548 15996536354662 53772612299082 196411306159267 28143927236699 40973578160193 263374493905660 0 2 7
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N =  1,  n = 2000000,  r =  0,   d = 100000,   t =  6
+
+      Number of categories = 100000
+      Expected number per category  = 20.00
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 99999
+Chi-square statistic                  : 1.00e+5
+p-value of test                       :    0.26
+
+
+-----------------------------------------------
+Anderson-Darling statistic            :    0.22
+p-value of test                       :    0.78
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:05.85
+
+Generator state:
+state: 146862376726029 176044962931006 141709578757236 201247787347547 246208386412685 203189222753590 227862075576514 196770944194268 116087198623886 86784651032993 140401000138057 209572619356930 1 8 8
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 200000,  r = 27,  k = 256,  Alpha =      0,  Beta =  0.125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   41
+Chi-square statistic                  :   38.07
+p-value of test                       :    0.60
+
+-----------------------------------------------
+CPU time used                    :  00:00:22.18
+
+Generator state:
+state: 86370709880897 235972622558373 244841497569152 92007511818312 50723451448267 7699977748121 190626174693102 3197780701232 223600571794086 154537021176210 246836862654728 51984330564635 0 4 2
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 20000,  r = 20,    s = 10,    L = 60,    k = 60
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    0.89
+p-value of test                       :    0.83
+
+-----------------------------------------------
+CPU time used                    :  00:00:03.35
+
+Generator state:
+state: 4170872627794 183698298547569 77126685892380 267395067669525 251153717115572 270615748508437 53287335272597 16763309229933 161446727842105 95511244048866 21913086959449 24269354368235 0 10 7
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 500000,  r = 20,   s = 10,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 2209
+Chi-square statistic                  : 2170.95
+p-value of test                       :    0.71
+
+-----------------------------------------------
+CPU time used                    :  00:00:13.10
+
+Generator state:
+state: 150881288130043 272323758566991 118035476749358 39024875270777 163542380182803 7108496527867 208044063127247 56605037252540 177493616117300 69306697577768 155921213552298 35402501331197 0 4 4
+
+
+
+
+***********************************************************
+HOST = mintos, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,   s = 30,   L0 =  150,   L1 =  150
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   52
+ChiSquare statistic                   :   42.32
+p-value of test                       :    0.83
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   52
+ChiSquare statistic                   :   67.75
+p-value of test                       :    0.07
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   75
+ChiSquare statistic                   :   64.07
+p-value of test                       :    0.81
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   44
+ChiSquare statistic                   :   25.92
+p-value of test                       :    0.99
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   26
+ChiSquare statistic                   :   28.98
+p-value of test                       :    0.31
+
+
+-----------------------------------------------
+CPU time used                    :  00:00:02.96
+
+Generator state:
+state: 272101065019997 36832765344085 171485580177275 91181192289025 255466517493273 185539834174735 51549644557167 218638855524421 96919501352815 124355936379902 190934140443618 35759987343429 0 6 9
+
+
+
+
+
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        stdcpp_ranlux48
+ Number of statistics:  15
+ Total CPU time:   00:01:41.81
+
+ All tests were passed
+
+
+

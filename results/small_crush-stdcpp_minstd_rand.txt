@@ -7,7 +7,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 smarsa_BirthdaySpacings test:
@@ -21,15 +21,15 @@ smarsa_BirthdaySpacings test:
 
 ----------------------------------------------------
 Total expected number = N*Lambda      :      27.11
-Total observed number                 : 4999997
+Total observed number                 : 4981064
 p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.31
+CPU time used                    :  00:00:00.86
 
 Generator state:
-state: count=10000000
+state: 1517639014
 
 
 
@@ -40,7 +40,7 @@ Test sknuth_Collision calling smultin_Multinomial
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 smultin_Multinomial test:
@@ -60,24 +60,24 @@ smultin_Multinomial test:
 Test Results for Collisions
 
 Expected number of collisions = Mu    :     2909.25
-Observed number of collisions         :  4999846
+Observed number of collisions         :     8587
 p-value of test                       :   eps      *****
 
 -----------------------------
 Total number of cells containing j balls
 
-  j =  0                              :       4294967142
-  j =  1                              :                0
-  j =  2                              :                0
-  j =  3                              :                0
+  j =  0                              :       4289975883
+  j =  1                              :          4982836
+  j =  2                              :             8567
+  j =  3                              :               10
   j =  4                              :                0
   j =  5                              :                0
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.20
+CPU time used                    :  00:00:01.06
 
 Generator state:
-state: count=20000000
+state: 1668199694
 
 
 
@@ -85,7 +85,7 @@ state: count=20000000
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 sknuth_Gap test:
@@ -95,14 +95,14 @@ sknuth_Gap test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 1114
-Chi-square statistic                  : 2.02e+8
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 1055.68
+p-value of test                       :    0.89
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.79
+CPU time used                    :  00:00:00.87
 
 Generator state:
-state: count=71199748
+state: 1487272962
 
 
 
@@ -110,7 +110,7 @@ state: count=71199748
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 sknuth_SimpPoker test:
@@ -120,14 +120,14 @@ sknuth_SimpPoker test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   19
-Chi-square statistic                  : 3.39e+9
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   12.16
+p-value of test                       :    0.88
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.39
+CPU time used                    :  00:00:00.68
 
 Generator state:
-state: count=96799748
+state: 662474866
 
 
 
@@ -135,7 +135,7 @@ state: count=96799748
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 sknuth_CouponCollector test:
@@ -145,14 +145,14 @@ sknuth_CouponCollector test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   44
-Chi-square statistic                  : 2.89e+7
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   53.24
+p-value of test                       :    0.16
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.46
+CPU time used                    :  00:00:00.58
 
 Generator state:
-state: count=126799749
+state: 777366176
 
 
 
@@ -160,7 +160,7 @@ state: count=126799749
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 sknuth_MaxOft test:
@@ -173,7 +173,7 @@ sknuth_MaxOft test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 99999
-Chi-square statistic                  :2.00e+11
+Chi-square statistic                  : 1.26e+8
 p-value of test                       :   eps      *****
 
 
@@ -183,10 +183,10 @@ p-value of test                       : 1 - eps1    *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.45
+CPU time used                    :  00:00:00.67
 
 Generator state:
-state: count=138799749
+state: 542409652
 
 
 
@@ -194,7 +194,7 @@ state: count=138799749
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 svaria_WeightDistrib test:
@@ -204,14 +204,14 @@ svaria_WeightDistrib test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   41
-Chi-square statistic                  : 2.46e+6
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   40.90
+p-value of test                       :    0.48
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.77
+CPU time used                    :  00:00:00.88
 
 Generator state:
-state: count=189999749
+state: 358618634
 
 
 
@@ -219,7 +219,7 @@ state: count=189999749
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 smarsa_MatrixRank test:
@@ -229,14 +229,14 @@ smarsa_MatrixRank test:
 
 -----------------------------------------------
 Number of degrees of freedom          :    3
-Chi-square statistic                  : 3.76e+6
-p-value of test                       :   eps      *****
+Chi-square statistic                  :    0.17
+p-value of test                       :    0.98
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.20
+CPU time used                    :  00:00:00.37
 
 Generator state:
-state: count=197199749
+state: 2018550526
 
 
 
@@ -244,7 +244,7 @@ state: count=197199749
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 sstring_HammingIndep test:
@@ -256,14 +256,14 @@ sstring_HammingIndep test:
 Counters with expected numbers >= 10
 -----------------------------------------------
 Number of degrees of freedom          : 2209
-Chi-square statistic                  : 3.51e+7
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 2265.89
+p-value of test                       :    0.20
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.37
+CPU time used                    :  00:00:00.71
 
 Generator state:
-state: count=227199749
+state: 212194595
 
 
 
@@ -271,7 +271,7 @@ state: count=227199749
 ***********************************************************
 HOST = mintos, Linux
 
-raw_counter
+stdcpp_minstd_rand
 
 
 swalk_RandomWalk1 test:
@@ -284,7 +284,7 @@ swalk_RandomWalk1 test:
 Test on the values of the Statistic H
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 2.47e+7
+ChiSquare statistic                   : 1.76e+5
 p-value of test                       :   eps      *****
 
 
@@ -292,7 +292,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic M
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 2.86e+6
+ChiSquare statistic                   : 2.48e+5
 p-value of test                       :   eps      *****
 
 
@@ -300,7 +300,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic J
 
 Number of degrees of freedom          :   75
-ChiSquare statistic                   : 2.56e+6
+ChiSquare statistic                   : 2.76e+5
 p-value of test                       :   eps      *****
 
 
@@ -308,7 +308,7 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic R
 
 Number of degrees of freedom          :   44
-ChiSquare statistic                   : 2.05e+6
+ChiSquare statistic                   : 6676.82
 p-value of test                       :   eps      *****
 
 
@@ -316,15 +316,15 @@ p-value of test                       :   eps      *****
 Test on the values of the Statistic C
 
 Number of degrees of freedom          :   26
-ChiSquare statistic                   : 1.89e+6
+ChiSquare statistic                   :72458.10
 p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.43
+CPU time used                    :  00:00:00.82
 
 Generator state:
-state: count=232199749
+state: 94779478
 
 
 
@@ -333,9 +333,9 @@ state: count=232199749
 ========= Summary results of SmallCrush =========
 
  Version:          TestU01 1.2.3
- Generator:        raw_counter
+ Generator:        stdcpp_minstd_rand
  Number of statistics:  15
- Total CPU time:   00:00:04.40
+ Total CPU time:   00:00:07.54
  The following tests gave p-values outside [0.001, 0.9990]:
  (eps  means a value < 1.0e-300):
  (eps1 means a value < 1.0e-15):
@@ -344,20 +344,15 @@ state: count=232199749
  ----------------------------------------------
   1  BirthdaySpacings                 eps  
   2  Collision                        eps  
-  3  Gap                              eps  
-  4  SimpPoker                        eps  
-  5  CouponCollector                  eps  
   6  MaxOft                           eps  
   6  MaxOft AD                      1 - eps1
-  7  WeightDistrib                    eps  
-  8  MatrixRank                       eps  
-  9  HammingIndep                     eps  
  10  RandomWalk1 H                    eps  
  10  RandomWalk1 M                    eps  
  10  RandomWalk1 J                    eps  
  10  RandomWalk1 R                    eps  
  10  RandomWalk1 C                    eps  
  ----------------------------------------------
+ All other tests were passed
 
 
 

@@ -264,21 +264,21 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &siphash11_key_counter, CounterState() );
     else if ( name == "siphash24_key_counter_64" )
         return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
-    else if ( name == "mt19937")
+    else if ( name == "stdcpp_mt19937")
         return makeUnif01Gen32StdRng( name, std::mt19937(56) );
-    else if ( name == "mt19937_64")
+    else if ( name == "stdcpp_mt19937_64")
         return makeUnif01Gen32StdRng( name, std::mt19937_64(56) );
-    else if ( name == "minstd_rand")
+    else if ( name == "stdcpp_minstd_rand")
         return makeUnif01Gen32StdRng( name, std::minstd_rand(57) );
-    else if ( name == "minstd_rand0")
+    else if ( name == "stdcpp_minstd_rand0")
         return makeUnif01Gen32StdRng( name, std::minstd_rand0(57) );
-    else if ( name == "ranlux24")
+    else if ( name == "stdcpp_ranlux24")
         return makeUnif01Gen32StdRng( name, std::ranlux24(57) );
-    else if ( name == "ranlux48")
+    else if ( name == "stdcpp_ranlux48")
         return makeUnif01Gen32StdRng( name, std::ranlux48(57) );
-    else if ( name == "knuth_b")
+    else if ( name == "stdcpp_knuth_b")
         return makeUnif01Gen32StdRng( name, std::knuth_b(57) );
-    else if ( name == "random_device") // random_device is not copyable
+    else if ( name == "stdcpp_random_device") // random_device is not copyable
         return makeUnif01Gen32StdSharedRng( name, std::make_shared<std::random_device>() );
     else
     {
@@ -343,6 +343,9 @@ int main (int argc, const char **argv )
         printf( "Unsupported test runner: %s\n", runner.c_str() );
         return 2;
     }
+
+    printf( "\n" );
+    fflush(stdout);
 
     return 0;
 }
