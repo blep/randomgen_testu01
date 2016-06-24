@@ -1,0 +1,3889 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting BigCrush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  0,   d =  256,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   59.604645
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0083558402,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16711680
+Value of the statistic                : 1.67e+7
+p-value of test                       :    0.68
+
+
+-----------------------------------------------
+CPU time used                    :  00:11:27.36
+
+Generator state:
+state: 226422025295762 166516895876806 32869434293694 135128174955698 121158538002934 203469887367246 120035195200654 35975440874932 65777152066690 246109000589686 136739040927657 61763749243948 0 4 10
+
+
+
+
+***********************************************************
+Test smarsa_SerialOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 22,   d =  256,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =           16777216
+       Expected number per cell =   59.604645
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0083558402,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 16711680
+Value of the statistic                : 1.67e+7
+p-value of test                       :    0.69
+
+
+-----------------------------------------------
+CPU time used                    :  00:10:50.13
+
+Generator state:
+state: 228793887922327 209584647008048 140324545896372 274660080292147 193712218297257 183685263985541 245764418567709 207009141834861 239869346161470 128787976933169 173271005277081 40587368841981 0 2 9
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d = 2097152,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1390
+p-value of test                       :    0.25
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334510
+  j =  1                              :        599997220
+  j =  2                              :             1390
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:07:40.25
+
+Generator state:
+state: 203385591778807 31061717488440 277689582609872 70434270323986 82083646979947 72021326375526 236760689901250 154570850596428 64531674784677 132310794980859 42149660918213 105395618306694 0 8 4
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  9,   d = 2097152,   t =  2,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1286
+p-value of test                       :    0.98
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334406
+  j =  1                              :        599997428
+  j =  2                              :             1286
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:07:48.90
+
+Generator state:
+state: 116204000136495 67388809247957 239925276985318 62477326194316 140679448868133 266109564202 40965761432860 190344858562180 216647171193410 22010333914617 222547445381489 110344534389344 0 8 10
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d = 16384,   t =  3,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1345
+p-value of test                       :    0.69
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334465
+  j =  1                              :        599997310
+  j =  2                              :             1345
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:14.19
+
+Generator state:
+state: 162869931864626 247494737728595 110130520241573 150015737029360 53743387046510 176009859534686 208873501245028 234778521542972 6973151720501 134405339924181 51811039959170 183816562120067 1 2 5
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 16,   d = 16384,   t =  3,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1343
+p-value of test                       :    0.71
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334463
+  j =  1                              :        599997314
+  j =  2                              :             1343
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:17.34
+
+Generator state:
+state: 70242010077341 161702782258414 161561262185213 263059509991439 179646720138358 136074577129903 148237718503319 147427599617943 248458219467250 137370761221074 92321399937742 41059785530945 0 2 11
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =   64,   t =  7,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1327
+p-value of test                       :    0.84
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334447
+  j =  1                              :        599997346
+  j =  2                              :             1327
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:18.13
+
+Generator state:
+state: 208576653191354 230541139810208 117903109525825 129482525299617 223334359221011 210041149610655 136094098734224 87030737994235 139024397227322 248501106039434 272518453696070 195748214633290 0 8 6
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 24,   d =   64,   t =  7,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1409
+p-value of test                       :    0.12
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334529
+  j =  1                              :        599997182
+  j =  2                              :             1409
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:20.97
+
+Generator state:
+state: 21406637839977 192304303160763 102139637852688 66156906247215 255572352070473 73468424131851 154191475062317 260806600934572 196214459512807 216068767357626 95556206814550 14381299888793 0 2 1
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =    8,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1447
+p-value of test                       :    0.01
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334567
+  j =  1                              :        599997106
+  j =  2                              :             1447
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:17.69
+
+Generator state:
+state: 26733536421573 39675432594709 95722959189588 154715890464192 193173288049383 167582356572021 117597295951596 213615015842973 209205065094862 49567482953792 116106391291869 165560188168213 0 2 7
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 27,   d =    8,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1331
+p-value of test                       :    0.81
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334451
+  j =  1                              :        599997338
+  j =  2                              :             1331
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:20.77
+
+Generator state:
+state: 149938599570005 59224759976495 65066841234168 81419697923142 147846084659225 263007760271950 127586273009686 193694456571030 118423888441273 271619730276265 82840763961683 204202146272264 1 8 2
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r =  0,   d =    4,   t = 21,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1294
+p-value of test                       :    0.97
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334414
+  j =  1                              :        599997412
+  j =  2                              :             1294
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:17.17
+
+Generator state:
+state: 207605297613521 37675112919009 2483274744023 47373732689590 13229337674934 11115740157668 245770058648535 9623468780150 271923780274715 197081537569683 2971438095035 64709451573604 1 8 8
+
+
+
+
+***********************************************************
+Test smarsa_CollisionOver calling smultin_MultinomialOver
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_MultinomialOver test:
+-----------------------------------------------
+   N = 30,  n = 20000000,  r = 28,   d =    4,   t = 21,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellSerial
+       Number of cells = d^t =      4398046511104
+       Expected number per cell =  1 /  219902.33
+       EColl = n^2 / (2k) =  45.47473509
+       Hashing =   TRUE
+
+       Collision test
+
+       CollisionOver:   density = n / k =  1 /  219902.33
+       Expected number of collisions = Mu =      45.47
+
+
+-----------------------------------------------
+Results of CollisionOver test:
+
+POISSON approximation                 :
+Expected number of collisions = N*Mu  :     1364.24
+Observed number of collisions         :     1341
+p-value of test                       :    0.73
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :  131940795334461
+  j =  1                              :        599997318
+  j =  2                              :             1341
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:08:20.23
+
+Generator state:
+state: 250809735647209 269790906143280 187682615258235 243511020396016 112173097247256 69190224556675 114833555511311 184442759550721 19605091345837 213087815832350 88310023160697 206373339346953 1 2 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 100,  n = 10000000,  r =  0,    d = 2147483648,    t = 2,    p = 1
+
+
+      Number of cells = d^t = 4611686018427387904
+      Lambda = Poisson mean =      54.2101
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    5421.01
+Total observed number                 :    5330
+p-value of test                       :    0.89
+
+
+-----------------------------------------------
+CPU time used                    :  00:20:33.18
+
+Generator state:
+state: 90468436517552 273613550931750 7370785243640 124648024696473 46936113694474 83822463945701 98169478387468 158701653316206 100391199105408 242575746121064 1300716923338 52600992442319 1 10 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,    d = 2097152,    t = 3,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4266
+p-value of test                       :    0.86
+
+
+-----------------------------------------------
+CPU time used                    :  00:11:16.64
+
+Generator state:
+state: 215194385816408 266844108994505 115942514992886 6920876453602 255975060459265 260627331708760 95893758892283 206783408262514 12387029261737 267197331716358 98948690231358 99505685653721 0 4 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 14,    d = 65536,    t = 4,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7311
+p-value of test                       :    0.53
+
+
+-----------------------------------------------
+CPU time used                    :  00:22:15.22
+
+Generator state:
+state: 150945144485728 185776003925632 216651145670410 162466026461538 131643505932759 17338756566229 27601955105513 208365754566169 23152081957202 151291085632298 217827275143957 77372794205914 0 4 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4255
+p-value of test                       :    0.89
+
+
+-----------------------------------------------
+CPU time used                    :  00:24:33.72
+
+Generator state:
+state: 49959221256045 225343480804349 243942315182121 105216620368157 193190755216986 90293398040648 248916787363496 98989256062980 119854122388765 182823121595320 108532190446670 42121889430331 0 8 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  7,    d = 512,    t = 7,    p = 1
+
+
+      Number of cells = d^t = 9223372036854775808
+      Lambda = Poisson mean =     216.8404
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    4336.81
+Total observed number                 :    4326
+p-value of test                       :    0.56
+
+
+-----------------------------------------------
+CPU time used                    :  00:24:35.73
+
+Generator state:
+state: 35577991250646 137306641713589 53662309928938 75302824905324 140115133390750 250853417338369 59799822672485 8259433847046 184615030756159 248546600933007 12792109056180 24578594609355 1 6 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 14,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7316
+p-value of test                       :    0.51
+
+
+-----------------------------------------------
+CPU time used                    :  00:41:55.76
+
+Generator state:
+state: 205793515419129 266424723317147 177344681196443 150514909562877 140918326512280 19582812347831 97413290853906 7440687727020 234502729309608 63347627889086 272739093822827 206446009306979 0 6 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 22,    d = 256,    t = 8,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7279
+p-value of test                       :    0.67
+
+
+-----------------------------------------------
+CPU time used                    :  00:41:55.34
+
+Generator state:
+state: 164773160334670 127421622227720 104601753278854 280115459950544 61531366307005 61845344205639 88163043950513 43291876005860 212123674449469 50852971065427 206264308184720 96117533931066 1 0 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r =  0,    d = 16,    t = 16,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7380
+p-value of test                       :    0.24
+
+
+-----------------------------------------------
+CPU time used                    :  01:23:24.75
+
+Generator state:
+state: 144562510240843 258532687387190 41064377926923 180335659578794 180596106777871 61052727504030 34280476797711 275628671216174 29836763685748 221950828479338 59464798827609 2463403817689 0 0 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_BirthdaySpacings test:
+-----------------------------------------------
+   N = 20,  n = 30000000,  r = 26,    d = 16,    t = 16,    p = 1
+
+
+      Number of cells = d^t = 18446744073709551616
+      Lambda = Poisson mean =     365.9182
+
+
+----------------------------------------------------
+Total expected number = N*Lambda      :    7318.36
+Total observed number                 :    7369
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+CPU time used                    :  01:21:48.74
+
+Generator state:
+state: 69229931453987 127296017046317 147339699974281 80313559841303 182454458815369 223054731757251 164177593594800 91852128706407 231286336048001 153172365034683 71375894582638 130794748420185 1 6 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 30,  n = 6000000,  r =  0,  t = 3,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    1.51
+p-value of test                       :    0.17
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.96
+p-value of test                       :    0.38
+
+Test on the Nm values of W_{n,i}(mNP1):    0.72
+p-value of test                       :    0.54
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     900
+Number of jumps of Y                  :     921
+p-value of test                       :    0.25
+
+Stat. AD (mNP2)                       :    1.46
+p-value of test                       :    0.19
+
+Stat. AD after spacings (mNP2-S)      :    1.67
+p-value of test                       :    0.14
+
+-----------------------------------------------
+CPU time used                    :  00:06:48.74
+
+Generator state:
+state: 172336785491874 220140302824150 96036078389085 41708420561122 179332581925815 171093753758570 226160229182276 10512519511208 225315507910730 97792924480106 35298896833133 233950328662848 1 0 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 20,  n = 4000000,  r =  0,  t = 5,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    1.01
+p-value of test                       :    0.35
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    3.03
+p-value of test                       :    0.03
+
+Test on the Nm values of W_{n,i}(mNP1):    0.58
+p-value of test                       :    0.67
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     600
+Number of jumps of Y                  :     610
+p-value of test                       :    0.35
+
+Stat. AD (mNP2)                       :    1.00
+p-value of test                       :    0.36
+
+Stat. AD after spacings (mNP2-S)      :    1.25
+p-value of test                       :    0.25
+
+-----------------------------------------------
+CPU time used                    :  00:04:51.02
+
+Generator state:
+state: 230008962945885 104511536037569 25393386682486 120043676117643 68258234449561 88985650191767 80055480048272 102494805439461 218798736451075 20424665530605 223844235088588 92207682988761 0 10 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N = 10,  n = 3000000,  r =  0,  t = 9,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.36
+p-value of test                       :    0.88
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    1.49
+p-value of test                       :    0.18
+
+Test on the Nm values of W_{n,i}(mNP1):    1.76
+p-value of test                       :    0.12
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     300
+Number of jumps of Y                  :     313
+p-value of test                       :    0.23
+
+Stat. AD (mNP2)                       :    0.73
+p-value of test                       :    0.54
+
+Stat. AD after spacings (mNP2-S)      :    0.54
+p-value of test                       :    0.71
+
+-----------------------------------------------
+CPU time used                    :  00:04:35.58
+
+Generator state:
+state: 171308129737950 190711098348797 208430359922128 127896767038477 114175726645530 103559429493090 25802990446377 277118594100762 47080009889492 49827012612284 57683781219487 157352610538775 0 10 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+snpair_ClosePairs test:
+-----------------------------------------------
+   N =  5,  n = 2000000,  r =  0,  t = 16,  p = 0,  m = 30,  Torus =  TRUE
+
+
+---------------------------------------
+Test based on the 2 nearest points (NP):
+
+Stat. AD on the N values (NP)         :    0.51
+p-value of test                       :    0.73
+
+
+A2 test based on the spacings between the
+   successive jump times of process Y_n(t):
+
+A2 test on the values of A2 (m-NP)    :    0.20
+p-value of test                       :    0.99
+
+Test on the Nm values of W_{n,i}(mNP1):    0.85
+p-value of test                       :    0.44
+
+Test on the jump times of Y
+   (superposition of Yn):
+
+Expected number of jumps of Y = mN    :     150
+Number of jumps of Y                  :     151
+p-value of test                       :    0.48
+
+Stat. AD (mNP2)                       :    0.47
+p-value of test                       :    0.78
+
+Stat. AD after spacings (mNP2-S)      :    2.75
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:03:55.06
+
+Generator state:
+state: 18652433649765 187838954994891 101048146034798 198541419060876 270600028637332 28413147476698 19058249941415 148716473229784 20891700317497 61141916689688 191879711047644 16233699254843 1 8 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000000,  r =  0,   d =    8,   k =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :   15.21
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:26:53.11
+
+Generator state:
+state: 16178043588873 90689802915440 13472710641479 65483531538842 258185452945379 116345501612191 99207913680258 256824199920279 73868185495598 70982061897315 102670993047327 196670542688872 0 10 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 400000000,  r = 27,   d =    8,   k =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    7
+Chi-square statistic                  :   13.24
+p-value of test                       :    0.07
+
+-----------------------------------------------
+CPU time used                    :  00:27:00.50
+
+Generator state:
+state: 131723714627727 120865020266237 41131345997857 88010107389184 122622530391894 157969905607976 190721384221708 63616465845516 135389790423454 58058949671487 136872346025436 164842256141028 1 6 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   d =   32,   k =   32
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   18
+Chi-square statistic                  :   27.28
+p-value of test                       :    0.07
+
+-----------------------------------------------
+CPU time used                    :  00:27:12.76
+
+Generator state:
+state: 15650184650378 266391247700126 254448698707295 211230472485502 10202025349021 197803750216509 39298402594746 209151934399620 167957824785079 245489961428044 247461307140517 258588237726877 0 8 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_SimpPoker test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 25,   d =   32,   k =   32
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   18
+Chi-square statistic                  :   15.67
+p-value of test                       :    0.62
+
+-----------------------------------------------
+CPU time used                    :  00:26:58.68
+
+Generator state:
+state: 146516454736018 103829197331898 90893528438239 117672544052578 120459111650218 12646792529377 226118758518623 202221753565 234210333311387 173685454328137 47407339513331 214732283657602 1 10 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r =  0,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   34.42
+p-value of test                       :    0.98
+
+-----------------------------------------------
+CPU time used                    :  00:36:27.12
+
+Generator state:
+state: 15515953724024 76703761241437 94054964362660 196283433845524 33822230283495 198228878200816 39912211560650 132210994451076 150321519241322 29254248303217 14199482857448 49532489290859 0 1 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 10,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   52.50
+p-value of test                       :    0.53
+
+-----------------------------------------------
+CPU time used                    :  00:37:24.84
+
+Generator state:
+state: 250820067731663 14498437640793 236625771047793 31478786328156 83026381984009 19609251410593 112937265397854 31912342747048 213630958167210 180406413149697 125956280529866 175884796623632 0 6 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 20,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   44.47
+p-value of test                       :    0.82
+
+-----------------------------------------------
+CPU time used                    :  00:36:30.41
+
+Generator state:
+state: 237715752243530 179132390176721 196598807425871 164321987203589 111385056947854 176202744720020 102044193167574 147754066028136 217518677624722 162932876550171 154832162412527 70178565579535 0 7 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_CouponCollector test:
+-----------------------------------------------
+   N =  1,  n = 200000000,  r = 27,   d =    8
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   54
+Chi-square statistic                  :   41.97
+p-value of test                       :    0.88
+
+-----------------------------------------------
+CPU time used                    :  00:36:32.66
+
+Generator state:
+state: 227659671394693 15055597919944 176167588042481 255308206751832 56062882547549 115429930772166 243260659973587 37825827622689 192301447281571 189238877193917 120545801633973 37586224286006 0 8 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   Alpha =        0,   Beta  =   0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  232
+Chi-square statistic                  :  249.97
+p-value of test                       :    0.20
+
+-----------------------------------------------
+CPU time used                    :  01:06:45.15
+
+Generator state:
+state: 248310704751332 76295949365749 169447127562352 228158021149491 47094517829711 244518515901073 2727354521905 132957478913170 75274035813227 44312446157075 31671685938908 151602776081083 0 7 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 300000000,  r = 25,   Alpha =        0,   Beta  =  0.03125
+
+
+-----------------------------------------------
+Number of degrees of freedom          :  434
+Chi-square statistic                  :  420.95
+p-value of test                       :    0.66
+
+-----------------------------------------------
+CPU time used                    :  01:19:44.86
+
+Generator state:
+state: 263386277486214 119851844380468 94172945159810 24762298414535 28175788866308 98569342565761 221905626591846 242147452281296 174089200786312 55678665944144 88213371098104 273355420628929 0 6 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   Alpha =        0,   Beta  = 0.0078125
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 1437
+Chi-square statistic                  : 1470.00
+p-value of test                       :    0.27
+
+-----------------------------------------------
+CPU time used                    :  01:46:06.44
+
+Generator state:
+state: 186494023351459 140845264894251 22246806876877 30397443599533 65853431560663 31044055433547 201000199090520 156581822290560 45645040252560 52426236008714 275638010859813 80196193911053 0 6 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Gap test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   Alpha =        0,   Beta  = 0.000976562
+
+
+-----------------------------------------------
+Number of degrees of freedom          : 7046
+Chi-square statistic                  : 7165.14
+p-value of test                       :    0.16
+
+-----------------------------------------------
+CPU time used                    :  01:24:47.37
+
+Generator state:
+state: 257411823171323 70668447062824 164648548104026 11353431814605 185949967441920 179398563513810 201983517157436 87399996601522 40845292290675 14635531440224 160342623073605 127701957498759 1 5 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N =  5,  n = 1000000000,  r =  0,   Up = FALSE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.21
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.29
+p-value of test                       :    0.37
+
+Anderson-Darling statistic = A2       :    0.50
+p-value of test                       :    0.74
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   30
+Chi-square statistic                  :   32.88
+p-value of test                       :    0.33
+
+-----------------------------------------------
+CPU time used                    :  00:41:44.38
+
+Generator state:
+state: 71270694079267 166579492431277 170303923151670 36539039107182 205990783592284 116484800354221 112219901664879 135765089309115 188302978295082 76705956654114 180116550344019 70775260324823 0 7 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_Run test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r = 15,   Up =  TRUE
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.094
+p-value of test                       :    0.79
+
+Kolmogorov-Smirnov- statistic = D-    :    0.15
+p-value of test                       :    0.59
+
+Anderson-Darling statistic = A2       :    0.23
+p-value of test                       :    0.98
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   60
+Chi-square statistic                  :   58.61
+p-value of test                       :    0.53
+
+-----------------------------------------------
+CPU time used                    :  01:23:46.07
+
+Generator state:
+state: 165691059351602 240785827274783 123603205970793 136190054093574 50749603303036 3446565793572 61616385447318 28980847054327 119512546832968 134319775020218 278478807706707 177786211989865 0 5 7
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  3,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                  6
+       Expected number per cell =  1.6666667e+08
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  2.5000002e-09,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :    5
+Value of the statistic                :    2.92
+p-value of test                       :    0.71
+
+
+-----------------------------------------------
+CPU time used                    :  00:25:13.80
+
+Generator state:
+state: 248726049655851 195688563879928 146864431785762 214795428272740 257386835952741 7368104539235 80348866159983 234491326544566 74418083388875 15538261780044 12786991908345 39717077193905 1 11 4
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r =  5,   t =  5,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =                120
+       Expected number per cell =   8333333.3
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.9500005e-08,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          :  119
+Value of the statistic                :   99.05
+p-value of test                       :    0.91
+
+
+-----------------------------------------------
+CPU time used                    :  00:42:09.05
+
+Generator state:
+state: 57792121926452 166607081550232 245632817882136 280544245932499 237054407563710 139612568575797 184071845121101 126104520261377 143599369974040 185623540584080 99200031410704 198027324505423 1 7 10
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  5,   t =  7,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =               5040
+       Expected number per cell =   99206.349
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =  5.0390004e-06,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 5039
+Value of the statistic                : 5101.70
+p-value of test                       :    0.26
+
+
+-----------------------------------------------
+CPU time used                    :  00:29:38.75
+
+Generator state:
+state: 60295401807683 209544276567457 224739273857957 280080375769087 185751933104055 118623629561977 192551454525663 268119382762637 219421204257342 271255364177858 133659345164707 25301038072423 0 9 1
+
+
+
+
+***********************************************************
+Test sknuth_Permutation calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r = 10,   t = 10,
+       Sparse =  FALSE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =            3628800
+       Expected number per cell =    137.7866
+       Hashing =  FALSE
+
+   For Delta > -1, we use the ChiSquare approximation
+   Correction factor of the ChiSquare: 
+       Delta =     1,    Mu =   0.0036287993,    Sigma =          1
+
+-----------------------------------------------
+Test Results for Delta =   1.0000
+
+Number of degrees of freedom          : 3628799
+Value of the statistic                : 3.63e+6
+p-value of test                       :    0.01
+
+
+-----------------------------------------------
+CPU time used                    :  00:43:13.89
+
+Generator state:
+state: 35976744625308 47612029699153 75697358385466 206757950888714 186495576727036 133634791946096 147991016145234 66646901724732 147027771746267 15814170267024 181298890348685 25893966590660 1 5 7
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r =  0,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    45545
+p-value of test                       :    0.94
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165869545
+  j =  1                              :        399908912
+  j =  2                              :            45541
+  j =  3                              :                2
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:50:13.25
+
+Generator state:
+state: 249898549429417 111860135351102 20271317438731 58690916296542 115595908047631 114741588635170 156462574728452 11596102970343 152084794951173 29727107017403 31938591710944 7882426556516 1 7 8
+
+
+
+
+***********************************************************
+Test sknuth_CollisionPermut calling smultin_Multinomial
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smultin_Multinomial test:
+-----------------------------------------------
+   N = 20,  n = 20000000,  r = 10,   t = 14,
+       Sparse =   TRUE
+
+       GenerCell = smultin_GenerCellPermut
+       Number of cells = t! =        87178291200
+       Expected number per cell =  1 /  4358.9146
+       EColl = n^2 / (2k) =   2294.14912
+       Hashing =   TRUE
+
+       Collision test,    Mu =      2293.9736,    Sigma =    47.8841
+
+-----------------------------------------------
+Test Results for Collisions
+
+For the total number of collisions, we use
+      the Poisson approximation:
+Expected number of collisions = N*Mu  :    45879.47
+Observed number of collisions         :    45814
+p-value of test                       :    0.62
+
+
+-----------------------------
+Total number of cells containing j balls
+
+  j =  0                              :    1743165869814
+  j =  1                              :        399908374
+  j =  2                              :            45810
+  j =  3                              :                2
+  j =  4                              :                0
+  j =  5                              :                0
+
+-----------------------------------------------
+CPU time used                    :  00:49:19.49
+
+Generator state:
+state: 130575300338120 120799267130210 93122064333770 272756634294200 214945606366527 218302260798481 18660563666282 169833761740909 74505535665208 162968927804846 271688038564980 232829847441930 0 9 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   d = 100000,   t =  8
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.12
+
+Kolmogorov-Smirnov- statistic = D-    :   0.086
+p-value of test                       :    0.53
+
+Anderson-Darling statistic = A2       :    1.46
+p-value of test                       :    0.19
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 3999960
+Chi-square statistic                  : 4.00e+6
+p-value of test                       :    0.89
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.080
+p-value of test                       :    0.57
+
+Kolmogorov-Smirnov- statistic = D-    :   0.068
+p-value of test                       :    0.66
+
+Anderson-Darling statistic = A2       :    0.45
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+CPU time used                    :  00:28:34.94
+
+Generator state:
+state: 81787136741371 92709811786695 29005870613465 244566230086975 188135606696374 21660398120589 174195287980780 280345863734208 1690712625622 114371078915391 143700342904326 171660846737784 1 11 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 30,  n = 10000000,  r =  0,   d = 100000,   t = 16
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.19
+
+Kolmogorov-Smirnov- statistic = D-    :    0.11
+p-value of test                       :    0.45
+
+Anderson-Darling statistic = A2       :    0.97
+p-value of test                       :    0.37
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 2999970
+Chi-square statistic                  : 3.00e+6
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.079
+p-value of test                       :    0.65
+
+Kolmogorov-Smirnov- statistic = D-    :    0.12
+p-value of test                       :    0.38
+
+Anderson-Darling statistic = A2       :    0.49
+p-value of test                       :    0.76
+
+
+-----------------------------------------------
+CPU time used                    :  00:41:32.27
+
+Generator state:
+state: 73312769560372 59788098462214 106453442698043 279260507211189 169753741473506 124080220667586 254640287270744 254532581185890 13786358760733 161151380163459 55391916614620 108670979834245 1 5 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 24
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.12
+p-value of test                       :    0.50
+
+Kolmogorov-Smirnov- statistic = D-    :   0.097
+p-value of test                       :    0.65
+
+Anderson-Darling statistic = A2       :    0.35
+p-value of test                       :    0.89
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.49
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.12
+p-value of test                       :    0.54
+
+Kolmogorov-Smirnov- statistic = D-    :   0.036
+p-value of test                       :    0.93
+
+Anderson-Darling statistic = A2       :    0.88
+p-value of test                       :    0.42
+
+
+-----------------------------------------------
+CPU time used                    :  00:40:59.41
+
+Generator state:
+state: 231970110066802 246208910535599 136350713011246 13029011386894 253961770920196 211559501903172 19603728856819 247283539021087 196042216897078 22281242895908 237233480889423 81397898412962 1 5 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sknuth_MaxOft test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   d = 100000,   t = 32
+
+      Number of categories = 100000
+      Expected number per category  = 100.00
+
+
+-----------------------------------------------
+Test results for chi2 with 99999 degrees of freedom:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.11
+p-value of test                       :    0.58
+
+Kolmogorov-Smirnov- statistic = D-    :    0.18
+p-value of test                       :    0.25
+
+Anderson-Darling statistic = A2       :    0.63
+p-value of test                       :    0.62
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 1999980
+Chi-square statistic                  : 2.00e+6
+p-value of test                       :    0.30
+
+
+-----------------------------------------------
+Test results for Anderson-Darling:
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.073
+p-value of test                       :    0.77
+
+Kolmogorov-Smirnov- statistic = D-    :    0.27
+p-value of test                       :    0.05
+
+Anderson-Darling statistic = A2       :    1.56
+p-value of test                       :    0.16
+
+
+-----------------------------------------------
+CPU time used                    :  00:54:17.78
+
+Generator state:
+state: 166781714584214 214689299151734 68541342055780 15573310194970 41989786121878 207590472657831 94519157506204 258604591836767 40256081801516 99484219567882 98328878739201 182250772795753 1 9 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 40,  n = 10000000,  r =  0,   t = 8
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.039
+p-value of test                       :    0.86
+
+Kolmogorov-Smirnov- statistic = D-    :    0.16
+p-value of test                       :    0.13
+
+Anderson-Darling statistic = A2       :    1.63
+p-value of test                       :    0.15
+
+-----------------------------------------------
+CPU time used                    :  00:27:54.41
+
+Generator state:
+state: 217251065587563 199810045065888 107482509289480 111464416536654 213742736170078 92998277688621 9734118777889 222390586775930 129254981862574 260039679991670 195724880961078 81457374667119 1 11 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 16
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.22
+p-value of test                       :    0.13
+
+Kolmogorov-Smirnov- statistic = D-    :   0.088
+p-value of test                       :    0.69
+
+Anderson-Darling statistic = A2       :    1.41
+p-value of test                       :    0.20
+
+-----------------------------------------------
+CPU time used                    :  00:27:23.89
+
+Generator state:
+state: 11578617581884 173361576839500 1931092694740 258219649150900 227820328581905 270516167456782 115008530273551 184943690691846 240065302498024 211464540320553 102455842262839 177856838700263 0 1 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleProd test:
+-----------------------------------------------
+   N = 20,  n = 10000000,  r =  0,   t = 24
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.19
+p-value of test                       :    0.20
+
+Kolmogorov-Smirnov- statistic = D-    :   0.080
+p-value of test                       :    0.73
+
+Anderson-Darling statistic = A2       :    0.45
+p-value of test                       :    0.80
+
+-----------------------------------------------
+CPU time used                    :  00:40:51.41
+
+Generator state:
+state: 51247104589179 217036692450800 95626752778915 215183026479542 141386472076304 88299129565127 103669225458173 244941410075150 195211136588589 64347928550996 104456711315914 73467901101616 0 1 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r =  0
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 8.49e-5
+p-value of test                       :    0.75
+
+Kolmogorov-Smirnov- statistic = D-    : 2.30e-4
+p-value of test                       :    0.12
+
+Anderson-Darling statistic = A2       :    1.11
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:05:16.78
+
+Generator state:
+state: 181246942307930 86544029287591 58870141291030 143873724187280 238860359909930 198484962395936 91448082620662 147605619846699 116432944924372 271289754804522 225770144228504 143087552336475 1 1 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleMean test:
+-----------------------------------------------
+   N = 20000000,  n = 30,  r = 10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    : 1.65e-4
+p-value of test                       :    0.34
+
+Kolmogorov-Smirnov- statistic = D-    : 1.24e-4
+p-value of test                       :    0.54
+
+Anderson-Darling statistic = A2       :    0.82
+p-value of test                       :    0.47
+
+-----------------------------------------------
+CPU time used                    :  00:05:15.83
+
+Generator state:
+state: 210388168176316 138440852714157 177198744495894 224924612326813 180710472802112 143695962482599 165103204082545 28467359874581 1048203447635 44637172378028 85394585634221 14689164256908 1 7 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 1
+
+
+-----------------------------------------------
+Normal statistic                      :   -1.92
+p-value of test                       :    0.97
+
+-----------------------------------------------
+CPU time used                    :  00:16:36.08
+
+Generator state:
+state: 91492919019781 180792052449374 32720168980454 128332895568039 27365368245453 173337642879955 200553471472458 90689321124264 61476996173014 253540497353715 87079975146271 205555740704097 0 3 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SampleCorr test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   k = 2
+
+
+-----------------------------------------------
+Normal statistic                      :   -2.19
+p-value of test                       :    0.99
+
+-----------------------------------------------
+CPU time used                    :  00:16:36.19
+
+Generator state:
+state: 84928868969675 178768983385074 133338694633154 88132834635705 166815283636423 281191918773989 184331515763589 165527259087033 4072976512797 269780988060850 184575662368869 16891607317907 0 11 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 1000000000,   r = 0,   s = 3,   L = 15
+
+   Sequences of n = (K + Q)L =  15150000000 bits
+   Q = 10000000 initialization blocks
+   K = 1000000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.49
+p-value of test                       :    0.69
+
+-----------------------------------------------
+CPU time used                    :  00:42:21.36
+
+Generator state:
+state: 260388251654706 207782864144400 74743437870853 162425690975451 267456004830266 247626193037446 87314651660072 223401297552243 58016429481755 167793092262477 243019774101279 120427147678033 0 9 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_AppearanceSpacings test:
+-----------------------------------------------
+   N =  1,   Q = 10000000,   K = 1000000000,   r = 27,   s = 3,   L = 15
+
+   Sequences of n = (K + Q)L =  15150000000 bits
+   Q = 10000000 initialization blocks
+   K = 1000000000 blocks for the test
+   the blocks have L = 15 bits
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.14
+p-value of test                       :    0.56
+
+-----------------------------------------------
+CPU time used                    :  00:42:27.03
+
+Generator state:
+state: 75293827226912 101137746540966 187089901460764 268123224407533 32177952731740 248197256379333 114873660035612 239280157689357 277569235744570 51830980720087 105285918311660 101654398732524 1 7 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   75.93
+p-value of test                       :    0.21
+
+-----------------------------------------------
+CPU time used                    :  00:42:15.22
+
+Generator state:
+state: 78143742900257 179500007449935 138468912156731 102269998154791 174368053390814 152999191824652 97624609626488 45451533075780 75059457364347 33310190401498 146590244337816 203181239159243 0 9 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 20,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   80.43
+p-value of test                       :    0.13
+
+-----------------------------------------------
+CPU time used                    :  00:42:18.74
+
+Generator state:
+state: 5121750652117 156621099044566 271251619914906 124821783057545 261869541118752 189592540427939 55084420277118 273857002580127 135076877616368 197628970404630 272868240608135 66652901767962 1 5 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 28,  k = 256,  Alpha =      0,  Beta =   0.25
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   67
+Chi-square statistic                  :   56.01
+p-value of test                       :    0.83
+
+-----------------------------------------------
+CPU time used                    :  00:42:19.44
+
+Generator state:
+state: 18504343242088 43114702383156 173071049223687 61161463139530 147614911027729 191416499191290 36004675330446 115923492865032 273168906956167 38014101063742 22340137922648 10696385096631 0 7 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r =  0,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   53.64
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:42:14.86
+
+Generator state:
+state: 117881549208597 173006201953958 280604201911734 209862649148472 151225339517273 238281363236075 245994273771598 85779724106158 131939968191871 236261367695928 158884191466354 127043352895696 1 3 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 10,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   32.81
+p-value of test                       :    0.67
+
+-----------------------------------------------
+CPU time used                    :  00:42:27.38
+
+Generator state:
+state: 228842104562921 17791159808418 195367634189844 55290920574618 68046392139489 54765793514372 232811210555119 234177777702773 223749167428545 251757582663344 124811274115242 175140636461582 0 5 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_WeightDistrib test:
+-----------------------------------------------
+   N =  1,  n = 20000000,  r = 26,  k = 256,  Alpha =      0,  Beta = 0.0625
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   37
+Chi-square statistic                  :   38.47
+p-value of test                       :    0.40
+
+-----------------------------------------------
+CPU time used                    :  00:42:21.67
+
+Generator state:
+state: 202226303663497 40947132225256 118358230286784 125854710583179 47670579179314 108362078069552 228754935325144 48057849073989 127074382282719 151396582504491 174816631352137 103092386347680 1 1 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+svaria_SumCollector test:
+-----------------------------------------------
+   N =  1,  n = 500000000,  r =  0,   g = 10
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   29
+Chi-square statistic                  :   30.67
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  01:26:34.85
+
+Generator state:
+state: 243454258315211 39320309370503 251329014086962 7744222132090 235007058661820 73037595281692 182895203310682 174288559298927 188615190430814 144370219915225 167047565612652 163249199066670 1 11 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N = 10,  n = 1000000,  r =  0,    s = 5,    L = 30,    k = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.098
+p-value of test                       :    0.77
+
+Kolmogorov-Smirnov- statistic = D-    :    0.25
+p-value of test                       :    0.25
+
+Anderson-Darling statistic = A2       :    1.41
+p-value of test                       :    0.20
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   40
+Chi-square statistic                  :   58.82
+p-value of test                       :    0.03
+
+-----------------------------------------------
+CPU time used                    :  00:15:26.47
+
+Generator state:
+state: 208896480293331 106261237309815 261359473124885 267493634286273 25161583146352 75853322447794 250887055695265 253875842031369 278281389717402 49245850455918 62813362565642 132076287854189 0 11 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N = 10,  n = 1000000,  r = 25,    s = 5,    L = 30,    k = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.051
+p-value of test                       :    0.92
+
+Kolmogorov-Smirnov- statistic = D-    :    0.24
+p-value of test                       :    0.28
+
+Anderson-Darling statistic = A2       :    0.65
+p-value of test                       :    0.60
+
+Test on the sum of all N observations
+Number of degrees of freedom          :   40
+Chi-square statistic                  :   50.03
+p-value of test                       :    0.13
+
+-----------------------------------------------
+CPU time used                    :  00:15:26.45
+
+Generator state:
+state: 198111653443370 168041686981738 26050852573251 195461745365391 151352952301522 236531900792288 149216450761149 114021698894194 70278457513852 116188984386431 19973615373958 24328655482454 1 5 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 5000,  r =  0,    s = 4,    L = 1000,    k = 1000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    0.72
+p-value of test                       :    0.87
+
+-----------------------------------------------
+CPU time used                    :  00:12:43.54
+
+Generator state:
+state: 198325101101 25156166853360 190847458983419 273754588443884 271173377109779 27838573196554 194655989303508 105276254981674 19837979845500 199407294888688 152878026182039 258858981035791 0 1 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 5000,  r = 26,    s = 4,    L = 1000,    k = 1000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    3
+Chi-square statistic                  :    6.53
+p-value of test                       :    0.09
+
+-----------------------------------------------
+CPU time used                    :  00:12:42.95
+
+Generator state:
+state: 254276195485571 64255905383345 181518487711148 170121286579914 57570138876330 30289481746149 193362609795420 139095457631008 258822629653199 173395242294593 53506751960542 278658132930204 1 9 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 80,  r = 15,    s = 15,    L = 5000,    k = 5000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    2
+Chi-square statistic                  :    1.25
+p-value of test                       :    0.54
+
+-----------------------------------------------
+CPU time used                    :  00:03:04.54
+
+Generator state:
+state: 238834125033845 124648563448249 268602271007570 117825722116775 222664553385412 71099263859127 178749250104983 176115794747755 25316428468324 147791734833936 162901424964772 250990656152278 1 1 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_MatrixRank test:
+-----------------------------------------------
+   N =  1,  n = 80,  r =  0,    s = 30,    L = 5000,    k = 5000
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    2
+Chi-square statistic                  :    0.23
+p-value of test                       :    0.89
+
+-----------------------------------------------
+CPU time used                    :  00:02:05.16
+
+Generator state:
+state: 54228914716595 191955144578082 87449292589442 219455732736831 279463409210206 259463179461887 126052768676184 155141542880638 122137772052624 84174646507910 43935673358755 31652553939401 1 3 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_Savir2 test:
+-----------------------------------------------
+   N = 10,  n = 10000000,  r = 10,    m = 1048576,    t = 30
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.073
+p-value of test                       :    0.86
+
+Kolmogorov-Smirnov- statistic = D-    :    0.33
+p-value of test                       :    0.09
+
+Anderson-Darling statistic = A2       :    1.54
+p-value of test                       :    0.17
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  130
+Chi-square statistic                  :  159.20
+p-value of test                       :    0.04
+
+-----------------------------------------------
+CPU time used                    :  00:24:51.82
+
+Generator state:
+state: 19919892884470 112254536499935 191688980756650 217649294903972 266604927145604 63275877332260 119841701342539 98942904760094 34084829694044 80088559211370 264850482293957 136121677359640 0 9 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+smarsa_GCD test:
+-----------------------------------------------
+   N = 10,  n = 50000000,  r =  0,   s = 30
+
+
+-----------------------------------------------
+Test results for GCD values:
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.28
+
+Kolmogorov-Smirnov- statistic = D-    :    0.14
+p-value of test                       :    0.62
+
+Anderson-Darling statistic = A2       :    0.72
+p-value of test                       :    0.53
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 17430
+Chi-square statistic                  :17442.87
+p-value of test                       :    0.47
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:09:42.05
+
+Generator state:
+state: 142192150799021 198191442042040 114310662457890 695628962254 5025723995018 138816564299875 163174368488812 157212250154441 125764997701804 41311461963343 261128245459922 185772831760814 0 7 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r =  0,   s = 5,   L0 =   50,   L1 =   50
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   22.65
+p-value of test                       :    0.96
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   19.65
+p-value of test                       :    0.98
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   25
+ChiSquare statistic                   :   19.95
+p-value of test                       :    0.75
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   24
+ChiSquare statistic                   :   26.36
+p-value of test                       :    0.34
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   17
+ChiSquare statistic                   :    8.02
+p-value of test                       :    0.97
+
+
+-----------------------------------------------
+CPU time used                    :  00:08:58.89
+
+Generator state:
+state: 276375088124910 5129882009285 72843998642006 65577971701058 17376107320488 153833876281282 196858523810823 134743419484205 125331745581877 133291378297199 246567100367052 185007687200001 0 5 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 25,   s = 5,   L0 =   50,   L1 =   50
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :   36
+ChiSquare statistic                   :   31.58
+p-value of test                       :    0.68
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :   35
+ChiSquare statistic                   :   45.73
+p-value of test                       :    0.11
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :   25
+ChiSquare statistic                   :   28.97
+p-value of test                       :    0.27
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :   24
+ChiSquare statistic                   :   21.07
+p-value of test                       :    0.63
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   17
+ChiSquare statistic                   :   13.98
+p-value of test                       :    0.67
+
+
+-----------------------------------------------
+CPU time used                    :  00:08:58.82
+
+Generator state:
+state: 158882192364943 112020408301311 209909981571044 233703304574690 271416691061890 189685027984373 239308736723529 214961467985294 15612576472911 1971159245888 273011918214745 238667389251358 1 3 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  156.07
+p-value of test                       :    0.27
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  150.98
+p-value of test                       :    0.37
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  459.99
+p-value of test                       :    0.90
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  136
+ChiSquare statistic                   :  147.67
+p-value of test                       :    0.23
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   74
+ChiSquare statistic                   :   71.96
+p-value of test                       :    0.55
+
+
+-----------------------------------------------
+CPU time used                    :  00:09:23.57
+
+Generator state:
+state: 131307985968050 197282364437156 226587699597016 110578987859773 140780189358209 163501821348005 136420864848242 255926946003435 98243789407641 185052188388370 243379119051982 183357904359357 0 1 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 20,   s = 10,   L0 = 1000,   L1 = 1000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  127.06
+p-value of test                       :    0.87
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  146
+ChiSquare statistic                   :  185.92
+p-value of test                       :    0.01
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          :  500
+ChiSquare statistic                   :  474.58
+p-value of test                       :    0.79
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  136
+ChiSquare statistic                   :  122.79
+p-value of test                       :    0.78
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :   74
+ChiSquare statistic                   :   48.36
+p-value of test                       :    0.9909
+
+
+-----------------------------------------------
+CPU time used                    :  00:09:23.44
+
+Generator state:
+state: 182238355673285 61365334364980 215809406209969 15151747888599 224803019903230 17290726229461 154443792322160 238736149070714 102727484256489 81428598364002 166323678775793 70991122869900 1 11 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r =  0,   s = 15,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  381.12
+p-value of test                       :    0.53
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  391.69
+p-value of test                       :    0.38
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5028.20
+p-value of test                       :    0.39
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  378
+ChiSquare statistic                   :  393.19
+p-value of test                       :    0.28
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  200
+ChiSquare statistic                   :  182.73
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+CPU time used                    :  00:06:31.35
+
+Generator state:
+state: 48588630950544 39024486506428 8848904315551 257503779152689 223414154623521 133061288619071 155539842553374 276502174901602 182435952082661 254960323357024 133934949576419 206115990468243 0 9 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+swalk_RandomWalk1 test:
+-----------------------------------------------
+   N =  1,  n = 1000000,  r = 15,   s = 15,   L0 = 10000,   L1 = 10000
+
+
+
+-----------------------------------------------
+Test on the values of the Statistic H
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  387.11
+p-value of test                       :    0.45
+
+
+-----------------------------------------------
+Test on the values of the Statistic M
+
+Number of degrees of freedom          :  384
+ChiSquare statistic                   :  397.73
+p-value of test                       :    0.30
+
+
+-----------------------------------------------
+Test on the values of the Statistic J
+
+Number of degrees of freedom          : 5000
+ChiSquare statistic                   : 5106.81
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+Test on the values of the Statistic R
+
+Number of degrees of freedom          :  378
+ChiSquare statistic                   :  379.23
+p-value of test                       :    0.47
+
+
+-----------------------------------------------
+Test on the values of the Statistic C
+
+Number of degrees of freedom          :  200
+ChiSquare statistic                   :  193.03
+p-value of test                       :    0.63
+
+
+-----------------------------------------------
+CPU time used                    :  00:06:31.51
+
+Generator state:
+state: 42878452889158 20443003823625 65014240958438 31282004282108 188372286235748 162894953133836 186982149496362 68694923458606 13768859658456 239902072835934 197500595241080 77710674504556 0 1 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 400020,  r =  0,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi2 statistic for size of jumps      :    7.82
+p-value of test                       :    0.80
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -0.38
+p-value of test                       :    0.65
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:48.23
+
+Generator state:
+state: 101854154528627 79156863084159 14089680518480 29956639561271 231632318517707 130604441496147 114901870264246 197859023706852 243273088790594 55955926824452 126394728702925 113798461445240 1 7 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+scomp_LinearComp test:
+-----------------------------------------------
+   N =  1,  n = 400020,  r = 29,    s = 1
+
+
+
+-----------------------------------------------
+Number of degrees of freedom          :   12
+Chi2 statistic for size of jumps      :    6.84
+p-value of test                       :    0.87
+
+
+-----------------------------------------------
+Normal statistic for number of jumps  :   -0.54
+p-value of test                       :    0.70
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:01:48.20
+
+Generator state:
+state: 42953213974712 65009510569458 222798164107069 25305290971672 260324933964375 4667560243837 270224235758656 48817932268355 80715989373910 198036522821152 50204686385346 45302322380674 1 7 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 134217728,  r =  0,   s =   30,   k =   27
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.036
+p-value of test                       :    0.95
+
+Kolmogorov-Smirnov- statistic = D-    :    0.35
+p-value of test                       :    0.06
+
+Anderson-Darling statistic = A2       :    1.96
+p-value of test                       :    0.10
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.68
+p-value of test                       :    0.05
+
+Sample variance                       :    0.46
+p-value of test                       :    0.90
+
+-----------------------------------------------
+CPU time used                    :  00:01:20.45
+
+Generator state:
+state: 63385931348361 213358720412352 111078311971545 242120576921881 114638574683742 77494162627809 263601581660381 221593405189564 272085721650443 98826713454217 246719156289089 256279329345732 0 5 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+scomp_LempelZiv test:
+-----------------------------------------------
+   N = 10,  n = 134217728,  r = 15,   s =   15,   k =   27
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.13
+p-value of test                       :    0.66
+
+Kolmogorov-Smirnov- statistic = D-    :    0.28
+p-value of test                       :    0.17
+
+Anderson-Darling statistic = A2       :    1.15
+p-value of test                       :    0.29
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    1.09
+p-value of test                       :    0.14
+
+Sample variance                       :    1.88
+p-value of test                       :    0.05
+
+-----------------------------------------------
+CPU time used                    :  00:01:44.95
+
+Generator state:
+state: 182799006565650 238977848495653 159837962239935 119857524802424 219804284896219 131718036030956 224289647218417 105325924660874 261294057443840 252540678478407 204811927145184 7081258702761 1 9 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 100000,  n = 16384,  r =  0,   s =    3,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.011
+p-value of test                       :    0.38
+
+Kolmogorov-Smirnov- statistic = D-    :   0.012
+p-value of test                       :    0.28
+
+Anderson-Darling statistic = A2       :    0.96
+p-value of test                       :    0.38
+
+-----------------------------------------------
+CPU time used                    :  00:05:04.57
+
+Generator state:
+state: 234300697350801 238449993415969 181266163451435 174188833847537 255941384150763 150573596315968 125369373057142 98727040329239 35878410389567 100329472008513 21274154290395 263510623702921 0 11 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sspectral_Fourier3 test:
+-----------------------------------------------
+   N = 100000,  n = 16384,  r = 27,   s =    3,   k =   14
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.015
+p-value of test                       :    0.16
+
+Kolmogorov-Smirnov- statistic = D-    :   0.020
+p-value of test                       :    0.03
+
+Anderson-Darling statistic = A2       :    3.33
+p-value of test                       :    0.02
+
+-----------------------------------------------
+CPU time used                    :  00:05:03.79
+
+Generator state:
+state: 210586502699322 110889908392201 153718908627003 237475136464263 164533503441771 209362080001001 90166292682427 171453934938117 252524042041456 117207501134112 34165600404751 3870050010420 0 7 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r =  0,   s = 3,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    7.25
+p-value of test                       :    0.51
+
+-----------------------------------------------
+Global longest run of 1               :   32.00
+p-value of test                       :    0.50
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:28:12.35
+
+Generator state:
+state: 255243490308225 43373432977320 32115777092368 190488202406534 23597244915464 11728551669835 70780940354443 189552448751247 239193028115980 11226941619293 216745251543847 136601840628833 0 5 2
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_LongestHeadRun test:
+-----------------------------------------------
+   N =  1,  n = 1000,  r = 27,   s = 3,   L = 10000020
+
+
+-----------------------------------------------
+Number of degrees of freedom          :    8
+Chi-square statistic                  :    3.50
+p-value of test                       :    0.90
+
+-----------------------------------------------
+Global longest run of 1               :   30.00
+p-value of test                       :    0.90
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:28:18.82
+
+Generator state:
+state: 248012309906873 21598584145499 112207828334637 57056434834677 29233631220988 82718094319891 245254150698582 176591359793421 94292248714091 185770418768347 51735847367807 146934835836344 0 3 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N = 10,  n = 500000000,  r =  0,   s =   10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.28
+
+Kolmogorov-Smirnov- statistic = D-    :   0.044
+p-value of test                       :    0.93
+
+Anderson-Darling statistic = A2       :    0.81
+p-value of test                       :    0.47
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  200
+Chi-square statistic                  :  176.73
+p-value of test                       :    0.88
+
+-----------------------------------------------
+CPU time used                    :  00:42:26.64
+
+Generator state:
+state: 163865313877121 85916988880478 203309751653984 204565976475865 54182100332104 70903403997897 198151288375956 196425357496126 214410167768552 120022183584893 6813040824880 107072662266591 0 11 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_PeriodsInStrings test:
+-----------------------------------------------
+   N = 10,  n = 500000000,  r = 20,   s =   10
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.54
+
+Kolmogorov-Smirnov- statistic = D-    :    0.14
+p-value of test                       :    0.60
+
+Anderson-Darling statistic = A2       :    0.41
+p-value of test                       :    0.83
+
+Test on the sum of all N observations
+Number of degrees of freedom          :  200
+Chi-square statistic                  :  195.14
+p-value of test                       :    0.58
+
+-----------------------------------------------
+CPU time used                    :  00:42:20.01
+
+Generator state:
+state: 257331933423115 214273912990270 251613703918761 38221079861185 223822595304028 110089513205481 70437700457273 35855670134449 257248305181482 112499654932192 30450924615571 247674047570350 1 1 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r =  0,   s = 3,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.045
+p-value of test                       :    0.93
+
+Kolmogorov-Smirnov- statistic = D-    :    0.36
+p-value of test                       :    0.06
+
+Anderson-Darling statistic = A2       :    1.79
+p-value of test                       :    0.12
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  :10237.82
+p-value of test                       :    0.05
+
+-----------------------------------------------
+CPU time used                    :  00:27:48.61
+
+Generator state:
+state: 270879626881975 33238786104703 62123673706700 179004481191856 29392358366860 109804758944700 103794263267143 63556866517897 80257073438344 280511727053278 18660853196632 191572026449981 0 11 5
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingWeight2 test:
+-----------------------------------------------
+   N = 10,  n = 1000000000,  r = 27,   s = 3,   L = 1000000
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.16
+p-value of test                       :    0.55
+
+Kolmogorov-Smirnov- statistic = D-    :    0.19
+p-value of test                       :    0.42
+
+Anderson-Darling statistic = A2       :    0.53
+p-value of test                       :    0.71
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 10000
+Chi-square statistic                  :10067.91
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:27:45.22
+
+Generator state:
+state: 168182461077092 267448794232308 63429685029333 64553603897496 103884213280037 234447724020036 18436616478038 54411753117117 129563586627380 119463182452272 132782252207006 244290466392416 1 9 6
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 1000000000,  r = 10,   s = 10,   L = 30
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -0.57
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:25:18.39
+
+Generator state:
+state: 186623415864058 204820923905835 212200904245078 137540167608041 182546041743056 80336499189828 17391822848886 111584358949672 164541079489528 190083846902955 248583982528001 4001375721236 1 3 3
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 10,   s = 10,   L = 300
+
+
+
+-----------------------------------------------
+Normal statistic                      :    0.14
+p-value of test                       :    0.45
+
+-----------------------------------------------
+CPU time used                    :  00:25:10.79
+
+Generator state:
+state: 133576251641460 275036878050095 100263600449183 167721938665228 40269075826538 76022471134137 37007246167168 149788369263503 112276505781313 140125747559288 29250743870685 13954310046816 0 3 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingCorr test:
+-----------------------------------------------
+   N =  1,  n = 100000000,  r = 10,   s = 10,   L = 1200
+
+
+
+-----------------------------------------------
+Normal statistic                      :   -1.24
+p-value of test                       :    0.89
+
+-----------------------------------------------
+CPU time used                    :  01:40:38.14
+
+Generator state:
+state: 134023469543817 20515886202485 138562623023717 8307702706355 78562070718993 86675456655414 276404021424717 271539625040704 122382312801087 149984714571953 280700813775387 34105832465953 1 9 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r =  0,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.26
+p-value of test                       :    0.21
+
+Kolmogorov-Smirnov- statistic = D-    :    0.10
+p-value of test                       :    0.76
+
+Anderson-Darling statistic = A2       :    0.87
+p-value of test                       :    0.43
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4806.74
+p-value of test                       :    0.80
+
+-----------------------------------------------
+CPU time used                    :  00:51:10.63
+
+Generator state:
+state: 63509472118224 42917070460968 130815047351669 203877912137443 43995895251820 222853535314466 79574865383785 19845496618129 123199228132946 221702990118709 121013891280183 50217769167949 0 9 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N = 10,  n = 30000000,  r = 27,   s = 3,   L = 30,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.24
+p-value of test                       :    0.28
+
+Kolmogorov-Smirnov- statistic = D-    :   0.088
+p-value of test                       :    0.81
+
+Anderson-Darling statistic = A2       :    0.43
+p-value of test                       :    0.81
+
+Test on the sum of all N observations
+Number of degrees of freedom          : 4890
+Chi-square statistic                  : 4831.18
+p-value of test                       :    0.72
+
+-----------------------------------------------
+CPU time used                    :  00:49:52.75
+
+Generator state:
+state: 25874984115141 25465610115739 188800642514136 182908435575479 164043268314267 166727126491708 175958389433725 77832425940198 12694451884054 170216641710047 235141282404823 35214436873378 1 3 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r =  0,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4048.86
+p-value of test                       :    0.77
+
+-----------------------------------------------
+CPU time used                    :  00:37:29.72
+
+Generator state:
+state: 265941856027581 196745574862429 54420078268848 238083907842514 125783480168123 86956062789448 94554088903531 15976331061574 271313166615457 252760016229939 78199938671445 141801439387399 1 9 10
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 30000000,  r = 26,   s = 4,   L = 300,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 4117
+Chi-square statistic                  : 4161.91
+p-value of test                       :    0.31
+
+-----------------------------------------------
+CPU time used                    :  00:37:21.76
+
+Generator state:
+state: 122663140760159 156175098020518 195682572827069 99982378827598 184417772655002 73968158523604 144602013512806 21034699281790 182826542269897 181373740252276 108115520298204 59930854563703 1 3 11
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r =  0,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :11887.44
+p-value of test                       :    0.34
+
+-----------------------------------------------
+CPU time used                    :  00:39:59.92
+
+Generator state:
+state: 140084922510385 135719445280955 57999851741952 208985181914730 185871757050775 164593112780175 136289937648552 187419182189060 148973779099330 223887367372835 248653625608681 179334756171033 0 9 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_HammingIndep test:
+-----------------------------------------------
+   N =  1,  n = 10000000,  r = 25,   s = 5,   L = 1200,   d = 0
+
+
+
+Counters with expected numbers >= 10
+-----------------------------------------------
+Number of degrees of freedom          : 11825
+Chi-square statistic                  :12016.79
+p-value of test                       :    0.11
+
+-----------------------------------------------
+CPU time used                    :  00:39:54.39
+
+Generator state:
+state: 150202614948835 173330587622251 269769724994757 85577018242040 26711271182697 26186740500406 166046666275906 138826413566726 60144287971144 17436592029961 24691783758687 142308347328121 0 9 8
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r =  0,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   65.05
+p-value of test                       :    0.14
+
+
+-----------------------------------------------
+Total number of bits:  7999798095
+
+Normal statistic for number of bits   :   -1.60
+p-value of test                       :    0.94
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:22:35.98
+
+Generator state:
+state: 163681167108394 121075750073431 2334463773698 268185970122082 91853262418359 158379929884015 57660745927692 192097407618015 250774122536291 20015686511081 210928789573538 77327215590518 0 6 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_Run test:
+-----------------------------------------------
+   N =  1,  n = 2000000000,  r = 27,   s =    3
+
+
+-----------------------------------------------
+Total number of 1 runs:  2000000000
+
+Number of degrees of freedom          :   54
+Chi2 statistic for number of runs     :   56.96
+p-value of test                       :    0.37
+
+
+-----------------------------------------------
+Total number of bits:  8000012289
+
+Normal statistic for number of bits   :   0.097
+p-value of test                       :    0.46
+
+
+
+-----------------------------------------------
+CPU time used                    :  00:22:37.80
+
+Generator state:
+state: 156751427430236 66075279169445 96145162822070 101400927430163 127346981695170 262355727559833 243567965338534 88757661634984 92874097216887 23978248287660 18316949053190 148829519647920 1 7 7
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r =  0,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :   0.092
+p-value of test                       :    0.80
+
+Kolmogorov-Smirnov- statistic = D-    :    0.25
+p-value of test                       :    0.25
+
+Anderson-Darling statistic = A2       :    0.76
+p-value of test                       :    0.51
+
+Tests on the sum of all N observations
+Standardized normal statistic         :    0.82
+p-value of test                       :    0.21
+
+Sample variance                       :    0.89
+p-value of test                       :    0.53
+
+-----------------------------------------------
+CPU time used                    :  00:29:03.48
+
+Generator state:
+state: 117843203760311 270784746162585 22329736450177 232031340898007 121754242147137 65482355791160 136806854799374 198995938205283 52516013119908 48618795879629 90838344771431 188460737168634 0 9 4
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r =  0,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.37
+p-value of test                       :    0.05
+
+Kolmogorov-Smirnov- statistic = D-    :    0.11
+p-value of test                       :    0.72
+
+Anderson-Darling statistic = A2       :    1.85
+p-value of test                       :    0.11
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.36
+p-value of test                       :    0.91
+
+Sample variance                       :    0.30
+p-value of test                       :    0.98
+
+-----------------------------------------------
+CPU time used                    :  00:28:50.19
+
+Generator state:
+state: 274147055080089 8876438273325 249429669017220 199221236979010 56341670236099 189050287890442 276840529052566 204868929948880 222122730268843 234168663440482 222211697487605 25669763921212 1 11 1
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000030,  r = 27,   s = 3,   d = 1
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.54
+p-value of test                       :  1.5e-3
+
+Kolmogorov-Smirnov- statistic = D-    :   0.020
+p-value of test                       :    0.98
+
+Anderson-Darling statistic = A2       :    4.05
+p-value of test                       :  8.6e-3
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -2.47
+p-value of test                       :    0.9932
+
+Sample variance                       :    0.35
+p-value of test                       :    0.96
+
+-----------------------------------------------
+CPU time used                    :  00:30:14.54
+
+Generator state:
+state: 143171533909946 96697835055390 97777630566387 184979691054157 261648080945624 230473155305720 164224616886020 211699544228849 160342645746359 75256368769763 51500869548228 101681088124282 1 7 9
+
+
+
+
+***********************************************************
+HOST = pard013422, Linux
+
+stdcpp_ranlux48
+
+
+sstring_AutoCor test:
+-----------------------------------------------
+   N = 10,  n = 1000000029,  r = 27,   s = 3,   d = 3
+
+
+-----------------------------------------------
+
+Kolmogorov-Smirnov+ statistic = D+    :    0.35
+p-value of test                       :    0.07
+
+Kolmogorov-Smirnov- statistic = D-    :   0.091
+p-value of test                       :    0.80
+
+Anderson-Darling statistic = A2       :    1.33
+p-value of test                       :    0.22
+
+Tests on the sum of all N observations
+Standardized normal statistic         :   -1.30
+p-value of test                       :    0.90
+
+Sample variance                       :    1.30
+p-value of test                       :    0.23
+
+-----------------------------------------------
+CPU time used                    :  00:29:16.01
+
+Generator state:
+state: 56002561025105 155348756372815 84472955674632 168723514105541 213729127054750 88571994058323 42379967030370 3041511576257 152931284440993 71513061936543 73495662329934 86206447303853 0 9 6
+
+
+
+
+
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        stdcpp_ranlux48
+ Number of statistics:  160
+ Total CPU time:   51:34:12.66
+
+ All tests were passed
+
+
+
+
