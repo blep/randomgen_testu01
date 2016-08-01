@@ -10,3 +10,6 @@
 [submodule "thirdparties/siphash-c"]
 	path = thirdparties/siphash-c
 	url = https://github.com/blep/siphash-c.git
+[submodule "thirdparties/xxHash"]
+	path = thirdparties/xxHash
+	url = https://github.com/Cyan4973/xxHash.git
