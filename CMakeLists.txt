@@ -61,6 +61,7 @@ include_directories(thirdparties/pcg-c/include)
 set(SMHASHER_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparties/smhasher/src)
 
 set(SIPHASH_C_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparties/siphash-c/src)
+set(XXHASH_C_DIR ${CMAKE_CURRENT_SOURCE_DIR}/thirdparties/xxHash)
 
 # sub-projects
 option(PCG_C_BUILD_SAMPLES "Build pgc-c samples" OFF)

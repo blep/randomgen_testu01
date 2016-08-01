@@ -17,5 +17,12 @@ set(SIPHASH_C_SOURCES
     ${SIPHASH_C_DIR}/siphash.c
 )
 
-add_executable( bbattery_runner  ${SOURCES} ${SMHASHER_SOURCES} ${SIPHASH_C_SOURCES} )
+include_directories(${XXHASH_C_DIR})
+set(XXHASH_C_SOURCES
+    ${XXHASH_C_DIR}/xxhash.h
+    ${XXHASH_C_DIR}/xxhash.c
+)
+
+
+add_executable( bbattery_runner  ${SOURCES} ${SMHASHER_SOURCES} ${SIPHASH_C_SOURCES} ${XXHASH_C_SOURCES} )
 target_link_libraries( bbattery_runner pcg_random_lib ${TESTU01_LIBRARIES} )

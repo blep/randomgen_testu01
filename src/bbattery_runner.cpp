@@ -4,6 +4,7 @@ extern "C" {
     #include <bbattery.h>
     #include <siphash.h>
     #include "siphash24_ints.h"
+    #include <xxhash.h>
 }
 
 #include <pcg_variants.h>
@@ -197,6 +198,18 @@ uint32_t siphash24_key_counter_64( CounterState64 *state )
     return (uint32_t)sip_hash24_key_only( state->next());
 }
 
+uint32_t xxh64_key_counter( CounterState *state )
+{
+    XXH64_hash_t serial = state->next();
+    return (uint32_t)XXH64(&serial, sizeof(serial), 0u);
+}
+
+uint32_t xxh64_key_counter_64( CounterState64 *state )
+{
+    XXH64_hash_t serial = state->next();
+    return (uint32_t)XXH64(&serial, sizeof(serial), 0u);
+}
+
 template<typename T>
 uint32_t cpp_random_engine( T *state )
 {
@@ -264,6 +277,10 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &siphash11_key_counter, CounterState() );
     else if ( name == "siphash24_key_counter_64" )
         return makeUnif01Gen32( name, &siphash24_key_counter_64, CounterState64() );
+    else if ( name == "xxh64_key_counter" )
+        return makeUnif01Gen32( name, &xxh64_key_counter, CounterState() );
+    else if ( name == "xxh64_key_counter_64" )
+        return makeUnif01Gen32( name, &xxh64_key_counter_64, CounterState64() );
     else if ( name == "stdcpp_mt19937")
         return makeUnif01Gen32StdRng( name, std::mt19937(56) );
     else if ( name == "stdcpp_mt19937_64")

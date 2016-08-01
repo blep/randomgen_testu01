@@ -8,8 +8,8 @@ BIG_CRUSH_RNG = """pcg32_random_r pcglite32_random
 	murmur1_counter murmur2_counter murmur3_counter
 	siphash24_counter siphash24_key_counter siphash24_key_counter_64
 	siphash14_key_counter siphash12_key_counter
-	stdcpp_ranlux48
-	""".split()
+	xxh64_key_counter xxh64_key_counter_64
+	""".split()  #	stdcpp_ranlux48 ranlux48 never seem to finish...
 
 CRUSH_RNG = BIG_CRUSH_RNG + """
 	siphash11_key_counter
