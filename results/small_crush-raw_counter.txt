@@ -5,7 +5,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -26,7 +26,7 @@ p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.38
+CPU time used                    :  00:00:00.33
 
 Generator state:
 state: count=10000000
@@ -38,7 +38,7 @@ state: count=10000000
 Test sknuth_Collision calling smultin_Multinomial
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -74,7 +74,7 @@ Total number of cells containing j balls
   j =  5                              :                0
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.28
+CPU time used                    :  00:00:00.22
 
 Generator state:
 state: count=20000000
@@ -83,7 +83,7 @@ state: count=20000000
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -99,7 +99,7 @@ Chi-square statistic                  : 2.02e+8
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.71
+CPU time used                    :  00:00:00.79
 
 Generator state:
 state: count=71199748
@@ -108,7 +108,7 @@ state: count=71199748
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -124,7 +124,7 @@ Chi-square statistic                  : 3.39e+9
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.43
+CPU time used                    :  00:00:00.40
 
 Generator state:
 state: count=96799748
@@ -133,7 +133,7 @@ state: count=96799748
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -149,7 +149,7 @@ Chi-square statistic                  : 2.89e+7
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.51
+CPU time used                    :  00:00:00.46
 
 Generator state:
 state: count=126799749
@@ -158,7 +158,7 @@ state: count=126799749
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -183,7 +183,7 @@ p-value of test                       : 1 - eps1    *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.53
+CPU time used                    :  00:00:00.50
 
 Generator state:
 state: count=138799749
@@ -192,7 +192,7 @@ state: count=138799749
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -208,7 +208,7 @@ Chi-square statistic                  : 2.46e+6
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.81
+CPU time used                    :  00:00:00.87
 
 Generator state:
 state: count=189999749
@@ -217,7 +217,7 @@ state: count=189999749
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -233,7 +233,7 @@ Chi-square statistic                  : 3.76e+6
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.24
+CPU time used                    :  00:00:00.18
 
 Generator state:
 state: count=197199749
@@ -242,7 +242,7 @@ state: count=197199749
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -260,7 +260,7 @@ Chi-square statistic                  : 3.51e+7
 p-value of test                       :   eps      *****
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.37
+CPU time used                    :  00:00:00.41
 
 Generator state:
 state: count=227199749
@@ -269,7 +269,7 @@ state: count=227199749
 
 
 ***********************************************************
-HOST = pard013422, Linux
+HOST = mintos, Linux
 
 raw_counter
 
@@ -321,7 +321,7 @@ p-value of test                       :   eps      *****
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.49
+CPU time used                    :  00:00:00.44
 
 Generator state:
 state: count=232199749
@@ -335,7 +335,7 @@ state: count=232199749
  Version:          TestU01 1.2.3
  Generator:        raw_counter
  Number of statistics:  15
- Total CPU time:   00:00:04.79
+ Total CPU time:   00:00:04.62
  The following tests gave p-values outside [0.001, 0.9990]:
  (eps  means a value < 1.0e-300):
  (eps1 means a value < 1.0e-15):

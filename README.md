@@ -37,8 +37,12 @@ doit -n2 small_crush
 | stdcpp_mt19937           |                OK |               2 fail |                     |
 | stdcpp_mt19937_64        |         1 suspect |               2 fail |                     |
 | stdcpp_random_device     |                OK |                   OK |                     |
-| stdcpp_ranlux24          |            9 fail |                      |                     |
-| stdcpp_ranlux48          |                OK |                   OK |                     |
+| stdcpp_ranlux24          |            9 fail |  11 suspect, 78 fail |                     |
+| stdcpp_ranlux48          |                OK |                   OK |                  OK |
+| xxh32_key_counter        |                OK |    3 suspect, 1 fail |                     |
+| xxh32_key_counter_64     |                OK |    3 suspect, 1 fail |                     |
+| xxh64_key_counter        |                OK |                   OK |                     |
+| xxh64_key_counter_64     |                OK |                   OK |                     |
 
 ## Test Status description
 
