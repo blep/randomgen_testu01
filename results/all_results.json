@@ -4820,6 +4820,76 @@
         "status": "fail"
     }, 
     {
+        "crush_type": "BigCrush", 
+        "failures": [
+            {
+                "is_suspect": true, 
+                "name": "Gap, r = 0", 
+                "p_value": "2.3e-14", 
+                "test_no": "34"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 25", 
+                "p_value": "eps", 
+                "test_no": "35"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 0", 
+                "p_value": "eps", 
+                "test_no": "36"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 20", 
+                "p_value": "eps", 
+                "test_no": "37"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 8", 
+                "p_value": "1 - eps1", 
+                "test_no": "46"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 16", 
+                "p_value": "1 - eps1", 
+                "test_no": "47"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 24", 
+                "p_value": "1 - eps1", 
+                "test_no": "48"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 32", 
+                "p_value": "1 - eps1", 
+                "test_no": "49"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "SumCollector", 
+                "p_value": "5.2e-9", 
+                "test_no": "65"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "RandomWalk1 R (L=1000, r=20)", 
+                "p_value": "3.7e-4", 
+                "test_no": "77"
+            }
+        ], 
+        "generator": "xxh32_key_counter", 
+        "nb_fail": 7, 
+        "nb_stat": "160", 
+        "nb_suspect": 3, 
+        "status": "fail"
+    }, 
+    {
         "crush_type": "SmallCrush", 
         "failures": [], 
         "generator": "xxh32_key_counter_64", 
@@ -4863,6 +4933,64 @@
         "status": "fail"
     }, 
     {
+        "crush_type": "BigCrush", 
+        "failures": [
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings, t = 2", 
+                "p_value": "eps", 
+                "test_no": "13"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "Gap, r = 0", 
+                "p_value": "3.7e-9", 
+                "test_no": "36"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "Gap, r = 20", 
+                "p_value": "1.9e-12", 
+                "test_no": "37"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 8", 
+                "p_value": "1 - eps1", 
+                "test_no": "46"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 16", 
+                "p_value": "1 - eps1", 
+                "test_no": "47"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 24", 
+                "p_value": "1 - eps1", 
+                "test_no": "48"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 32", 
+                "p_value": "1 - eps1", 
+                "test_no": "49"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "HammingIndep, L=300, r=26", 
+                "p_value": "5.4e-4", 
+                "test_no": "98"
+            }
+        ], 
+        "generator": "xxh32_key_counter_64", 
+        "nb_fail": 5, 
+        "nb_stat": "160", 
+        "nb_suspect": 3, 
+        "status": "fail"
+    }, 
+    {
         "crush_type": "SmallCrush", 
         "failures": [], 
         "generator": "xxh64_key_counter", 
@@ -4881,6 +5009,64 @@
         "status": "pass"
     }, 
     {
+        "crush_type": "BigCrush", 
+        "failures": [
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 0", 
+                "p_value": "eps", 
+                "test_no": "34"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 25", 
+                "p_value": "eps", 
+                "test_no": "35"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 0", 
+                "p_value": "eps", 
+                "test_no": "36"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 20", 
+                "p_value": "eps", 
+                "test_no": "37"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "WeightDistrib, r = 0", 
+                "p_value": "8.3e-5", 
+                "test_no": "59"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "WeightDistrib, r = 28", 
+                "p_value": "1.7e-4", 
+                "test_no": "61"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "SumCollector", 
+                "p_value": "2.6e-7", 
+                "test_no": "65"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "LongestHeadRun, r = 0", 
+                "p_value": "8.5e-4", 
+                "test_no": "86"
+            }
+        ], 
+        "generator": "xxh64_key_counter", 
+        "nb_fail": 4, 
+        "nb_stat": "160", 
+        "nb_suspect": 4, 
+        "status": "fail"
+    }, 
+    {
         "crush_type": "SmallCrush", 
         "failures": [], 
         "generator": "xxh64_key_counter_64", 
@@ -4895,6 +5081,15 @@
         "generator": "xxh64_key_counter_64", 
         "nb_fail": 0, 
         "nb_stat": "144", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "BigCrush", 
+        "failures": [], 
+        "generator": "xxh64_key_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "160", 
         "nb_suspect": 0, 
         "status": "pass"
     }

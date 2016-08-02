@@ -39,10 +39,10 @@ doit -n2 small_crush
 | stdcpp_random_device     |                OK |                   OK |                     |
 | stdcpp_ranlux24          |            9 fail |  11 suspect, 78 fail |                     |
 | stdcpp_ranlux48          |                OK |                   OK |                  OK |
-| xxh32_key_counter        |                OK |    3 suspect, 1 fail |                     |
-| xxh32_key_counter_64     |                OK |    3 suspect, 1 fail |                     |
-| xxh64_key_counter        |                OK |                   OK |                     |
-| xxh64_key_counter_64     |                OK |                   OK |                     |
+| xxh32_key_counter        |                OK |    3 suspect, 1 fail |   3 suspect, 7 fail |
+| xxh32_key_counter_64     |                OK |    3 suspect, 1 fail |   3 suspect, 5 fail |
+| xxh64_key_counter        |                OK |                   OK |   4 suspect, 4 fail |
+| xxh64_key_counter_64     |                OK |                   OK |                  OK |
 
 ## Test Status description
 
