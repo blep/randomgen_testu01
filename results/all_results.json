@@ -459,6 +459,200 @@
         "status": "pass"
     }, 
     {
+        "crush_type": "SmallCrush", 
+        "failures": [
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings", 
+                "p_value": "eps", 
+                "test_no": "1"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Collision", 
+                "p_value": "eps", 
+                "test_no": "2"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap", 
+                "p_value": "eps", 
+                "test_no": "3"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SimpPoker", 
+                "p_value": "eps", 
+                "test_no": "4"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CouponCollector", 
+                "p_value": "eps", 
+                "test_no": "5"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft", 
+                "p_value": "eps", 
+                "test_no": "6"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD", 
+                "p_value": "1 - eps1", 
+                "test_no": "6"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "WeightDistrib", 
+                "p_value": "eps", 
+                "test_no": "7"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MatrixRank", 
+                "p_value": "eps", 
+                "test_no": "8"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingIndep", 
+                "p_value": "eps", 
+                "test_no": "9"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 H", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 M", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 J", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 R", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 C", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }
+        ], 
+        "generator": "raw_counter", 
+        "nb_fail": 15, 
+        "nb_stat": "15", 
+        "nb_suspect": 0, 
+        "status": "fail"
+    }, 
+    {
+        "crush_type": "SmallCrush", 
+        "failures": [
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings", 
+                "p_value": "eps", 
+                "test_no": "1"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Collision", 
+                "p_value": "eps", 
+                "test_no": "2"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap", 
+                "p_value": "eps", 
+                "test_no": "3"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SimpPoker", 
+                "p_value": "eps", 
+                "test_no": "4"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CouponCollector", 
+                "p_value": "eps", 
+                "test_no": "5"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft", 
+                "p_value": "eps", 
+                "test_no": "6"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD", 
+                "p_value": "1 - eps1", 
+                "test_no": "6"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "WeightDistrib", 
+                "p_value": "eps", 
+                "test_no": "7"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingIndep", 
+                "p_value": "eps", 
+                "test_no": "9"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 H", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 M", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 J", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 R", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 C", 
+                "p_value": "eps", 
+                "test_no": "10"
+            }
+        ], 
+        "generator": "siphash11_key_counter", 
+        "nb_fail": 14, 
+        "nb_stat": "15", 
+        "nb_suspect": 0, 
+        "status": "fail"
+    }, 
+    {
         "crush_type": "Crush", 
         "failures": [
             {
@@ -5088,6 +5282,74 @@
         "crush_type": "BigCrush", 
         "failures": [], 
         "generator": "xxh64_key_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "160", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "SmallCrush", 
+        "failures": [], 
+        "generator": "xxh64_key_only2_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "15", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "Crush", 
+        "failures": [
+            {
+                "is_suspect": true, 
+                "name": "RandomWalk1 H (L = 90)", 
+                "p_value": "0.9994", 
+                "test_no": "66"
+            }
+        ], 
+        "generator": "xxh64_key_only2_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "144", 
+        "nb_suspect": 1, 
+        "status": "suspect"
+    }, 
+    {
+        "crush_type": "BigCrush", 
+        "failures": [
+            {
+                "is_suspect": true, 
+                "name": "RandomWalk1 C (L=1000, r=0)", 
+                "p_value": "0.9991", 
+                "test_no": "76"
+            }
+        ], 
+        "generator": "xxh64_key_only2_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "160", 
+        "nb_suspect": 1, 
+        "status": "suspect"
+    }, 
+    {
+        "crush_type": "SmallCrush", 
+        "failures": [], 
+        "generator": "xxh64_key_only_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "15", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "Crush", 
+        "failures": [], 
+        "generator": "xxh64_key_only_counter_64", 
+        "nb_fail": 0, 
+        "nb_stat": "144", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "BigCrush", 
+        "failures": [], 
+        "generator": "xxh64_key_only_counter_64", 
         "nb_fail": 0, 
         "nb_stat": "160", 
         "nb_suspect": 0, 

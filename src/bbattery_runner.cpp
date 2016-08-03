@@ -10,6 +10,7 @@ extern "C" {
 #include <pcg_variants.h>
 #include "pcg_lite.h"
 #include "pcg_lite_inline.h"
+#include "xxhash_keyonly.h"
 #include <MurmurHash1.h>
 #include <MurmurHash2.h>
 #include <MurmurHash3.h>
@@ -222,6 +223,16 @@ uint32_t xxh64_key_counter_64( CounterState64 *state )
     return (uint32_t)XXH64(&serial, sizeof(serial), 0u);
 }
 
+uint32_t xxh64_key_only_counter_64( CounterState64 *state )
+{
+    return (uint32_t)XXH64_little_endian_keyonly(state->next());
+}
+
+uint32_t xxh64_key_only2_counter_64( CounterState64 *state )
+{
+    return (uint32_t)XXH64_little_endian_keyonly_simplified(state->next());
+}
+
 template<typename T>
 uint32_t cpp_random_engine( T *state )
 {
@@ -297,6 +308,10 @@ createRng( const std::string &name )
         return makeUnif01Gen32( name, &xxh64_key_counter, CounterState() );
     else if ( name == "xxh64_key_counter_64" )
         return makeUnif01Gen32( name, &xxh64_key_counter_64, CounterState64() );
+    else if ( name == "xxh64_key_only_counter_64" )
+        return makeUnif01Gen32( name, &xxh64_key_only_counter_64, CounterState64() );
+    else if ( name == "xxh64_key_only2_counter_64" )
+        return makeUnif01Gen32( name, &xxh64_key_only2_counter_64, CounterState64() );
     else if ( name == "stdcpp_mt19937")
         return makeUnif01Gen32StdRng( name, std::mt19937(56) );
     else if ( name == "stdcpp_mt19937_64")

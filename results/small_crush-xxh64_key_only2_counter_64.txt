@@ -7,7 +7,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 smarsa_BirthdaySpacings test:
@@ -21,15 +21,15 @@ smarsa_BirthdaySpacings test:
 
 ----------------------------------------------------
 Total expected number = N*Lambda      :      27.11
-Total observed number                 :    3433
-p-value of test                       :   eps      *****
+Total observed number                 :      21
+p-value of test                       :    0.86
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.09
+CPU time used                    :  00:00:00.99
 
 Generator state:
-state: count=10000000
+state: count=0000000010000000
 
 
 
@@ -40,7 +40,7 @@ Test sknuth_Collision calling smultin_Multinomial
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 smultin_Multinomial test:
@@ -60,24 +60,24 @@ smultin_Multinomial test:
 Test Results for Collisions
 
 Expected number of collisions = Mu    :     2909.25
-Observed number of collisions         :    90264
-p-value of test                       :   eps      *****
+Observed number of collisions         :     2884
+p-value of test                       :    0.68
 
 -----------------------------
 Total number of cells containing j balls
 
-  j =  0                              :       4290057560
-  j =  1                              :          4821760
-  j =  2                              :            86004
-  j =  3                              :             1666
-  j =  4                              :              299
-  j =  5                              :                5
+  j =  0                              :       4289970180
+  j =  1                              :          4994232
+  j =  2                              :             2884
+  j =  3                              :                0
+  j =  4                              :                0
+  j =  5                              :                0
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.12
+CPU time used                    :  00:00:01.02
 
 Generator state:
-state: count=20000000
+state: count=0000000020000000
 
 
 
@@ -85,7 +85,7 @@ state: count=20000000
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 sknuth_Gap test:
@@ -95,14 +95,14 @@ sknuth_Gap test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 1114
-Chi-square statistic                  : 5366.64
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 1189.62
+p-value of test                       :    0.06
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.49
+CPU time used                    :  00:00:00.91
 
 Generator state:
-state: count=71097225
+state: count=0000000071137552
 
 
 
@@ -110,7 +110,7 @@ state: count=71097225
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 sknuth_SimpPoker test:
@@ -120,14 +120,14 @@ sknuth_SimpPoker test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   19
-Chi-square statistic                  :16234.93
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   15.78
+p-value of test                       :    0.67
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.97
+CPU time used                    :  00:00:00.71
 
 Generator state:
-state: count=96697225
+state: count=0000000096737552
 
 
 
@@ -135,7 +135,7 @@ state: count=96697225
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 sknuth_CouponCollector test:
@@ -145,14 +145,14 @@ sknuth_CouponCollector test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   44
-Chi-square statistic                  :70212.65
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   54.84
+p-value of test                       :    0.13
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.82
+CPU time used                    :  00:00:00.62
 
 Generator state:
-state: count=119491580
+state: count=0000000121423242
 
 
 
@@ -160,7 +160,7 @@ state: count=119491580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 sknuth_MaxOft test:
@@ -173,20 +173,20 @@ sknuth_MaxOft test:
 
 -----------------------------------------------
 Number of degrees of freedom          : 99999
-Chi-square statistic                  : 4.69e+5
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 1.00e+5
+p-value of test                       :    0.39
 
 
 -----------------------------------------------
-Anderson-Darling statistic            :   0.000
-p-value of test                       : 1 - eps1    *****
+Anderson-Darling statistic            :    0.41
+p-value of test                       :    0.59
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.80
+CPU time used                    :  00:00:00.68
 
 Generator state:
-state: count=131491580
+state: count=0000000133423242
 
 
 
@@ -194,7 +194,7 @@ state: count=131491580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 svaria_WeightDistrib test:
@@ -204,14 +204,14 @@ svaria_WeightDistrib test:
 
 -----------------------------------------------
 Number of degrees of freedom          :   41
-Chi-square statistic                  : 1.19e+5
-p-value of test                       :   eps      *****
+Chi-square statistic                  :   48.21
+p-value of test                       :    0.20
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.46
+CPU time used                    :  00:00:00.92
 
 Generator state:
-state: count=182691580
+state: count=0000000184623242
 
 
 
@@ -219,7 +219,7 @@ state: count=182691580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 smarsa_MatrixRank test:
@@ -229,14 +229,14 @@ smarsa_MatrixRank test:
 
 -----------------------------------------------
 Number of degrees of freedom          :    3
-Chi-square statistic                  :    5.75
-p-value of test                       :    0.12
+Chi-square statistic                  :    3.34
+p-value of test                       :    0.34
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.46
+CPU time used                    :  00:00:00.37
 
 Generator state:
-state: count=189891580
+state: count=0000000191823242
 
 
 
@@ -244,7 +244,7 @@ state: count=189891580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 sstring_HammingIndep test:
@@ -256,14 +256,14 @@ sstring_HammingIndep test:
 Counters with expected numbers >= 10
 -----------------------------------------------
 Number of degrees of freedom          : 2209
-Chi-square statistic                  : 4.16e+6
-p-value of test                       :   eps      *****
+Chi-square statistic                  : 2159.18
+p-value of test                       :    0.77
 
 -----------------------------------------------
-CPU time used                    :  00:00:01.09
+CPU time used                    :  00:00:00.84
 
 Generator state:
-state: count=219891580
+state: count=0000000221823242
 
 
 
@@ -271,7 +271,7 @@ state: count=219891580
 ***********************************************************
 HOST = mintos, Linux
 
-siphash11_key_counter
+xxh64_key_only2_counter_64
 
 
 swalk_RandomWalk1 test:
@@ -284,47 +284,47 @@ swalk_RandomWalk1 test:
 Test on the values of the Statistic H
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 2.98e+5
-p-value of test                       :   eps      *****
+ChiSquare statistic                   :   52.21
+p-value of test                       :    0.47
 
 
 -----------------------------------------------
 Test on the values of the Statistic M
 
 Number of degrees of freedom          :   52
-ChiSquare statistic                   : 1.52e+5
-p-value of test                       :   eps      *****
+ChiSquare statistic                   :   51.76
+p-value of test                       :    0.48
 
 
 -----------------------------------------------
 Test on the values of the Statistic J
 
 Number of degrees of freedom          :   75
-ChiSquare statistic                   :18103.28
-p-value of test                       :   eps      *****
+ChiSquare statistic                   :   79.74
+p-value of test                       :    0.33
 
 
 -----------------------------------------------
 Test on the values of the Statistic R
 
 Number of degrees of freedom          :   44
-ChiSquare statistic                   :12152.39
-p-value of test                       :   eps      *****
+ChiSquare statistic                   :   35.75
+p-value of test                       :    0.81
 
 
 -----------------------------------------------
 Test on the values of the Statistic C
 
 Number of degrees of freedom          :   26
-ChiSquare statistic                   :12574.72
-p-value of test                       :   eps      *****
+ChiSquare statistic                   :   22.96
+p-value of test                       :    0.64
 
 
 -----------------------------------------------
-CPU time used                    :  00:00:00.91
+CPU time used                    :  00:00:00.94
 
 Generator state:
-state: count=224891580
+state: count=0000000226823242
 
 
 
@@ -333,30 +333,11 @@ state: count=224891580
 ========= Summary results of SmallCrush =========
 
  Version:          TestU01 1.2.3
- Generator:        siphash11_key_counter
+ Generator:        xxh64_key_only2_counter_64
  Number of statistics:  15
- Total CPU time:   00:00:10.26
- The following tests gave p-values outside [0.001, 0.9990]:
- (eps  means a value < 1.0e-300):
- (eps1 means a value < 1.0e-15):
+ Total CPU time:   00:00:08.01
 
-       Test                          p-value
- ----------------------------------------------
-  1  BirthdaySpacings                 eps  
-  2  Collision                        eps  
-  3  Gap                              eps  
-  4  SimpPoker                        eps  
-  5  CouponCollector                  eps  
-  6  MaxOft                           eps  
-  6  MaxOft AD                      1 - eps1
-  7  WeightDistrib                    eps  
-  9  HammingIndep                     eps  
- 10  RandomWalk1 H                    eps  
- 10  RandomWalk1 M                    eps  
- 10  RandomWalk1 J                    eps  
- 10  RandomWalk1 R                    eps  
- 10  RandomWalk1 C                    eps  
- ----------------------------------------------
+ All tests were passed
 
 
 

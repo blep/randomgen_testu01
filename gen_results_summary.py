@@ -104,8 +104,11 @@ def main():
                         failure = Failure( test_id, name, p_value, is_suspect)
                         failures.append( failure )
             if test_status is None or crush_type is None:
-                print( "SKIPPING %s, no result found" % path )
-                continue
+                if len(failures):
+                    test_status = 'fail' # all tests failed
+                else:
+                    print( "SKIPPING %s, no result found" % path )
+                    continue
             if len(failures) and all(f.is_suspect for f in failures):
                 test_status = 'suspect' # all failures are "just" suspect
             nb_fail = len([f for f in failures if not f.is_suspect])
