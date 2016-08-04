@@ -18,31 +18,34 @@ doit -n2 small_crush
 
 # TestU01 results
 
-|           RNG            |    SmallCrush     |        Crush         |      BigCrush       |
-| ------------------------ | ----------------- | -------------------- | ------------------- |
-| murmur1_counter          |                OK |            4 suspect |   1 suspect, 8 fail |
-| murmur2_counter          |                OK |    4 suspect, 2 fail |  12 suspect, 8 fail |
-| murmur3_counter          |                OK |    3 suspect, 1 fail |   3 suspect, 7 fail |
-| pcg32_random_r           |                OK |                   OK |                  OK |
-| pcglite32_random         |                OK |                   OK |                  OK |
-| siphash11_key_counter    |                   | 13 suspect, 118 fail |                     |
-| siphash12_key_counter    |            1 fail |  15 suspect, 25 fail | 23 suspect, 59 fail |
-| siphash14_key_counter    |                OK |                   OK |   2 suspect, 3 fail |
-| siphash24_counter        |                OK |                   OK |   4 suspect, 3 fail |
-| siphash24_key_counter    |                OK |                   OK |   4 suspect, 3 fail |
-| siphash24_key_counter_64 |                OK |            2 suspect |                  OK |
-| stdcpp_knuth_b           | 1 suspect, 8 fail |  11 suspect, 65 fail |                     |
-| stdcpp_minstd_rand       |            9 fail |  12 suspect, 78 fail |                     |
-| stdcpp_minstd_rand0      |            9 fail |  14 suspect, 82 fail |                     |
-| stdcpp_mt19937           |                OK |               2 fail |                     |
-| stdcpp_mt19937_64        |         1 suspect |               2 fail |                     |
-| stdcpp_random_device     |                OK |                   OK |                     |
-| stdcpp_ranlux24          |            9 fail |  11 suspect, 78 fail |                     |
-| stdcpp_ranlux48          |                OK |                   OK |                  OK |
-| xxh32_key_counter        |                OK |    3 suspect, 1 fail |   3 suspect, 7 fail |
-| xxh32_key_counter_64     |                OK |    3 suspect, 1 fail |   3 suspect, 5 fail |
-| xxh64_key_counter        |                OK |                   OK |   4 suspect, 4 fail |
-| xxh64_key_counter_64     |                OK |                   OK |                  OK |
+|            RNG             |    SmallCrush     |        Crush         |       BigCrush       |
+| -------------------------- | ----------------- | -------------------- | -------------------- |
+| murmur1_counter            |                OK |            4 suspect |    1 suspect, 8 fail |
+| murmur2_counter            |                OK |    4 suspect, 2 fail |   12 suspect, 8 fail |
+| murmur3_counter            |                OK |    3 suspect, 1 fail |    3 suspect, 7 fail |
+| pcg32_random_r             |                OK |                   OK |                   OK |
+| pcglite32_random           |                OK |                   OK |                   OK |
+| raw_counter                |           15 fail |                      |                      |
+| siphash11_key_counter      |           14 fail | 13 suspect, 118 fail |                      |
+| siphash12_key_counter      |            1 fail |  15 suspect, 25 fail |  23 suspect, 59 fail |
+| siphash14_key_counter      |                OK |                   OK |    2 suspect, 3 fail |
+| siphash24_counter          |                OK |                   OK |    4 suspect, 3 fail |
+| siphash24_key_counter      |                OK |                   OK |    4 suspect, 3 fail |
+| siphash24_key_counter_64   |                OK |            2 suspect |                   OK |
+| stdcpp_knuth_b             | 1 suspect, 8 fail |  11 suspect, 65 fail |                      |
+| stdcpp_minstd_rand         |            9 fail |  12 suspect, 78 fail |  9 suspect, 100 fail |
+| stdcpp_minstd_rand0        |            9 fail |  14 suspect, 82 fail | 12 suspect, 101 fail |
+| stdcpp_mt19937             |                OK |               2 fail |               2 fail |
+| stdcpp_mt19937_64          |         1 suspect |               2 fail |               2 fail |
+| stdcpp_random_device       |                OK |                   OK |                      |
+| stdcpp_ranlux24            |            9 fail |  11 suspect, 78 fail |                      |
+| stdcpp_ranlux48            |                OK |                   OK |                   OK |
+| xxh32_key_counter          |                OK |    3 suspect, 1 fail |    3 suspect, 7 fail |
+| xxh32_key_counter_64       |                OK |    3 suspect, 1 fail |    3 suspect, 5 fail |
+| xxh64_key_counter          |                OK |                   OK |    4 suspect, 4 fail |
+| xxh64_key_counter_64       |                OK |                   OK |                   OK |
+| xxh64_key_only2_counter_64 |                OK |            1 suspect |            1 suspect |
+| xxh64_key_only_counter_64  |                OK |                   OK |                   OK |
 
 ## Test Status description
 

@@ -5,6 +5,8 @@ from pathlib import Path
 DOIT_CONFIG = {'default_tasks': ['small_crush']}
 
 BIG_CRUSH_RNG = """pcg32_random_r pcglite32_random
+ 	stdcpp_mt19937 stdcpp_mt19937_64
+ 	stdcpp_minstd_rand stdcpp_minstd_rand0
 	murmur1_counter murmur2_counter murmur3_counter
 	siphash24_counter siphash24_key_counter siphash24_key_counter_64
 	siphash14_key_counter siphash12_key_counter
@@ -15,8 +17,7 @@ BIG_CRUSH_RNG = """pcg32_random_r pcglite32_random
 
 CRUSH_RNG = BIG_CRUSH_RNG + """
 	siphash11_key_counter
- 	stdcpp_mt19937 stdcpp_mt19937_64
- 	stdcpp_minstd_rand stdcpp_minstd_rand0 stdcpp_ranlux24 stdcpp_knuth_b
+ 	stdcpp_ranlux24 stdcpp_knuth_b
  	stdcpp_random_device
 """.split()
 
