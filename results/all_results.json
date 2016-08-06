@@ -2985,6 +2985,532 @@
         "status": "fail"
     }, 
     {
+        "crush_type": "BigCrush", 
+        "failures": [
+            {
+                "is_suspect": false, 
+                "name": "SerialOver, r = 0", 
+                "p_value": "eps", 
+                "test_no": "1"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CollisionOver, t = 2", 
+                "p_value": "eps", 
+                "test_no": "3"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CollisionOver, t = 3", 
+                "p_value": "eps", 
+                "test_no": "5"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CollisionOver, t = 7", 
+                "p_value": "eps", 
+                "test_no": "7"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CollisionOver, t = 14", 
+                "p_value": "eps", 
+                "test_no": "9"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CollisionOver, t = 21", 
+                "p_value": "eps", 
+                "test_no": "11"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings, t = 2", 
+                "p_value": "eps", 
+                "test_no": "13"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings, t = 3", 
+                "p_value": "eps", 
+                "test_no": "14"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings, t = 7", 
+                "p_value": "eps", 
+                "test_no": "16"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "BirthdaySpacings, t = 16", 
+                "p_value": "eps", 
+                "test_no": "20"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs NP, t = 3", 
+                "p_value": "4.6e-16", 
+                "test_no": "22"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP, t = 3", 
+                "p_value": "eps", 
+                "test_no": "22"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP1, t = 3", 
+                "p_value": "eps", 
+                "test_no": "22"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs NJumps, t = 3", 
+                "p_value": "eps", 
+                "test_no": "22"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs mNP2S, t = 3", 
+                "p_value": "2.3e-80", 
+                "test_no": "22"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs NP, t = 5", 
+                "p_value": "8.7e-20", 
+                "test_no": "23"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP, t = 5", 
+                "p_value": "eps", 
+                "test_no": "23"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP1, t = 5", 
+                "p_value": "eps", 
+                "test_no": "23"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs NJumps, t = 5", 
+                "p_value": "eps", 
+                "test_no": "23"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs NP, t = 9", 
+                "p_value": "1.7e-23", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs mNP, t = 9", 
+                "p_value": "3.2e-157", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP1, t = 9", 
+                "p_value": "eps", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs mNP2, t = 9", 
+                "p_value": "3.8e-20", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs NJumps, t = 9", 
+                "p_value": "eps", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs mNP2S, t = 9", 
+                "p_value": "2.3e-10", 
+                "test_no": "24"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs NP, t = 16", 
+                "p_value": "1.4e-21", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "ClosePairs mNP, t = 16", 
+                "p_value": "1.8e-79", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP1, t = 16", 
+                "p_value": "eps", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP2, t = 16", 
+                "p_value": "eps", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs NJumps, t = 16", 
+                "p_value": "eps", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "ClosePairs mNP2S, t = 16", 
+                "p_value": "eps", 
+                "test_no": "25"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SimpPoker, r = 0", 
+                "p_value": "eps", 
+                "test_no": "26"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SimpPoker, r = 0", 
+                "p_value": "eps", 
+                "test_no": "28"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "CouponCollector, r = 0", 
+                "p_value": "eps", 
+                "test_no": "30"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 0", 
+                "p_value": "eps", 
+                "test_no": "34"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Gap, r = 0", 
+                "p_value": "eps", 
+                "test_no": "36"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 8", 
+                "p_value": "eps", 
+                "test_no": "46"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD, t = 8", 
+                "p_value": "eps", 
+                "test_no": "46"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 16", 
+                "p_value": "eps", 
+                "test_no": "47"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD, t = 16", 
+                "p_value": "eps", 
+                "test_no": "47"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 24", 
+                "p_value": "eps", 
+                "test_no": "48"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD, t = 24", 
+                "p_value": "eps", 
+                "test_no": "48"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft, t = 32", 
+                "p_value": "eps", 
+                "test_no": "49"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MaxOft AD, t = 32", 
+                "p_value": "eps", 
+                "test_no": "49"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleProd, t = 8", 
+                "p_value": "eps", 
+                "test_no": "50"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleProd, t = 16", 
+                "p_value": "eps", 
+                "test_no": "51"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleProd, t = 24", 
+                "p_value": "eps", 
+                "test_no": "52"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleMean, r = 0", 
+                "p_value": "eps", 
+                "test_no": "53"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleCorr, k = 1", 
+                "p_value": "1 - eps1", 
+                "test_no": "55"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SampleCorr, k = 2", 
+                "p_value": "1 - eps1", 
+                "test_no": "56"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "AppearanceSpacings, r = 0", 
+                "p_value": "1 - eps1", 
+                "test_no": "57"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "WeightDistrib, r = 0", 
+                "p_value": "eps", 
+                "test_no": "59"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "WeightDistrib, r = 0", 
+                "p_value": "eps", 
+                "test_no": "62"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "SumCollector", 
+                "p_value": "eps", 
+                "test_no": "65"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MatrixRank, L=30, r=0", 
+                "p_value": "eps", 
+                "test_no": "66"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MatrixRank, L=1000, r=0", 
+                "p_value": "eps", 
+                "test_no": "68"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "MatrixRank, L=5000", 
+                "p_value": "eps", 
+                "test_no": "71"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 H (L=50, r=0)", 
+                "p_value": "eps", 
+                "test_no": "74"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 M (L=50, r=0)", 
+                "p_value": "eps", 
+                "test_no": "74"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 J (L=50, r=0)", 
+                "p_value": "eps", 
+                "test_no": "74"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 R (L=50, r=0)", 
+                "p_value": "eps", 
+                "test_no": "74"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 C (L=50, r=0)", 
+                "p_value": "eps", 
+                "test_no": "74"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 H (L=1000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "76"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 M (L=1000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "76"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 J (L=1000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "76"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 R (L=1000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "76"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 C (L=1000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "76"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 H (L=10000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "78"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 M (L=10000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "78"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 J (L=10000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "78"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 R (L=10000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "78"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "RandomWalk1 C (L=10000, r=0)", 
+                "p_value": "eps", 
+                "test_no": "78"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "LinearComp, r = 0", 
+                "p_value": "1 - eps1", 
+                "test_no": "80"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "LinearComp, r = 0", 
+                "p_value": "1 - eps1", 
+                "test_no": "80"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "LempelZiv, r = 0", 
+                "p_value": "1 - eps1", 
+                "test_no": "82"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Fourier3, r = 0", 
+                "p_value": "eps", 
+                "test_no": "84"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "LongestHeadRun, r = 0", 
+                "p_value": "eps", 
+                "test_no": "86"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "LongestHeadRun, r = 0", 
+                "p_value": "1 - eps1", 
+                "test_no": "86"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "PeriodsInStrings, r = 0", 
+                "p_value": "0.9996", 
+                "test_no": "88"
+            }, 
+            {
+                "is_suspect": true, 
+                "name": "PeriodsInStrings, r = 20", 
+                "p_value": "1 - 1.7e-12", 
+                "test_no": "89"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingWeight2, r = 0", 
+                "p_value": "eps", 
+                "test_no": "90"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingIndep, L=30, r=0", 
+                "p_value": "eps", 
+                "test_no": "95"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingIndep, L=300, r=0", 
+                "p_value": "eps", 
+                "test_no": "97"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "HammingIndep, L=1200, r=0", 
+                "p_value": "eps", 
+                "test_no": "99"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "Run of bits, r = 0", 
+                "p_value": "eps", 
+                "test_no": "101"
+            }, 
+            {
+                "is_suspect": false, 
+                "name": "AutoCor, d=3, r=0", 
+                "p_value": "1 - eps1", 
+                "test_no": "104"
+            }
+        ], 
+        "generator": "stdcpp_knuth_b", 
+        "nb_fail": 75, 
+        "nb_stat": "160", 
+        "nb_suspect": 11, 
+        "status": "fail"
+    }, 
+    {
         "crush_type": "SmallCrush", 
         "failures": [
             {
@@ -5728,6 +6254,15 @@
         "generator": "stdcpp_random_device", 
         "nb_fail": 0, 
         "nb_stat": "144", 
+        "nb_suspect": 0, 
+        "status": "pass"
+    }, 
+    {
+        "crush_type": "BigCrush", 
+        "failures": [], 
+        "generator": "stdcpp_random_device", 
+        "nb_fail": 0, 
+        "nb_stat": "160", 
         "nb_suspect": 0, 
         "status": "pass"
     }, 
